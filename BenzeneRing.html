@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		Cody Haslam
+		Mobile App Design and Computer Coding
+		Sep 8 2016
+		-->
+		<meta charset='utf-8' />
+		<title>This is a benzene ring</title>
+	 	<style type='text/css'>
+	 		/* styles go here */
+			h1{color:#B6EF75; font-family:Cursive; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px}
+			p{color:#B6EF75; font-family:Courier}
+		</style>
+		<body style="background-color:#E7719F">
+	</head>
+	
+	<body>
+	  	<!-- Page Content -->
+	  	<svg width='400' height='600' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 400 600' xmlns:xlink= "http://www.w3.org/1999/xlink">
+	  		<defs>
+    			<radialGradient id="ripples" cx="50%" cy="50%" r="69%" fx="50%" fy="50%">
+   			   	<stop offset="0%" style="stop-color:#AAA; stop-opacity:1" />
+     			<stop offset="11%" style="stop-color:#787878; stop-opacity:1" />
+   			   	<stop offset="22%" style="stop-color:#AAA; stop-opacity:1" />
+     			<stop offset="33%" style="stop-color:#787878; stop-opacity:1" />
+   			   	<stop offset="44%" style="stop-color:#AAA; stop-opacity:1" />
+     			<stop offset="55%" style="stop-color:#787878; stop-opacity:1" />
+   			   	<stop offset="66%" style="stop-color:#AAA; stop-opacity:1" />
+     			<stop offset="77%" style="stop-color:#787878; stop-opacity:1" />
+   			   	<stop offset="88%" style="stop-color:#AAA; stop-opacity:1" />
+     			<stop offset="100%" style="stop-color:#787878; stop-opacity:1" />
+    			</radialGradient>
+    			
+    			<radialGradient id="pink" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+   			   	<stop offset="0%" style="stop-color:#FFF; stop-opacity:1" />
+     			<stop offset="100%" style="stop-color:#E7719F; stop-opacity:1" />
+    			</radialGradient>
+  			</defs>
+			<!-- CIRCLES -->
+			<!-- & other stuff -->
+			
+			<rect x='0' y='0' width='400' height='600' fill='url(#ripples)' />
+			
+			<polyline points='200 200 113 250' stroke='url(#pink)' stroke-width='5' />
+			<polyline points='113 350 200 400' stroke='url(#pink)' stroke-width='5' />
+			<polyline points='200 400 287 350' stroke='url(#pink)' stroke-width='5' transform='translate(0 5)' />
+			<polyline points='200 400 287 350' stroke='url(#pink)' stroke-width='5' transform='translate(0 -5)' />
+			<polyline points='287 250 200 200' stroke='url(#pink)' stroke-width='5' transform='translate(0 5)' />
+			<polyline points='287 250 200 200' stroke='url(#pink)' stroke-width='5' transform='translate(0 -5)' />
+			<rect x='110.5' y='250' width='5' height='100' fill='url(#pink)' transform='translate(5 0)' />
+			<rect x='110.5' y='250' width='5' height='100' fill='url(#pink)' transform='translate(-5 0)' />
+			<rect x='284.5' y='250' width='5' height='100' fill='url(#pink)' />
+			
+			<circle cx='200' cy='200' r='35' fill='url(#pink)' />
+			<circle cx='113' cy='250' r='35' fill='url(#pink)' />
+			<circle cx='113' cy='350' r='35' fill='url(#pink)' />
+			<circle cx='200' cy='400' r='35' fill='url(#pink)' />
+			<circle cx='287' cy='350' r='35' fill='url(#pink)' />
+			<circle cx='287' cy='250' r='35' fill='url(#pink)' />
+			
+		</svg>
+	</body>
+</html>
