@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<!--
+		Cody Haslam
+		Mobile App Design and Computer Coding
+		Sep 12 2016
+		-->
+		<meta charset='utf-8' />
+		<title>This is a chocolate molecule</title>
+		<style type='text/css'>
+		  /* styles go here */
+			h1{color:#B6EF75; font-family:Cursive; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px}
+			p{color:#B6EF75; font-family:Courier}
+		</style>
+		<body style="background-color:#E7719F">
+	</head>
+	
+	<body>
+	  	<!-- Page Content -->
+	  	<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" xmlns:xlink="http://www.w3.org/1999/xlink">
+	  	  <defs>
+    			<radialGradient id="ripples" cx="50%" cy="50%" r="69%" fx="50%" fy="50%">
+   			   	<stop offset="0%" style="stop-color:#AAA; stop-opacity:1"></stop>
+     			<stop offset="11%" style="stop-color:#787878; stop-opacity:1"></stop>
+   			   	<stop offset="22%" style="stop-color:#AAA; stop-opacity:1"></stop>
+     			<stop offset="33%" style="stop-color:#787878; stop-opacity:1"></stop>
+   			   	<stop offset="44%" style="stop-color:#AAA; stop-opacity:1"></stop>
+     			<stop offset="55%" style="stop-color:#787878; stop-opacity:1"></stop>
+   			   	<stop offset="66%" style="stop-color:#AAA; stop-opacity:1"></stop>
+     			<stop offset="77%" style="stop-color:#787878; stop-opacity:1"></stop>
+   			   	<stop offset="88%" style="stop-color:#AAA; stop-opacity:1"></stop>
+     			<stop offset="100%" style="stop-color:#787878; stop-opacity:1"></stop>
+    			</radialGradient>
+    			
+    			<radialGradient id="pink1" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+   			   	<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+     			<stop offset="100%" style="stop-color:#E7719F; stop-opacity:1"></stop>
+    			</radialGradient>
+    			
+    			<radialGradient id="pink2" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+   			   	<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+     			<stop offset="100%" style="stop-color:#DA4F85; stop-opacity:1"></stop>
+    			</radialGradient>
+    			
+    			<radialGradient id="purple1" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+   			   	<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+     			<stop offset="100%" style="stop-color:#B461C2; stop-opacity:1"></stop>
+    			</radialGradient>
+    			
+    			<radialGradient id="purple2" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+   			   	<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+     			<stop offset="100%" style="stop-color:#963EA6; stop-opacity:1"></stop>
+    			</radialGradient>
+    			
+    			<radialGradient id="orange1" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+   			   	<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+     			<stop offset="100%" style="stop-color:#FF987D; stop-opacity:1"></stop>
+    			</radialGradient>
+    			
+    			<radialGradient id="orange2" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+   			   	<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+     			<stop offset="100%" style="stop-color:#FC7D5B; stop-opacity:1"></stop>
+    			</radialGradient>
+  			</defs>
+			<!-- CIRCLES -->
+			<!-- & other stuff -->
+			
+			<rect x="0" y="0" width="400" height="600" fill="url(#ripples)"></rect>
+			
+			<polyline points="200 200 113 250" stroke="url(#pink1)" stroke-width="5"></polyline>
+			<polyline points="113 350 200 400" stroke="url(#pink1)" stroke-width="5"></polyline>
+			<polyline points="200 400 287 350" stroke="url(#pink1)" stroke-width="5" transform="translate(0 5)"></polyline>
+			<polyline points="200 400 287 350" stroke="url(#pink1)" stroke-width="5" transform="translate(0 -5)"></polyline>
+			<polyline points="287 250 200 200" stroke="url(#pink1)" stroke-width="5" transform="translate(0 5)"></polyline>
+			<polyline points="287 250 200 200" stroke="url(#pink1)" stroke-width="5" transform="translate(0 -5)"></polyline>
+			<rect x="110.5" y="250" width="5" height="100" fill="url(#pink1)" transform="translate(5 0)"></rect>
+			<rect x="110.5" y="250" width="5" height="100" fill="url(#pink1)" transform="translate(-5 0)"></rect>
+			<rect x="284.5" y="250" width="5" height="100" fill="url(#pink1)"></rect>
+			
+			<circle cx="500" cy="600" r="35" fill="url(#pink1)"></circle>
+			<circle cx="370" cy="675" r="35" fill="url(#orange2)"></circle>
+			<circle cx="370" cy="825" r="35" fill="url(#purple1)"></circle>
+			<circle cx="500" cy="900" r="35" fill="url(#pink2)"></circle>
+			<circle cx="630" cy="825" r="35" fill="url(#orange1)"></circle>
+			<circle cx="630" cy="675" r="35" fill="url(#purple2)"></circle>
+			
+			<circle cx="140" cy="750" r="35" fill="url(#pink1)"></circle>
+			<circle cx="228" cy="871" r="35" fill="url(#orange2)"></circle>
+			<circle cx="228" cy="629" r="35" fill="url(#purple1)"></circle>
+			<!--
+			<text x="200" y="100" fill="#B6EF75" font="comic sans ms" font-size="32px" text-anchor="middle">Benzene</text>
+			<text x="200" y="500" fill="#B6EF75" font="comic sans ms" font-size="32px" text-anchor="middle">Ring</text>
+			-->
+		</svg>
+	</body>
+</html>
