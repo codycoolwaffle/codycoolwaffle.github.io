@@ -1,5 +1,6 @@
   <svg width='240' height='240' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 240 240' xmlns:xlink='http://www.w3.org/1999/xlink'>
     <rect x='0' y='0' width='240' height='240' fill='#248' rx='48' ry='48' />
+    <g transform='scale(0.9) translate(15 15)'>
     <circle cx='120' cy='120' r='20' fill='#FFF' />
     <g>
     <ellipse cx='120' cy='120' rx='100' ry='45' stroke='#FFF' stroke-width='2' fill='none' />
@@ -12,5 +13,6 @@
     <g transform='rotate(240 120 120)'>
     <ellipse cx='120' cy='120' rx='100' ry='45' stroke='#FFF' stroke-width='2' fill='none' />
     <circle cx='36' cy='143' r='10' fill='#FFF' />
+    </g>
     </g>
   </svg>
