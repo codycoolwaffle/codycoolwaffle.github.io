@@ -1,5 +1,5 @@
   <svg width='240' height='240' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 240 240' xmlns:xlink='http://www.w3.org/1999/xlink'>
     <rect x='0' y='0' width='240' height='240' fill='#F00' rx='48' ry='48' />
     <circle cx='120' cy='120' r='80' fill='#FFF' />
-    <circle cx='120' cy='120' r='40' fill='#FFF' stroke='#F00' stroke-width='5' />
+    <circle cx='120' cy='120' r='35' fill='#FFF' stroke='#F00' stroke-width='5' />
   </svg>
