@@ -2,5 +2,5 @@
     <rect x='0' y='0' width='240' height='240' fill='#248' rx='48' ry='48' />
     <circle cx='120' cy='120' r='20' fill='#FFF' />
     <ellipse cx='120' cy='120' rx='100' ry='45' stroke='#FFF' stroke-width='2' fill='none' />
-    <circle cx='42' cy='120' r='10' fill='#FFF' />
+    <circle cx='42' cy='150' r='10' fill='#FFF' />
   </svg>
