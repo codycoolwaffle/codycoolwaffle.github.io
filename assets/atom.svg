@@ -7,10 +7,10 @@
     </g>
     <g transform='rotate(120 120 120)'>
     <ellipse cx='120' cy='120' rx='100' ry='45' stroke='#FFF' stroke-width='2' fill='none' />
-    <circle cx='42' cy='147' r='10' fill='#FFF' />
+    <circle cx='36' cy='143' r='10' fill='#FFF' />
     </g>
     <g transform='rotate(240 120 120)'>
     <ellipse cx='120' cy='120' rx='100' ry='45' stroke='#FFF' stroke-width='2' fill='none' />
-    <circle cx='42' cy='147' r='10' fill='#FFF' />
+    <circle cx='36' cy='143' r='10' fill='#FFF' />
     </g>
   </svg>
