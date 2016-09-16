@@ -1,5 +1,5 @@
   <svg width='240' height='240' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 240 240' xmlns:xlink='http://www.w3.org/1999/xlink'>
-    <rect x='0' y='0' width='240' height='240' fill='#FA0' rx='48' ry='48' />
+    <rect x='0' y='0' width='240' height='240' fill='#F40' rx='48' ry='48' />
     <circle cx='120' cy='120' r='56.5' fill='orange' stroke='#FFF' stroke-width='27' />
     <polyline points='120 120 240 120' stroke='orange' stroke-width='15' />
     <polyline points='120 120 240 120' stroke='orange' stroke-width='15' transform='rotate(120 120 120)' />
