@@ -19,6 +19,6 @@
 		<!-- L -->
 		<rect x='1020' y='15' width='50' height='345' fill='#3CBA54' />
 		<!-- E -->
-  		
+		<circle cx='1215' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' />
   	</g>
 </svg>
