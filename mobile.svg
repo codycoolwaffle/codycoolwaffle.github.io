@@ -11,12 +11,12 @@
 	<circle cx='500' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' />
 	<!-- B -->
 	<circle cx='770' cy='240' r='100' fill='none' stroke='#F4C20D' stroke-width='50' />
-	<rect x='650' y='50' width='50' height='310' fill='#F4C20D' />
+	<rect x='645' y='35' width='50' height='325' fill='#F4C20D' />
 	<!-- I -->
-	<rect x='920' y='150' width='50' height='210' fill='#4885ED' />
-	<rect x='920' y='90' width='50' height='40' fill='#4885ED' />
+	<rect x='915' y='150' width='50' height='210' fill='#4885ED' />
+	<rect x='915' y='90' width='50' height='40' fill='#4885ED' />
 	<!-- L -->
-	<rect x='990' y='50' width='50' height='310' fill='#3CBA54' />
+	<rect x='975' y='50' width='50' height='310' fill='#3CBA54' />
 	<!-- E -->
   
 </svg>
