@@ -8,15 +8,15 @@
 	<!-- M -->
 	
 	<!-- O -->
-	<circle cx='500' cy='240' r='100' fill='none' stroke='#E00' stroke-width='40' />
+	<circle cx='500' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='40' />
 	<!-- B -->
-	<circle cx='770' cy='240' r='100' fill='none' stroke='#FF0' stroke-width='40' />
-	<rect x='650' y='50' width='40' height='310' fill='#FF0' />
+	<circle cx='770' cy='240' r='100' fill='none' stroke='#F4C20D' stroke-width='40' />
+	<rect x='650' y='50' width='40' height='310' fill='#F4C20D' />
 	<!-- I -->
-	<rect x='920' y='150' width='40' height='210' fill='#00F' />
-	<rect x='920' y='90' width='40' height='40' fill='#00F' />
+	<rect x='920' y='150' width='40' height='210' fill='#4885ED' />
+	<rect x='920' y='90' width='40' height='40' fill='#4885ED' />
 	<!-- L -->
-	<rect x='990' y='50' width='40' height='310' fill='#0F0' />
+	<rect x='990' y='50' width='40' height='310' fill='#3CBA54' />
 	<!-- E -->
   
 </svg>
