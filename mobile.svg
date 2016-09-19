@@ -3,6 +3,8 @@
 	<defs>
 	</defs>
 	<!-- the shapes and stuff will go here -->
+	<rect x='0' y='0' width='1600' height='400' fill='#E7719F' />
+	<rect x='0' y='200' width='1600' height='400' fill='#B6EF75' />
 	<!-- M -->
 	
 	<!-- O -->
