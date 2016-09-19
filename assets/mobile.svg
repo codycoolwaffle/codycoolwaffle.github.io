@@ -13,7 +13,9 @@
 	<rect x='0' y='240' width='1600' height='400' fill='#B6EF75' />
 	<g transform='translate(0 60)'>
 		<!-- M -->
-		
+		<rect x='195' y='120' width='50' height='240' fill='#4885ED' />
+		<rect x='255' y='120' width='50' height='240' fill='#4885ED' />
+		<rect x='315' y='120' width='50' height='240' fill='#4885ED' />
 		<!-- O -->
 		<circle cx='500' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' />
 		<!-- B -->
