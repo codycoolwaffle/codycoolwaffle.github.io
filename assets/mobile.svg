@@ -26,7 +26,7 @@
 		<rect x='1020' y='15' width='50' height='345' fill='#3CBA54' />
 		<!-- E -->
 		<text font-size='300px' x='100'>
-		hi	
+		John cena was here
 		</text>
 		<g transform='rotate(-30 1215 240)'>
 			<rect x='1095' y='190' width='245' height='50' fill='#DB3236' clip-path='url(#e2)' />
