@@ -23,6 +23,6 @@
 		<rect x='1020' y='15' width='50' height='345' fill='#3CBA54' />
 		<!-- E -->
 		<circle cx='1215' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' clip-path='url(#e)' />
-		<rect x='1090' y='215' width='250' height='50' fill='#DB3236' />
+		<rect x='1090' y='215' width='240' height='50' fill='#DB3236' />
   	</g>
 </svg>
