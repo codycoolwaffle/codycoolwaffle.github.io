@@ -11,7 +11,7 @@
 	<circle cx='500' cy='240' r='100' fill='none' stroke='#E00' stroke-width='40' />
 	<!-- B -->
 	<circle cx='840' cy='240' r='100' fill='none' stroke='#FF0' stroke-width='40' />
-	<rect x='700' y='50' width='40' height='310' fill='#FF0' />
+	<rect x='740' y='50' width='40' height='310' fill='#FF0' />
 	<!-- I -->
 	
 	<!-- L -->
