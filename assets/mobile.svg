@@ -1,10 +1,10 @@
-<svg width='1600' height='400' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 1600 400' xmlns:xlink= "http://www.w3.org/1999/xlink">
+<svg width='1600' height='480' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 1600 480' xmlns:xlink= "http://www.w3.org/1999/xlink">
 	<!-- Clipping paths -->
 	<defs>
 	</defs>
 	<!-- the shapes and stuff will go here -->
 	<rect x='0' y='0' width='1600' height='400' fill='#E7719F' />
-	<rect x='0' y='200' width='1600' height='400' fill='#B6EF75' />
+	<rect x='0' y='240' width='1600' height='400' fill='#B6EF75' />
 	<!-- M -->
 	
 	<!-- O -->
