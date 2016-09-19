@@ -10,7 +10,7 @@
 	<!-- O -->
 	<circle cx='500' cy='240' r='100' fill='none' stroke='#E00' stroke-width='40' />
 	<!-- B -->
-	<circle cx='840' cy='240' r='100' fill='none' stroke='#E00' stroke-width='40' />
+	<circle cx='840' cy='240' r='100' fill='none' stroke='#FF0' stroke-width='40' />
 	
 	<!-- I -->
 	
