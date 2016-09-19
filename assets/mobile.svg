@@ -26,7 +26,7 @@
 		<rect x='1020' y='15' width='50' height='345' fill='#3CBA54' />
 		<!-- E -->
 		<g transform='rotate(-30 1215 240)'>
-			<rect x='1095' y='215' width='245' height='50' fill='#DB3236' clip-path='url(#e2)' />
+			<rect x='1120' y='215' width='245' height='50' fill='#DB3236' clip-path='url(#e2)' />
 			<circle cx='1215' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' clip-path='url(#e)' />
 		</g>
   	</g>
