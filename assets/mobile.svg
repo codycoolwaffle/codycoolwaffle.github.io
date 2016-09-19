@@ -4,6 +4,9 @@
 		<clipPath id='e'>
 			<polygon points='1340 240 1215 240 1340 365 1090 365 1090 115 1340 115 z' />
 		</clipPath>
+		<clipPath id='e2'>
+			<circle x='1215' y='240' r='50' />
+		</clipPath>
 	</defs>
 	<!-- the shapes and stuff will go here -->
 	<rect x='0' y='0' width='1600' height='400' fill='#E7719F' />
@@ -23,6 +26,6 @@
 		<rect x='1020' y='15' width='50' height='345' fill='#3CBA54' />
 		<!-- E -->
 		<circle cx='1215' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' clip-path='url(#e)' />
-		<rect x='1090' y='215' width='250' height='50' fill='#DB3236' clip-path='url(#e)' />
+		<rect x='1090' y='215' width='250' height='50' fill='#DB3236' clip-path='url(#e2)' />
   	</g>
 </svg>
