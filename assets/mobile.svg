@@ -27,5 +27,6 @@
 		<!-- E -->
 		<rect x='1095' y='215' width='245' height='50' fill='#DB3236' clip-path='url(#e2)' />
 		<circle cx='1215' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' clip-path='url(#e)' />
+			<circle x='1215' y='240' r='125' fill='none' stroke='#000' stroke-width='1' />
   	</g>
 </svg>
