@@ -13,8 +13,8 @@
 	<circle cx='770' cy='240' r='100' fill='none' stroke='#FF0' stroke-width='40' />
 	<rect x='650' y='50' width='40' height='310' fill='#FF0' />
 	<!-- I -->
-	<rect x='920' y='110' width='40' height='250' fill='#00F' />
-	<rect x='920' y='50' width='40' height='40' fill='#00F' />
+	<rect x='920' y='150' width='40' height='250' fill='#00F' />
+	<rect x='920' y='90' width='40' height='40' fill='#00F' />
 	<!-- L -->
 	
 	<!-- E -->
