@@ -4,7 +4,7 @@
           L 100 300'
            fill='none' stroke='lavender' stroke-width='12' stroke-linejoin='miter' stroke-linecap='square' />
   <path d='M 100 150
-           C 100 100 200 100 200 150
+           C 100 70 200 70 200 150
            L 200 300'
            fill='none' stroke='lavender' stroke-width='12' stroke-linejoin='miter' stroke-linecap='square' />
 </svg>
