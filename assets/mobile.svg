@@ -16,8 +16,8 @@
 	<rect x='0' y='240' width='1600' height='400' fill='#B6EF75' />
 	<g transform='translate(80 60)'>
 		<!-- M -->
-		<rect x='95' y='120' width='50' height='240' fill='#4885ED' />
-		<rect x='205' y='199' width='50' height='161' fill='#4885ED' />
+		<rect x='15' y='120' width='50' height='240' fill='#4885ED' />
+		<rect x='165' y='199' width='50' height='161' fill='#4885ED' />
 		<rect x='315' y='199' width='50' height='161' fill='#4885ED' />
 		<circle cx='175' cy='200' r='55' fill='none' stroke='#4885ED' stroke-width='50' clip-path='url(#m)' />
 		<circle cx='285' cy='200' r='55' fill='none' stroke='#4885ED' stroke-width='50' clip-path='url(#m)' />
