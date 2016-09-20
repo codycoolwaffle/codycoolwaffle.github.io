@@ -7,6 +7,9 @@
 		<clipPath id='e2'>
 			<circle cx='1215' cy='240' r='125' />
 		</clipPath>
+		<clipPath id='m'>
+			<polygon points='0 200 400 200 400 400 0 400 z' />
+		</clipPath>
 	</defs>
 	<!-- the shapes and stuff will go here -->
 	<rect x='0' y='0' width='1600' height='400' fill='#E7719F' />
