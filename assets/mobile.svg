@@ -8,7 +8,7 @@
 			<circle cx='1215' cy='240' r='125' />
 		</clipPath>
 		<clipPath id='m'>
-			<polygon points='0 600 400 600 400 400 0 400 z' />
+			<rect x='0' y='0' width='400' height='200' />
 		</clipPath>
 	</defs>
 	<!-- the shapes and stuff will go here -->
