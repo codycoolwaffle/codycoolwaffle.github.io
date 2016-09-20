@@ -14,7 +14,7 @@
 	<!-- the shapes and stuff will go here -->
 	<rect x='0' y='0' width='1600' height='400' fill='#E7719F' />
 	<rect x='0' y='240' width='1600' height='400' fill='#B6EF75' />
-	<g transform='translate(662.5 52.5)'>
+	<g transform='translate(130 52.5)'>
 		<!-- M -->
 		<rect x='15' y='115' width='50' height='245' fill='#4885ED' />
 		<rect x='165' y='214' width='50' height='146' fill='#4885ED' />
