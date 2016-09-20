@@ -29,7 +29,7 @@
 	<!-- L -->
 	<rect x='995' y='15' width='50' height='345' fill='#3CBA54' />
 	<!-- E -->
-	<g transform='rotate(-22.5 1215 240)'>
+	<g transform='rotate(-22.5 1190 240)'>
 		<rect x='1070' y='215' width='245' height='50' fill='#DB3236' clip-path='url(#e2)' />
 		<circle cx='1190' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' clip-path='url(#e)' />
 	</g>
