@@ -4,4 +4,6 @@
            C 0 0 240 240 0 240' stroke='#F00' stroke-width='8' fill='none' />
   <path d='M 240 0
            C -100 0 340 240 0 240' stroke='#F0F' stroke-width='8' fill='none' />
+  <path d='M 240 0
+           C 0 0 0 240 240 240' stroke='#F00' stroke-width='8' fill='none' />
 </svg>
