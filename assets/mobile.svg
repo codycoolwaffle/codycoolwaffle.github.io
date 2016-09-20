@@ -5,7 +5,7 @@
 			<polygon points='1315 240 1190 240 1315 365 1065 365 1065 115 1315 115 z' />
 		</clipPath>
 		<clipPath id='e2'>
-			<circle cx='1215' cy='240' r='125' />
+			<circle cx='1190' cy='240' r='125' />
 		</clipPath>
 		<clipPath id='m'>
 			<rect x='0' y='0' width='400' height='215' />
