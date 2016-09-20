@@ -2,7 +2,7 @@
 	<!-- Clipping paths -->
 	<defs>
 		<clipPath id='e'>
-			<polygon points='1340 240 1215 240 1340 365 1090 365 1090 115 1340 115 z' />
+			<polygon points='1315 240 1190 240 1315 365 1065 365 1065 115 1315 115 z' />
 		</clipPath>
 		<clipPath id='e2'>
 			<circle cx='1215' cy='240' r='125' />
