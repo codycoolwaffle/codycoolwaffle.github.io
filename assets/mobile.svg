@@ -27,8 +27,8 @@
 		<circle cx='770' cy='240' r='100' fill='none' stroke='#F4C20D' stroke-width='50' />
 		<rect x='645' y='15' width='50' height='345' fill='#F4C20D' />
 		<!-- I -->
-		<rect x='940' y='120' width='50' height='240' fill='#4885ED' />
-		<rect x='940' y='50' width='50' height='50' fill='#4885ED' />
+		<rect x='940' y='115' width='50' height='245' fill='#4885ED' />
+		<rect x='940' y='45' width='50' height='50' fill='#4885ED' />
 		<!-- L -->
 		<rect x='1020' y='15' width='50' height='345' fill='#3CBA54' />
 		<!-- E -->
