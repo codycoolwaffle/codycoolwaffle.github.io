@@ -1,11 +1,13 @@
 <svg width='600' height='400' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 600 400' xmlns:xlink= "http://www.w3.org/1999/xlink">
   <!-- the shapes and stuff will go here -->
+  <g opacity='0.2'>
   <path d='M 240 0
            C 0 0 240 240 0 240' stroke='#0FF' stroke-width='8' fill='none' />
   <path d='M 240 0
            C -100 0 340 240 0 240' stroke='#F0F' stroke-width='8' fill='none' />
   <path d='M 240 0
            C 0 0 0 240 240 240' stroke='#FF0' stroke-width='8' fill='none' />
+  </g>
   <path d='M 120 0
            C 180 0 240 60 240 120
            C 240 240 240 240 120 240
