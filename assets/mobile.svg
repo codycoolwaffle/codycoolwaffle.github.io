@@ -12,30 +12,25 @@
 		</clipPath>
 	</defs>
 	<!-- the shapes and stuff will go here -->
-	<rect x='0' y='0' width='1600' height='400' fill='#E7719F' />
-	<rect x='0' y='240' width='1600' height='400' fill='#B6EF75' />
-	<!--<g transform='translate(130 52.5)'>-->
-	<g>
 		<!-- M -->
-		<rect x='15' y='115' width='50' height='245' fill='#4885ED' />
-		<rect x='165' y='214' width='50' height='146' fill='#4885ED' />
-		<rect x='315' y='214' width='50' height='146' fill='#4885ED' />
-		<circle cx='115' cy='215' r='75' fill='none' stroke='#4885ED' stroke-width='50' clip-path='url(#m)' />
-		<circle cx='265' cy='215' r='75' fill='none' stroke='#4885ED' stroke-width='50' clip-path='url(#m)' />
-		<!-- O -->
-		<circle cx='500' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' />
-		<!-- B -->
-		<circle cx='770' cy='240' r='100' fill='none' stroke='#F4C20D' stroke-width='50' />
-		<rect x='645' y='15' width='50' height='345' fill='#F4C20D' />
-		<!-- I -->
-		<rect x='940' y='115' width='50' height='245' fill='#4885ED' />
-		<rect x='940' y='45' width='50' height='50' fill='#4885ED' />
-		<!-- L -->
-		<rect x='1020' y='15' width='50' height='345' fill='#3CBA54' />
-		<!-- E -->
-		<g transform='rotate(-22.5 1215 240)'>
-			<rect x='1095' y='215' width='245' height='50' fill='#DB3236' clip-path='url(#e2)' />
-			<circle cx='1215' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' clip-path='url(#e)' />
-		</g>
-  	</g>
+	<rect x='15' y='115' width='50' height='245' fill='#4885ED' />
+	<rect x='165' y='214' width='50' height='146' fill='#4885ED' />
+	<rect x='315' y='214' width='50' height='146' fill='#4885ED' />
+	<circle cx='115' cy='215' r='75' fill='none' stroke='#4885ED' stroke-width='50' clip-path='url(#m)' />
+	<circle cx='265' cy='215' r='75' fill='none' stroke='#4885ED' stroke-width='50' clip-path='url(#m)' />
+	<!-- O -->
+	<circle cx='500' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' />
+	<!-- B -->
+	<circle cx='770' cy='240' r='100' fill='none' stroke='#F4C20D' stroke-width='50' />
+	<rect x='645' y='15' width='50' height='345' fill='#F4C20D' />
+	<!-- I -->
+	<rect x='940' y='115' width='50' height='245' fill='#4885ED' />
+	<rect x='940' y='45' width='50' height='50' fill='#4885ED' />
+	<!-- L -->
+	<rect x='1020' y='15' width='50' height='345' fill='#3CBA54' />
+	<!-- E -->
+	<g transform='rotate(-22.5 1215 240)'>
+		<rect x='1095' y='215' width='245' height='50' fill='#DB3236' clip-path='url(#e2)' />
+		<circle cx='1215' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' clip-path='url(#e)' />
+	</g>
 </svg>
