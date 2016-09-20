@@ -3,5 +3,5 @@
   <path d='M 100 100
            L 100 300
            C 300 300 300 100 100 100'
-           fill='none' stroke='lavender' stroke-width='12' />
+           fill='none' stroke='lavender' stroke-width='12' stroke-linejoin='miter' stroke-linejoin='square' />
 </svg>
