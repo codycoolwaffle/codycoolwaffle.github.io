@@ -2,6 +2,6 @@
   <!-- the shapes and stuff will go here -->
   <path d='M 100 100
            L 100 300
-           C 500 300 500 100 100 100'
+           C 200 300 200 100 100 100'
            fill='none' stroke='lavender' stroke-width='12' />
 </svg>
