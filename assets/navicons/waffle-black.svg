@@ -8,8 +8,8 @@
   </defs>
   <!-- the shapes and stuff will go here -->
   <g fill='#000'>
-    <rect x='0' y='0' width='3' height='13' clip-path='url(#waffle)' fill='#000' transform='scale(40 40)' />
-    <rect x='5' y='0' width='3' height='13' clip-path='url(#waffle)' fill='#000' transform='scale(40 40)' />
-    <rect x='10' y='0' width='3' height='13' clip-path='url(#waffle)' fill='#000' transform='scale(40 40)' />
+    <rect x='0' y='0' width='3' height='13' clip-path='url(#waffle)' transform='scale(40 40)' />
+    <rect x='5' y='0' width='3' height='13' clip-path='url(#waffle)' transform='scale(40 40)' />
+    <rect x='10' y='0' width='3' height='13' clip-path='url(#waffle)' transform='scale(40 40)' />
   </g>
 </svg>
