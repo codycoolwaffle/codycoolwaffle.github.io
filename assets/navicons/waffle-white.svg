@@ -1,0 +1,15 @@
+<svg width='520' height='520' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 520 520' xmlns:xlink= "http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id='waffle'>
+      <rect x='0' y='0' width='13' height='3' />
+      <rect x='0' y='5' width='13' height='3' />
+      <rect x='0' y='10' width='13' height='3' />
+    </clipPath>
+  </defs>
+  <!-- the shapes and stuff will go here -->
+  <g fill='#FFF'>
+    <rect x='0' y='0' width='3' height='13' clip-path='url(#waffle)' transform='scale(40 40)' />
+    <rect x='5' y='0' width='3' height='13' clip-path='url(#waffle)' transform='scale(40 40)' />
+    <rect x='10' y='0' width='3' height='13' clip-path='url(#waffle)' transform='scale(40 40)' />
+  </g>
+</svg>
