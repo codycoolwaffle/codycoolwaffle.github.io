@@ -29,5 +29,5 @@
            10.5 16.5 
            14.5 18
            
-           fill='none' stroke='#000' stroke-width='1' transform='scale(20)' stroke-linejoin='round' stroke-linecap='round' transform='rotate(180 14 18)' />
+           fill='none' stroke='#000' stroke-width='1' transform='scale(20) rotate(180 14.5 18)' stroke-linejoin='round' stroke-linecap='round' />
 </svg>
