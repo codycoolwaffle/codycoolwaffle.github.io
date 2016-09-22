@@ -6,7 +6,7 @@
            C 7.1 13 10.5 16.5 14.5 18
            C 19 19.4 21.5 22 21.5 25
            C 21.75 28 17.5 32.15 13.85 32.15
-           C 10.5 32.15 8.7 31.5 6.1 29.35' fill='none' stroke='#000' stroke-width='5' transform='scale(20)' />
+           C 10.5 32.15 8.7 31.5 6.1 29.35' fill='none' stroke='#000' stroke-width='5' transform='scale(20)' stroke-linejoin='round' stroke-linecap='round' />
   <!--<path d='M 100 100
           L 100 300'
            fill='none' stroke='lavender' stroke-width='12' stroke-linejoin='miter' stroke-linecap='square' />
