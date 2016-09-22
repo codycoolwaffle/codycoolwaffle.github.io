@@ -1,6 +1,13 @@
-<svg width='600' height='400' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 600 400' xmlns:xlink= "http://www.w3.org/1999/xlink">
+<svg width='540' height='720' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 540 720' xmlns:xlink= "http://www.w3.org/1999/xlink">
   <!-- the shapes and stuff will go here -->
-  <path d='M 100 100
+  <path d='M 21.5 5.4
+           C 18.25 3.5 17 3.25 14.25 3.25
+           C 10.9 3.25 7.1 7 7.1 10.25
+           C 7.1 13 10.5 16.5 14.5 18
+           C 19 19.4 21.5 22 21.5 25
+           C 21.75 28 17.5 32.15 13.85 32.15
+           C 10.5 32.15 8.7 31.5 6.1 29.35' fill='none' stroke='#000' stroke-width='5' />
+  <!--<path d='M 100 100
           L 100 300'
            fill='none' stroke='lavender' stroke-width='12' stroke-linejoin='miter' stroke-linecap='square' />
   <path d='M 100 150
@@ -10,5 +17,5 @@
   <path d='M 100 150
            C 100 80 200 80 200 150
            L 200 300'
-           fill='none' stroke='lavender' stroke-width='12' stroke-linejoin='miter' stroke-linecap='square' transform='translate(100 0)' />
+           fill='none' stroke='lavender' stroke-width='12' stroke-linejoin='miter' stroke-linecap='square' transform='translate(100 0)' />-->
 </svg>
