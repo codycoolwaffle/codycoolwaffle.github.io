@@ -8,15 +8,4 @@
            C 21.75 28 17.5 32.15 13.85 32.15
            C 10.5 32.15 8.7 31.5 6.1 29.35' 
            fill='none' stroke='#000' stroke-width='5' transform='scale(20)' stroke-linejoin='round' stroke-linecap='round' />
-  <!--<path d='M 100 100
-          L 100 300'
-           fill='none' stroke='lavender' stroke-width='12' stroke-linejoin='miter' stroke-linecap='square' />
-  <path d='M 100 150
-           C 100 80 200 80 200 150
-           L 200 300'
-           fill='none' stroke='lavender' stroke-width='12' stroke-linejoin='miter' stroke-linecap='square' />
-  <path d='M 100 150
-           C 100 80 200 80 200 150
-           L 200 300'
-           fill='none' stroke='lavender' stroke-width='12' stroke-linejoin='miter' stroke-linecap='square' transform='translate(100 0)' />-->
 </svg>
