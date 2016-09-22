@@ -1,11 +1,30 @@
 <svg width='540' height='720' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 540 720' xmlns:xlink= "http://www.w3.org/1999/xlink">
   <!-- the shapes and stuff will go here -->
   <path d='M 21.5 5.4
-           C 18.25 3.5 17 3.25 14.5 3.25
-           C 10.9 3.25 7.5 7 7.5 10
-           C 7.5 13 10.5 16.5 14.5 18
-           C 18.5 19.5 21.5 22 21.5 25
-           C 21.5 28 17.5 31.75 14.5 31.75
-           C 10.5 31.75 8.7 31.5 6.1 29.35' 
+  
+           C 18.25 3.5 
+           17 3.25 
+           14.5 3.25
+           
+           C 10.9 3.25 
+           7.5 7 
+           7.5 10
+           
+           C 7.5 13 
+           10.5 16.5 
+           14.5 18
+           
+           C 18.5 19.5 
+           21.5 22 
+           21.5 25
+           
+           C 21.5 28 
+           17.5 31.75 
+           14.5 31.75
+           
+           C 10.5 31.75 
+           8.7 31.5 
+           6.1 29.35' 
+           
            fill='none' stroke='#000' stroke-width='1' transform='scale(20)' stroke-linejoin='round' stroke-linecap='round' />
 </svg>
