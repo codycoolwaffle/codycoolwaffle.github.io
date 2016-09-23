@@ -1,6 +1,6 @@
 <svg width='600' height='680' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 600 680' xmlns:xlink= "http://www.w3.org/1999/xlink">
   <!-- the shapes and stuff will go here -->
-  <g fill='#FFF' transform='scale(20)'>
+  <g fill='#000' transform='scale(20)'>
   <path d='M 15.5 10.5
            C 18 10.5 19 9 21.5 9
            C 24 9 25.5 10 26.5 12
