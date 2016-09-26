@@ -1,19 +1,44 @@
 <svg width='600' height='680' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 600 680' xmlns:xlink= "http://www.w3.org/1999/xlink">
   <!-- the shapes and stuff will go here -->
-  <g fill='#000' transform='scale(20)'>
-  <path d='M 15.5 10.5
-           C 18 10.5 19 9 21.5 9
-           C 24 9 25.5 10 26.5 12
-           C 22 14.5 22.25 21.25 27.75 24
-           C 26.5 27 23.5 31.75 21 31.75
-           C 18.5 31.75 18 30.5 15.75 30.5
-           C 13.5 30.5 13 31.75 10.5 31.75
-           C 8 31.75 2.25 24.5 2.25 17.5
-           C 2.25 12.5 7 9 9.5 9
-           C 12 9 13 10.5 15.5 10.5'
-           />
+  <defs>
+    <clipPath id='1'>
+    	<rect x='0' y='9' width='600' height='3.7916666667' />
+    </clipPath>
+    <clipPath id='2'>
+    	<rect x='0' y='12.7916666667' width='600' height='3.7916666667' />
+    </clipPath>
+    <clipPath id='3'>
+    	<rect x='0' y='16.5833333334' width='600' height='3.7916666667' />
+    </clipPath>
+    <clipPath id='4'>
+    	<rect x='0' y='20.375' width='600' height='3.7916666667' />
+    </clipPath>
+    <clipPath id='5'>
+    	<rect x='0' y='24.166666667' width='600' height='3.7916666667' />
+    </clipPath>
+    <clipPath id='6'>
+    	<rect x='0' y='27.958333334' width='600' height='3.7916666667' />
+    </clipPath>
+  	<path d='M 15.5 10.5
+          	 C 18 10.5 19 9 21.5 9
+         	 C 24 9 25.5 10 26.5 12
+         	 C 22 14.5 22.25 21.25 27.75 24
+         	 C 26.5 27 23.5 31.75 21 31.75
+           	 C 18.5 31.75 18 30.5 15.75 30.5
+           	 C 13.5 30.5 13 31.75 10.5 31.75
+             C 8 31.75 2.25 24.5 2.25 17.5
+             C 2.25 12.5 7 9 9.5 9
+             C 12 9 13 10.5 15.5 10.5'
+           transform='scale(20)' id='apple' />
+  </defs>
   <path d='M 14.5 9.5
            C 14 6 17.75 2.25 20.75 2.25
-           C 21 5.5 17.75 9 14.5 9.5' />
-  </g>
+           C 21 5.5 17.75 9 14.5 9.5' 
+		   transform='scale(20)' fill='#0F0' />
+	<use id ='apple' clip-path='url(#1)' fill='#0F0' />
+	<use id ='apple' clip-path='url(#2)' fill='#FF0' />
+	<use id ='apple' clip-path='url(#3)' fill='#F90' />
+	<use id ='apple' clip-path='url(#4)' fill='#F00' />
+	<use id ='apple' clip-path='url(#5)' fill='#F0F' />
+	<use id ='apple' clip-path='url(#6)' fill='#00F' />
 </svg>
