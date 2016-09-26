@@ -35,10 +35,19 @@
            C 14 6 17.75 2.25 20.75 2.25
            C 21 5.5 17.75 9 14.5 9.5' 
 		   transform='scale(20)' fill='#0F0' />
+	<use x='0' y='0' xlink:href='#apple' style='fill:#0F0' />
+	<use x='0' y='0' xlink:href='#apple' style='fill:#FF0' />
+	<use x='0' y='0' xlink:href='#apple' style='fill:#F90' />
+	<use x='0' y='0' xlink:href='#apple' style='fill:#F00' />
+	<use x='0' y='0' xlink:href='#apple' style='fill:#F0F' />
+	<use x='0' y='0' xlink:href='#apple' style='fill:#00F' />
+	
+	<!--
 	<use id ='apple' clip-path='url(#1)' fill='#0F0' />
 	<use id ='apple' clip-path='url(#2)' fill='#FF0' />
 	<use id ='apple' clip-path='url(#3)' fill='#F90' />
 	<use id ='apple' clip-path='url(#4)' fill='#F00' />
 	<use id ='apple' clip-path='url(#5)' fill='#F0F' />
 	<use id ='apple' clip-path='url(#6)' fill='#00F' />
+	-->
 </svg>
