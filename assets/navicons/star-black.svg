@@ -1,4 +1,4 @@
 <svg width='520' height='520' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 520 520' xmlns:xlink= "http://www.w3.org/1999/xlink">
   <!-- the shapes and stuff will go here -->
-  <polygon points='260 110 172 139 117 214 117 306 172 381 260 410 348 381 403 306 403 214 348 139 z' fill='#000' />
+  <polygon points='260 110 142 98 117 214 70 322 172 381 260 460 348 381 450 322 403 214 378 98 z' fill='#000' />
 </svg>
