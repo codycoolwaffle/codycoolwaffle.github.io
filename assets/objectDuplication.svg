@@ -16,8 +16,8 @@
 		<polygon points='20 20 580 200 200 380 z' id='tri' />
 	</defs>
 	<rect x='0' y='0' width='600' height='400' fill='beige' />
-	<use xlink:href='#tri' fill='#F00' clipPath='url(#1)' />
-	<use xlink:href='#tri' fill='#FF0' clipPath='url(#2)' />
-	<use xlink:href='#tri' fill='#0F0' clipPath='url(#3)' />
-	<use xlink:href='#tri' fill='#00F' clipPath='url(#4)' />
+	<use xlink:href='#tri' fill='#F00' clip-path='url(#1)' />
+	<use xlink:href='#tri' fill='#FF0' clip-path='url(#2)' />
+	<use xlink:href='#tri' fill='#0F0' clip-path='url(#3)' />
+	<use xlink:href='#tri' fill='#00F' clip-path='url(#4)' />
 </svg>
