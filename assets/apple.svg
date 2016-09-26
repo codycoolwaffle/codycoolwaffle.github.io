@@ -40,7 +40,7 @@
 	<use x='0' y='0' xlink:href='#apple' style='fill:#F90' />
 	<use x='0' y='0' xlink:href='#apple' style='fill:#F00' />
 	<use x='0' y='0' xlink:href='#apple' style='fill:#F0F' />
-	<use x='0' y='0' xlink:href='#apple' style='fill:#00F' />
+	<use x='0' y='0' xlink:href='#apple' style='fill:#00F; clipPath:url(#6)' />
 	
 	<!--
 	<use id ='apple' clip-path='url(#1)' fill='#0F0' />
