@@ -34,14 +34,14 @@
   <path d='M 14.5 9.5
            C 14 6 17.75 2.25 20.75 2.25
            C 21 5.5 17.75 9 14.5 9.5' 
-		   transform='scale(20)' fill='#0F0' />
+		   transform='scale(20)' fill='#61bb46' />
 	<g transform='scale(20)'>
-	<use x='0' y='0' xlink:href='#apple' fill='#0F0' clip-path='url(#1)' />
-	<use x='0' y='0' xlink:href='#apple' fill='#FF0' clip-path='url(#2)' />
-	<use x='0' y='0' xlink:href='#apple' fill='#F90' clip-path='url(#3)' />
-	<use x='0' y='0' xlink:href='#apple' fill='#F00' clip-path='url(#4)' />
-	<use x='0' y='0' xlink:href='#apple' fill='#F0F' clip-path='url(#5)' />
-	<use x='0' y='0' xlink:href='#apple' fill='#00F' clip-path='url(#6)' />
+	<use x='0' y='0' xlink:href='#apple' fill='#61BB46' clip-path='url(#1)' />
+	<use x='0' y='0' xlink:href='#apple' fill='#fDB827' clip-path='url(#2)' />
+	<use x='0' y='0' xlink:href='#apple' fill='#F5821F' clip-path='url(#3)' />
+	<use x='0' y='0' xlink:href='#apple' fill='#E03A3E' clip-path='url(#4)' />
+	<use x='0' y='0' xlink:href='#apple' fill='#963D97' clip-path='url(#5)' />
+	<use x='0' y='0' xlink:href='#apple' fill='#009DDC' clip-path='url(#6)' />
 	</g>
 	
 	<!--
