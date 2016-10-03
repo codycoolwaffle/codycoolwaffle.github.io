@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<!--
+		Cody Haslam
+		Mobile App Design and Computer Coding
+		Sep 30 2016
+		-->
+		<meta charset='utf-8' />
+		<title>Tic Tac What-are-thooooooooooooose?!?</title>
+	 	<style type='text/css'>
+	 		/* styles go here */
+			h1{color:#B6EF75; font-family: Cursive; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px}
+			body{text-align:center}
+		</style>
+		<body style="background-color:#E7719F">
+	</head>
+	
+	<body>
+	  	<h1>Tic Tac What-are-those?!?</h1>
+	  	<!-- Page Content -->
+	  	
+	  	<img src='blank.svg'>
+	  	<img src='blank.svg'>
+	  	<img src='blank.svg'><br />
+	  	
+	  	<img src='blank.svg'>
+	  	<img src='blank.svg'>
+	  	<img src='blank.svg'><br />
+	  	
+	  	<img src='blank.svg'>
+	  	<img src='blank.svg'>
+	  	<img src='blank.svg'>
+	  	
+	  	<script type='text/javascript'>
+	  		var images = document.getElementsByTagName('img');
+	  		var x = true;
+	  		var wins = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+	  		var playable = true;
+	  		
+	  		for(var i = 0; i < images.length; i++)
+	  		{
+	  			images[i].onclick = clicked;
+	  		}
+	  		
+	  		function clicked(event)
+	  		{
+	  			//alert(event.target.src);
+	  			if(event.target.src.indexOf('blank.svg') < 0 || !playable)
+	  			{
+	  				return;
+	  			}
+	  			if(x)
+	  			{
+	  				event.target.src = 'X.svg';
+	  				checkWin('X.svg');
+	  			}
+	  			else
+	  			{
+	  				event.target.src = 'O.svg';
+	  				checkWin('O.svg');
+	  			}
+	  			
+	  			x = !x;
+	  			
+	  		}
+	  		
+	  		function checkWin(player)
+	  		{
+	  			for(var i = 0; i < wins.length; i++)
+	  			{
+	  				if(images[wins[i][0]].src.indexOf(player) > 0 && images[wins[i][1]].src.indexOf(player) > 0 && images[wins[i][2]].src.indexOf(player) > 0)
+	  				{
+	  					alert(player.substring(0,1) + " has won!");
+	  					playable = false;
+	  					break;
+	  				}
+	  			}
+	  		}
+	  	</script>
+	</body>
+</html>
