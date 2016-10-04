@@ -8,16 +8,37 @@
 		-->
 		<meta charset='utf-8' />
 		<title>Tic Tac What-are-thooooooooooooose?!?</title>
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	 	<style type='text/css'>
 	 		/* styles go here */
-			h1{color:#B6EF75; font-family: Cursive; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px}
+			h1{color:#B6EF75; font-family:Quicksand; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px}
 			body{text-align:center}
+			#results{margin:2em; font-family:Quicksand; font-size:1.5em; background-color:#FF987D; color:#83CB2F padding:0.5em; display:none}
+			#newgame{margin:3.5em}
+			.btn 
+			{
+  				-webkit-border-radius: 30;
+ 				-moz-border-radius: 30;
+ 				border-radius: 30px;
+  				font-family: Georgia;
+  				color: #B6EF75;
+  				font-size: 32px;
+  				background: #B461C2;
+  				padding: 10px 20px 10px 20px;
+  				text-decoration: none;
+			}
+
+			.btn:hover 
+			{
+  				background: #D18EDC;
+  				text-decoration: none;
+			}
 		</style>
 		<body style="background-color:#E7719F">
 	</head>
 	
 	<body>
-	  	<h1>Tic Tac What-are-those?!?</h1>
+	  	<h1>TIC TAC WHAT-ARE-THOSE?!?</h1>
 	  	<!-- Page Content -->
 	  	
 	  	<img src='blank.svg'>
@@ -32,11 +53,18 @@
 	  	<img src='blank.svg'>
 	  	<img src='blank.svg'>
 	  	
-	  	<script type='text/javascript'>
+	  	<div id='results'>YAAAAAAAAAAASSSSSSSS</div>
+	  	<div id='newgame'><a class="btn" href="">New Game!</a></div>
+	  	
+	  	<script type='text/javascript'>//THIS IS MY HOME DOMAIN
 	  		var images = document.getElementsByTagName('img');
-	  		var x = true;
 	  		var wins = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
-	  		var playable = true;
+	  		var newgameButton = document.getElementById('newgame');
+	  		var playable;
+	  		var x;
+	  		
+	  		newgame();
+	  		newgameButton.onclick = newgame;
 	  		
 	  		for(var i = 0; i < images.length; i++)
 	  		{
@@ -45,8 +73,7 @@
 	  		
 	  		function clicked(event)
 	  		{
-	  			//alert(event.target.src);
-	  			if(event.target.src.indexOf('blank.svg') < 0 || !playable)
+	  			if(!(event.target.src.substring(event.target.src.length-9)=="blank.svg") || !playable)
 	  			{
 	  				return;
 	  			}
@@ -65,13 +92,35 @@
 	  			
 	  		}
 	  		
+	  		function newgame()
+	  		{
+	  			x = true;
+	  			document.getElementById('results').style.display = 'none';
+	  			
+	  			for(var i = 0; i < images.length; i++)
+	  			{
+	  				images[i].src = 'blank.svg';
+	  			}
+	  			
+	  			playable = true;
+	  		}
+	  		
 	  		function checkWin(player)
 	  		{
 	  			for(var i = 0; i < wins.length; i++)
 	  			{
 	  				if(images[wins[i][0]].src.indexOf(player) > 0 && images[wins[i][1]].src.indexOf(player) > 0 && images[wins[i][2]].src.indexOf(player) > 0)
 	  				{
-	  					alert(player.substring(0,1) + " has won!");
+	  					document.getElementById('results').innerHTML = ('Player ' + player.replace('.svg', '') + ' won!');
+	  					document.getElementById('results').style.display = 'block';
+	  					if(player == 'X.svg')
+	  					{
+	  						document.getElementById('results').style.color = '#E7719F';
+	  					}
+	  					if(player == 'O.svg')
+	  					{
+	  						document.getElementById('results').style.color = '#B6EF75';
+	  					}
 	  					playable = false;
 	  					break;
 	  				}
