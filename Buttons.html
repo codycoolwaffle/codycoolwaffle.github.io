@@ -36,8 +36,7 @@
 			for(var i = 0; i < 3; i++)
 			{
 				console.log(pageElements[1][i]);
-				pageElements[1][i].onclick = changeButton(i);
-				changeButton(i);
+				pageElements[1][i].onclick = changeButton;
 			}
 			
 			function randomColour()
@@ -52,8 +51,10 @@
 					colourNums[Math.floor(Math.random() * colourNums.length)];
 			}
 			
-			function changeButton(elementNum)
+			function changeButton(event)
 			{
+				console.log(event);
+				/**
 				console.log(elementNum);
 				if(norms[elementNum]==false)
 				{
@@ -68,7 +69,7 @@
 				console.log(newColour);
 				pageElements[0].style.color = newColour;
 				pageElements[1][elementNum].style.backgroundColor = newColour;
-				norms[elementNum] = false;
+				norms[elementNum] = false;**/
 			}
 		</script>
 	</body>
