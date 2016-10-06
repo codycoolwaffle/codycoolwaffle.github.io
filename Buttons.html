@@ -54,11 +54,11 @@
 			function changeButton(event)
 			{
 				console.log(event.target.id);
-				/**
+				var elementNum = 'rgb'.indexOf(event.target.id);
 				console.log(elementNum);
 				if(norms[elementNum]==false)
 				{
-					pageElements[1][elementNum].style.color = normColours[elementNum];
+					event.target.style.color = normColours[elementNum];
 					console.log('returning');
 					norms[elementNum] = true;
 					return;
@@ -68,8 +68,8 @@
 				var newColour = randomColour();
 				console.log(newColour);
 				pageElements[0].style.color = newColour;
-				pageElements[1][elementNum].style.backgroundColor = newColour;
-				norms[elementNum] = false;**/
+				event.target.style.backgroundColor = newColour;
+				norms[elementNum] = false;
 			}
 		</script>
 	</body>
