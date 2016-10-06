@@ -59,16 +59,18 @@
 				console.log(elementNum);
 				if(norms[elementNum]==false)
 				{
-					pageElements[1][elementNum].color = normColours[elementNum];
+					pageElements[1][elementNum].style.color = normColours[elementNum];
 					console.log('returning');
+					norms[elementNum] = true;
 					return;
 				}
 				
 				console.log('Setting new colour');
 				var newColour = randomColour();
 				console.log(newColour);
-				pageElements[0].color = newColour;
-				pageElements[1][elementNum].backgroundColor = newColour;
+				pageElements[0].style.color = newColour;
+				pageElements[1][elementNum].style.backgroundColor = newColour;
+				norms[elementNum] = false;
 			}
 		</script>
 	</body>
