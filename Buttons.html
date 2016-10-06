@@ -41,6 +41,7 @@
 			
 			function randomColour()
 			{
+				console.log('Making random Colour');
 				return '#' + 
 					colourNums[Math.floor(Math.random * colourNums.length)] + 
 					colourNums[Math.floor(Math.random * colourNums.length)] + 
@@ -52,12 +53,15 @@
 			
 			function changeButton(elementNum)
 			{
+				console.log(elementNum);
 				if(norms[elementNum]==false)
 				{
 					pageElements[1][elementNum].color = normColours[elementNum];
+					console.log('returning');
 					return;
 				}
 				
+				console.log('Setting new colour');
 				var newColour = randomColour();
 				pageElements[0].color = newColour;
 				pageElements[1][elementNum].backgroundColor = newColour;
