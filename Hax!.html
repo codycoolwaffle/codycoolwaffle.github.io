@@ -50,7 +50,19 @@
 			function generateHackerSpeak()
 			{
 				var inputString = get('hacker').value;
-				console.log(inputString);
+				var outputString = '';
+				for(var i = 0; i < inputString.length; i++)
+				{
+					if(inputString[i] == 'a')
+						outputString += '4';
+					else if(inputString[i] == 'i')
+						outputString += '1';
+					else if(inputString[i] == 'o')
+						outputString += '0';
+					else
+						outputString += inputString[i];
+				}
+				get('hackerspeak').textContent = outputString;
 			}
       		</script>
 	</body>
