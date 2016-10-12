@@ -23,15 +23,16 @@
         		var alphabet = 'abcdefghijklmnopqrstuvwxyz';
         		function get(id)
         		{
-         		 return document.getElementById('id');
+         			return document.getElementById('id');
         		}
         
         		get('button1').onclick = generateRandomString;
         
         		function generateRandomString(e)
         		{
-          		var index = Math.floor(Math.random()*alphabet.length);
-         		 get('randomstring').textContent = alphabet[index];
+          			var index = Math.floor(Math.random()*alphabet.length);
+         			get('randomstring').textContent = alphabet[index];
+				alert(index);
       			}
       		</script>
 	</body>
