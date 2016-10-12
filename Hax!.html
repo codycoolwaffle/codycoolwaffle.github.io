@@ -7,32 +7,32 @@
 		Oct 12 2016
 		-->
 		<meta charset='utf-8' />
-		<title>HTML Template!</title>
+		<title>Hacks!</title>
 	 	<style type='text/css'>
 	 		/* styles go here */
 		</style>
-		<body style="background-color:#E7719F">
+		<body style="background-color:#E7719F; text-align:center">
 	</head>
 	
 	<body>
-	  	<h1>Testing, testing, 123!</h1>
+	  	<h1>Hacks!</h1>
 	  	<!-- Page Content -->
-      <button id='button1'>Generate random string</button>
-      <div id='randomstring'></div>
-      <script type='text/javascipt'>
-        var alphabet = 'abcdefghijklmnopqrstuvwxyz';
-        function get(id)
-        {
-          return document.getElementById('id');
-        }
+      		<button id='button1'>Generate random string</button>
+      		<div id='randomstring'></div>
+      		<script type='text/javascipt'>
+        		var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        		function get(id)
+        		{
+         		 return document.getElementById('id');
+        		}
         
-        get('button1').onclick = generateRandomString;
+        		get('button1').onclick = generateRandomString;
         
-        function generateRandomString(e)
-        {
-          var index = Math.floor(Math.random()*alphabet.length);
-          get('randomstring').textContent = alphabet[index];
-        }
-      </script>
+        		function generateRandomString(e)
+        		{
+          		var index = Math.floor(Math.random()*alphabet.length);
+         		 get('randomstring').textContent = alphabet[index];
+      			}
+      		</script>
 	</body>
 </html>
