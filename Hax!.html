@@ -21,6 +21,7 @@
       		<div id='randomstring'></div>
 		
 		<input type='text' id='hacker' /><br />
+		<button id='button2'>Hacker Speak</button>
 		<div id='hackerspeak'></div>
       		<script type='text/javascript'>
         		var alphabet = 'abcdefghijklmnopqrstuvwxyz';
@@ -30,6 +31,7 @@
         		}
         
         		get('button1').onclick = generateRandomString;
+			get('button2').onclick = generateHackerSpeak;
         
         		function generateRandomString(e)
         		{
@@ -44,6 +46,12 @@
 				
          			get('randomstring').textContent = randomString;
       			}
+			
+			function generateHackerSpeak()
+			{
+				var inputString = get('hacker').value;
+				console.log(inputString);
+			}
       		</script>
 	</body>
 </html>
