@@ -30,9 +30,15 @@
         
         		function generateRandomString(e)
         		{
-          			var index = Math.floor(Math.random()*alphabet.length);
-         			get('randomstring').textContent = alphabet[index];
-				alert(index);
+				var randomString = '';
+				
+				for(var i = 0; i < 6; i++)
+				{
+					var index = Math.floor(Math.random * alphabet.length);
+					randomString += alphabet[index];
+				}
+				
+         			get('randomstring').textContent = randomString;
       			}
       		</script>
 	</body>
