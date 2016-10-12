@@ -53,11 +53,11 @@
 				var outputString = '';
 				for(var i = 0; i < inputString.length; i++)
 				{
-					if(inputString[i] == 'a')
+					if(inputString[i].toLowerCase() == 'a')
 						outputString += '4';
-					else if(inputString[i] == 'i')
+					else if(inputString[i].toLowerCase() == 'i')
 						outputString += '1';
-					else if(inputString[i] == 'o')
+					else if(inputString[i].toLowerCase() == 'o')
 						outputString += '0';
 					else
 						outputString += inputString[i];
