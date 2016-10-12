@@ -23,6 +23,11 @@
 		<input type='text' id='hacker' /><br />
 		<button id='button2'>Hacker Speak</button>
 		<div id='hackerspeak'></div>
+		
+		<input id='caps' />
+		<button id='button3'>Generate Caps Speak</button>
+		<div id='capspeak'></div>
+		
       		<script type='text/javascript'>
         		var alphabet = 'abcdefghijklmnopqrstuvwxyz';
         		function get(id)
@@ -63,6 +68,11 @@
 						outputString += inputString[i];
 				}
 				get('hackerspeak').textContent = outputString;
+			}
+			
+			funtion generateCapsSpeak()
+			{
+				
 			}
       		</script>
 	</body>
