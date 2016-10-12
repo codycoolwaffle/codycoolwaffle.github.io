@@ -31,8 +31,9 @@
         		function generateRandomString(e)
         		{
 				var randomString = '';
+				var length = Math.floor((Math.random() * 40)+2);
 				
-				for(var i = 0; i < 6; i++)
+				for(var i = 0; i < length; i++)
 				{
 					var index = Math.floor(Math.random() * alphabet.length);
 					randomString += alphabet[index];
