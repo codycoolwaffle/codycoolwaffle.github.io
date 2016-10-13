@@ -108,7 +108,11 @@
 				
 				for(var i = 0; i < inputString.length; i++)
 				{
-					var index = alphabet.indexOf(inputString[i]);
+					var index = alphabet.indexOf(inputString[i]).toLowerCase();
+					var upper = false;
+					
+					if(inputString[i] != inputString[i].toLowerCase())
+						upper = true;
 					
 					if(index >= 0)
 					{
@@ -117,7 +121,10 @@
 						{
 							index -= 26;
 						}
-						outputString += alphabet[index];
+						var letterOut = alphabet[index];
+						if(upper)
+							letterOut = letterOut.toUpperCase();
+						outputString += letterOut;
 					}
 					else
 						outputString += inputString[i];
