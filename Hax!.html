@@ -72,7 +72,18 @@
 			
 			funtion generateCapsSpeak()
 			{
+				var inputString = get('caps').value;
+				var outputString = '';
 				
+				for(var i = 0; i < inputString.length; i++)
+				{
+					if(Math.random < 0.5)
+						outputString += inputString[i].toLowerCase();
+					else
+						outputString += inputString[i].toUpperCase();
+				}
+				
+				get('capspeak').textContent = outputString;
 			}
       		</script>
 	</body>
