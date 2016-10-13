@@ -108,7 +108,19 @@
 				
 				for(var i = 0; i < inputString.length; i++)
 				{
+					var index = alphabet.indexOf(inputString[i]);
 					
+					if(index >= 0)
+					{
+						index += 13;
+						if(index > 12)
+						{
+							index -= 13;
+						}
+						outputString += alphabet[index];
+					}
+					else
+						outputString += inputString[i];
 				}
 				
 				get('encrypted').textContent = outputString;
