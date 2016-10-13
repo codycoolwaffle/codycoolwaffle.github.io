@@ -10,7 +10,7 @@
 		<title>Hacks!</title>
 	 	<style type='text/css'>
 	 		/* styles go here */
-			div.hack{margin:1em; padding:1em; border:1px solid #963EA6; background-color:#B461C2}
+			div.hack{margin:1em; padding:1em; border:3px solid #963EA6; background-color:#B461C2}
 		</style>
 		<body style="background-color:#E7719F; text-align:center">
 	</head>
@@ -35,6 +35,12 @@
 			<div id='capspeak'></div>
 		</div>
 		
+		<div class='hack'>
+			<input type='text' id='crypt' /><br />
+			<button id='button4'>Encrypt</button>
+			<div id='encrypted'></div>
+		</div>
+		
       		<script type='text/javascript'>
         		var alphabet = 'abcdefghijklmnopqrstuvwxyz';
         		function get(id)
@@ -45,6 +51,7 @@
         		get('button1').onclick = generateRandomString;
 			get('button2').onclick = generateHackerSpeak;
 			get('button3').onclick = generateCapsSpeak;
+			get('button4').onclick = generateEncryption;
         
         		function generateRandomString(e)
         		{
@@ -92,6 +99,19 @@
 				}
 				
 				get('capspeak').textContent = outputString;
+			}
+			
+			function generateEncryption()
+			{
+				var inputString = get('crypt').value;
+				var outputString = '';
+				
+				for(var i = 0; i < inputString.length; i++)
+				{
+					
+				}
+				
+				get('encrypted').textContent = outputString;
 			}
       		</script>
 	</body>
