@@ -42,94 +42,129 @@
 		</div>
 		
       		<script type='text/javascript'>
+			//Declaring variables
         		var alphabet = 'abcdefghijklmnopqrstuvwxyz';
-        		function get(id)
-        		{
-         			return document.getElementById(id);
-        		}
         
+			//Setting each button to run the appropriate function
         		get('button1').onclick = generateRandomString;
 			get('button2').onclick = generateHackerSpeak;
 			get('button3').onclick = generateCapsSpeak;
 			get('button4').onclick = generateEncryption;
         
+			//The function for grabbing elements from the id provided
+        		function get(id)
+         			return document.getElementById(id);
+			
+			//The function for random strings
         		function generateRandomString(e)
         		{
-				var randomString = '';
+				//Declaring variables
+				var outputString = '';
 				var length = Math.floor((Math.random() * 40)+2);
 				
+				//Main loop
 				for(var i = 0; i < length; i++)
 				{
+					//Creating a random number between 0 - 25 inclusive
+					//The random number will correspond to a letter. example: 0 = a
 					var index = Math.floor(Math.random() * alphabet.length);
-					randomString += alphabet[index];
+					//Adding letter to output
+					outputString += alphabet[index];
 				}
 				
-         			get('randomstring').textContent = randomString;
+				//Setting div to the output
+         			get('randomstring').textContent = outputString;
       			}
 			
+			//The function for hacker speak
 			function generateHackerSpeak()
 			{
+				//Declaring variables
 				var inputString = get('hacker').value;
 				var outputString = '';
+				
+				//Main loop
 				for(var i = 0; i < inputString.length; i++)
 				{
+					//If letter is 'a' it is set to '4'
 					if(inputString[i].toLowerCase() == 'a')
 						outputString += '4';
+					//If letter is 'i' it is set to '1'
 					else if(inputString[i].toLowerCase() == 'i')
 						outputString += '1';
+					//If letter is 'a' it is set to '4'
 					else if(inputString[i].toLowerCase() == 'o')
 						outputString += '0';
+					//Anything that isn't one of the letters
 					else
 						outputString += inputString[i];
 				}
+				
+				//Setting div to the output
 				get('hackerspeak').textContent = outputString;
 			}
 			
+			//The function for random caps
 			function generateCapsSpeak()
 			{
+				//Declaring variables
 				var inputString = get('caps').value;
 				var outputString = '';
 				
+				//Main loop
 				for(var i = 0; i < inputString.length; i++)
 				{
+					//Randomly chooses(50/50) whether the letter will be upper or lower case
 					if(Math.random() < 0.5)
 						outputString += inputString[i].toLowerCase();
 					else
 						outputString += inputString[i].toUpperCase();
 				}
 				
+				//Setting div to the output
 				get('capspeak').textContent = outputString;
 			}
 			
+			//The function for encryption
 			function generateEncryption()
 			{
+				//Declaring variables
 				var inputString = get('crypt').value;
 				var outputString = '';
 				
+				//Main loop
 				for(var i = 0; i < inputString.length; i++)
 				{
+					//Declaring variables
 					var index = alphabet.indexOf(inputString[i].toLowerCase());
 					var upper = false;
 					
+					//Checking if character is capital
 					if(inputString[i] != inputString[i].toLowerCase())
 						upper = true;
 					
+					//Checking if character is a letter
 					if(index >= 0)
 					{
+						//Running math for index
 						index += 13;
 						if(index > 26)
-						{
 							index -= 26;
-						}
+						
+						//Checking if original letter is capital, if so, capping the letter
 						var letterOut = alphabet[index];
 						if(upper)
 							letterOut = letterOut.toUpperCase();
+						//Adding letter to output
 						outputString += letterOut;
 					}
+					//Anything that isn't a letter
 					else
+						//Adding other character to output
 						outputString += inputString[i];
 				}
 				
+				//Setting div to the output
 				get('encrypted').textContent = outputString;
 			}
       		</script>
