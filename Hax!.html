@@ -10,6 +10,7 @@
 		<title>Hacks!</title>
 	 	<style type='text/css'>
 	 		/* styles go here */
+			div.hack{margin:1em; padding:1em; border:1px solid #FC7D5B; background-color:#FF987D}
 		</style>
 		<body style="background-color:#E7719F; text-align:center">
 	</head>
@@ -17,16 +18,22 @@
 	<body>
 	  	<h1>Hacks!</h1>
 	  	<!-- Page Content -->
-      		<button id='button1'>Generate random string</button>
-      		<div id='randomstring'></div>
+		<div class='hack'>
+      			<button id='button1'>Generate random string</button>
+      			<div id='randomstring'></div>
+		</div>
 		
-		<input type='text' id='hacker' /><br />
-		<button id='button2'>Hacker Speak</button>
-		<div id='hackerspeak'></div>
+		<div class='hack'>
+			<input type='text' id='hacker' /><br />
+			<button id='button2'>Hacker Speak</button>
+			<div id='hackerspeak'></div>
+		</div>
 		
-		<input id='caps' />
-		<button id='button3'>Generate Caps Speak</button>
-		<div id='capspeak'></div>
+		<div class='hack'>
+			<input id='caps' />
+			<button id='button3'>Generate Caps Speak</button>
+			<div id='capspeak'></div>
+		</div>
 		
       		<script type='text/javascript'>
         		var alphabet = 'abcdefghijklmnopqrstuvwxyz';
