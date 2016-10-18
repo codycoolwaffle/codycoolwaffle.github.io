@@ -46,6 +46,7 @@
 		<script type='text/javascript'>
 			//Declaring Variables
 			var moveBall = document.getElementById('bb1');
+			var rotateBall = document.getElementById('bb2');
 			var x = 0;
 			
 			//Calling Main Loop
@@ -56,6 +57,7 @@
 			{
 				x += 5;
 				moveBall.setAttribute('transform', 'translate(' + x + ' 0)');
+				rotateBall.setAttribute('transform', 'rotate(' + (x + 100) + ' 100 1)');
 				setTimeout(animate, 100);
 			}
 		</script>
