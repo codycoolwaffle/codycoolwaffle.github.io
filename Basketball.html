@@ -44,10 +44,20 @@
 		</svg>
 		
 		<script type='text/javascript'>
-			//Declaring variables
+			//Declaring Variables
 			var moveBall = document.getElementById('bb1');
+			var x = 0;
 			
-			moveBall.setAttribute('transform', 'translate(1 0)');
+			//Calling Main Loop
+			animate();
+			
+			//Declaring Main Loop Function
+			function animate()
+			{
+				x += 5;
+				moveBall.setAttribute('transform', 'translate(' + x + ' 0)');
+				setTimeout(animate, 100);
+			}
 		</script>
 	</body>
 </html>
