@@ -48,7 +48,9 @@
 			var moveBall = document.getElementById('bb1');
 			var rotateBall = document.getElementById('bb2');
 			var x = 0;
+			var rotation = 0;
 			var velocity = 5;
+			var rotVelocity = 7.15;
 			
 			//Calling Main Loop
 			animate();
@@ -57,12 +59,16 @@
 			function animate()
 			{
 				if(x >= 650 || x<= -50)
-					velocity = -velocity
+				{
+					velocity = -velocity;
+					rotVelocity = -rotVelocity;
+				}
 				
 				x += velocity;
+				rotation += rotVelocity;
 				
 				moveBall.setAttribute('transform', 'translate(' + x + ' 0)');
-				rotateBall.setAttribute('transform', 'rotate(' + x + ' ' + x + ' ' + x + ')');
+				rotateBall.setAttribute('transform', 'rotate(' + rotation + ' 100 100)');
 				setTimeout(animate, 25);
 			}
 		</script>
