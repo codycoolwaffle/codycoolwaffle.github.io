@@ -58,17 +58,21 @@
 			//Declaring Main Loop Function
 			function animate()
 			{
+				//Testing if is Touching Edge
 				if(x >= 650 || x<= -50)
 				{
 					velocity = -velocity;
 					rotVelocity = -rotVelocity;
 				}
 				
+				//Increasing the Movement Variables
 				x += velocity;
 				rotation += rotVelocity;
 				
+				//Moving and Rotating the Ball
 				moveBall.setAttribute('transform', 'translate(' + x + ' 0)');
 				rotateBall.setAttribute('transform', 'rotate(' + rotation + ' 100 100)');
+				//Telling Javascript how much Milliseconds to wait before repeating loop
 				setTimeout(animate, 30);
 			}
 		</script>
