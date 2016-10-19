@@ -35,8 +35,7 @@
 			</defs>
 			
 			<!-- the shapes and stuff will go here -->
-			<rect x='0' y='0' width='800' height='200' fill='#B461C2' />
-			<rect x='0' y='150' width='800' height='25' fill='#963EA6' />
+			<rect x='0' y='0' width='800' height='600' fill='#B461C2' />
 			<g id='bb1' transform='translate(0 0)'>
 				<circle cx='100' cy='100' r='50' fill='#FF987D' />
 				<line x1='50' x2='150' y1='100' y2='100' stroke='black' />
