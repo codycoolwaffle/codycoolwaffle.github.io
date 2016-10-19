@@ -44,12 +44,13 @@
 				<circle cx='100' cy='30' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
 				<circle cx='100' cy='170' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
 			</g>
-			<circle cx='100' cy='100' r='50' fill='url(#ballIsLife)' />
+			<circle cx='100' cy='100' r='50' fill='url(#ballIsLife)' id='gradientBall' />
 		</svg>
 		
 		<script type='text/javascript'>
 			//Declaring variables
 			var moveBall = document.getElementById('bb1');
+			var gradientBall = document.getElementById('gradientBall');
 			var x = 0;
 			var rotation = 0;
 			var velocity = 5;
@@ -75,6 +76,7 @@
 				
 				//Moving and rotating the ball
 				moveBall.setAttribute('transform', 'translate(' + x + ' 0) rotate(' + rotation + ' 100 100)');
+				gradientBall.setAttribute('transform', 'translate(' + x + ' 0)');
 				//Telling Javascript how much milliseconds to wait before repeating loop
 				setTimeout(animate, 30);
 			}
