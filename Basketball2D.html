@@ -52,8 +52,10 @@
 			var gradientBall = document.getElementById('gradientBall');
 			var x = 0;
 			var rotation = 0;
-			var velocity = 5;
-			var rotVelocity = velocity *360/314;
+			var velocityX = 5;
+			var y = 50;
+			var velocityY = 3;
+			var rotVelocity = velocityX *360/314;
 			
 			//Calling main loop
 			animate();
@@ -65,16 +67,17 @@
 				if(x >= 650 || x<= -50)
 				{
 					//Making ball go backwards
-					velocity = -velocity;
+					velocityX = -velocityX;
 					rotVelocity = -rotVelocity;
 				}
 				
 				//Increasing the movement variables
-				x += velocity;
+				x += velocityX;
+				y += velocityY;
 				rotation += rotVelocity;
 				
 				//Moving and rotating the ball
-				moveBall.setAttribute('transform', 'translate(' + x + ' 0) rotate(' + rotation + ' 100 100)');
+				moveBall.setAttribute('transform', 'translate(' + x + ' ' + y + ') rotate(' + rotation + ' 100 100)');
 				gradientBall.setAttribute('transform', 'translate(' + x + ' 0)');
 				//Telling Javascript how much milliseconds to wait before repeating loop
 				setTimeout(animate, 30);
