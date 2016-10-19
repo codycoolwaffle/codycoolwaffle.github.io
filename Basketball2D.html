@@ -53,7 +53,7 @@
 			var x = 0;
 			var rotation = 0;
 			var velocityX = 5;
-			var y = 50;
+			var y = 0;
 			var velocityY = 3;
 			var rotVelocity = velocityX *360/314;
 			
@@ -88,7 +88,7 @@
 				moveBall.setAttribute('transform', 'translate(' + x + ' ' + y + ') rotate(' + rotation + ' 100 100)');
 				gradientBall.setAttribute('transform', 'translate(' + x + ' ' + y + ')');
 				//Telling Javascript how much milliseconds to wait before repeating loop
-				setTimeout(animate, 15);
+				setTimeout(animate, 5);
 			}
 		</script>
 	</body>
