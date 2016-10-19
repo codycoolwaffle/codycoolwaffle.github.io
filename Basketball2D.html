@@ -78,7 +78,7 @@
 				
 				//Moving and rotating the ball
 				moveBall.setAttribute('transform', 'translate(' + x + ' ' + y + ') rotate(' + rotation + ' 100 100)');
-				gradientBall.setAttribute('transform', 'translate(' + x + ' 0)');
+				gradientBall.setAttribute('transform', 'translate(' + x + ' ' + y + ')');
 				//Telling Javascript how much milliseconds to wait before repeating loop
 				setTimeout(animate, 30);
 			}
