@@ -27,6 +27,11 @@
 				<clipPath id='ball'>
 					<circle cx='100' cy='100' r='50' />
 				</clipPath>
+				
+				<radialGradient id='ballIsLife' cx='60%' cy='40%' r='60%' fx='60%' fy='40%'>
+					<stop offset='0%' style='stop-color:#FFF; stop-opacity:1' />
+					<stop offset='100%' style='stop-color:#FFF; stop-opacity:0' />
+				</radialGradient>
 			</defs>
 			
 			<!-- the shapes and stuff will go here -->
@@ -34,19 +39,17 @@
 			<rect x='0' y='150' width='800' height='25' fill='#963EA6' />
 			<g id='bb1' transform='translate(0 0)'>
 				<circle cx='100' cy='100' r='50' fill='#FF987D' />
-				<g id='bb2' transform='rotate(100 100 0)'>
-					<line x1='50' x2='150' y1='100' y2='100' stroke='black' />
-					<line x1='100' x2='100' y1='50' y2='150' stroke='black' />
-					<circle cx='100' cy='30' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
-					<circle cx='100' cy='170' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
-				</g>
+				<line x1='50' x2='150' y1='100' y2='100' stroke='black' />
+				<line x1='100' x2='100' y1='50' y2='150' stroke='black' />
+				<circle cx='100' cy='30' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
+				<circle cx='100' cy='170' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
 			</g>
+			<circle cx='100' cy='100' r='50' fill='url(#ballIsLife)' />
 		</svg>
 		
 		<script type='text/javascript'>
 			//Declaring variables
 			var moveBall = document.getElementById('bb1');
-			var rotateBall = document.getElementById('bb2');
 			var x = 0;
 			var rotation = 0;
 			var velocity = 5;
@@ -61,6 +64,7 @@
 				//Testing if is touching edge
 				if(x >= 650 || x<= -50)
 				{
+					//Making ball go backwards
 					velocity = -velocity;
 					rotVelocity = -rotVelocity;
 				}
@@ -70,8 +74,7 @@
 				rotation += rotVelocity;
 				
 				//Moving and rotating the ball
-				moveBall.setAttribute('transform', 'translate(' + x + ' 0)');
-				rotateBall.setAttribute('transform', 'rotate(' + rotation + ' 100 100)');
+				moveBall.setAttribute('transform', 'translate(' + x + ' 0) rotate(' + rotation + ' 100 100)');
 				//Telling Javascript how much milliseconds to wait before repeating loop
 				setTimeout(animate, 30);
 			}
