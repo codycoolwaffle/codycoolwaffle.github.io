@@ -71,6 +71,14 @@
 					rotVelocity = -rotVelocity;
 				}
 				
+				
+				if(y >= 450 || y<= -50)
+				{
+					//Making ball go backwards
+					velocityY = -velocityY;
+					rotVelocity = -rotVelocity;
+				}
+				
 				//Increasing the movement variables
 				x += velocityX;
 				y += velocityY;
