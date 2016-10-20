@@ -79,18 +79,16 @@
 			{
 				for(var i = 0; i < 2; i++)
 				{
-					//Testing if is touching edge
+					//Testing if balls are touching edge
 					if(x[i] >= 650 || x[i]<= -50)
 					{
-						//Making ball go backwards
+						//Making balls go backwards
 						velocityX[i] = -velocityX[i];
 						rotVelocity[i] = -rotVelocity[i];
 					}
-					
-					
 					if(y[i] >= 450 || y[i]<= -50)
 					{
-						//Making ball go backwards
+						//Making balls go backwards
 						velocityY[i] = -velocityY[i];
 						rotVelocity[i] = -rotVelocity[i];
 					}
@@ -100,7 +98,7 @@
 					y[i] += velocityY[i];
 					rotation[i] += rotVelocity[i];
 					
-					//Moving and rotating the ball
+					//Moving and rotating the balls
 					moveBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ') rotate(' + rotation[i] + ' 100 100)');
 					gradientBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ')');
 				}
