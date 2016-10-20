@@ -68,7 +68,8 @@
 			var velocityX = [5, 3];
 			var y = [0, 400];
 			var velocityY = [3, 5];
-			var rotVelocity = [velocityX[0] * 360/314, velocityX[1] * 360/314];
+			var velocity = [Math.sqrt((velocityX[1]*velocityX[1])+(velocityY[1]*velocityY[1])), Math.sqrt((velocityX[2]*velocityX[2])+(velocityY[2]*velocityY[2]))];
+			var rotVelocity = [velocity[0] * 360/314, velocity[1] * 360/314];
 			var fps = 7.5;
 			
 			//Calling main loop
