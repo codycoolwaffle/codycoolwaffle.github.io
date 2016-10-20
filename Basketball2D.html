@@ -48,18 +48,27 @@
 				<circle cx='100' cy='170' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
 			</g>
 			<circle cx='100' cy='100' r='50' fill='url(#ballIsLife)' id='gradientBall' />
+			
+			<g id='bb2' transform='translate(0 0)'>
+				<circle cx='100' cy='100' r='50' fill='#FF987D' />
+				<line x1='50' x2='150' y1='100' y2='100' stroke='black' />
+				<line x1='100' x2='100' y1='50' y2='150' stroke='black' />
+				<circle cx='100' cy='30' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
+				<circle cx='100' cy='170' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
+			</g>
+			<circle cx='100' cy='100' r='50' fill='url(#ballIsLife)' id='gradientBall2' />
 		</svg>
 		
 		<script type='text/javascript'>
 			//Declaring variables
-			var moveBall = document.getElementById('bb1');
-			var gradientBall = document.getElementById('gradientBall');
-			var x = 0;
-			var rotation = 0;
-			var velocityX = 5;
-			var y = 0;
-			var velocityY = 3;
-			var rotVelocity = velocityX *360/314;
+			var moveBall = [document.getElementById('bb1'), document.getElementById('bb2')];
+			var gradientBall = [document.getElementById('gradientBall'), document.getElementById('gradientBall2')];
+			var x = [0, 300];
+			var rotation = [0, 0];
+			var velocityX = [5, 3];
+			var y = [0, 400];
+			var velocityY = [3, 5];
+			var rotVelocity = [velocityX[0] * 360/314, velocityX[1] * 360/314];
 			var fps = 7.5;
 			
 			//Calling main loop
@@ -68,30 +77,33 @@
 			//Declaring main loop function
 			function animate()
 			{
-				//Testing if is touching edge
-				if(x >= 650 || x<= -50)
+				for(var i = 0; i < 2; i++)
 				{
-					//Making ball go backwards
-					velocityX = -velocityX;
-					rotVelocity = -rotVelocity;
+					//Testing if is touching edge
+					if(x[i] >= 650 || x[i]<= -50)
+					{
+						//Making ball go backwards
+						velocityX[i] = -velocityX[i];
+						rotVelocity[i] = -rotVelocity[i];
+					}
+					
+					
+					if(y[i] >= 450 || y[i]<= -50)
+					{
+						//Making ball go backwards
+						velocityY[i] = -velocityY[i];
+						rotVelocity[i] = -rotVelocity[i];
+					}
+					
+					//Increasing the movement variables
+					x[i] += velocityX[i];
+					y[i] += velocityY[i];
+					rotation[i] += rotVelocity[i];
+					
+					//Moving and rotating the ball
+					moveBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ') rotate(' + rotation[i] + ' 100 100)');
+					gradientBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ')');
 				}
-				
-				
-				if(y >= 450 || y<= -50)
-				{
-					//Making ball go backwards
-					velocityY = -velocityY;
-					rotVelocity = -rotVelocity;
-				}
-				
-				//Increasing the movement variables
-				x += velocityX;
-				y += velocityY;
-				rotation += rotVelocity;
-				
-				//Moving and rotating the ball
-				moveBall.setAttribute('transform', 'translate(' + x + ' ' + y + ') rotate(' + rotation + ' 100 100)');
-				gradientBall.setAttribute('transform', 'translate(' + x + ' ' + y + ')');
 				//Telling Javascript how much milliseconds to wait before repeating loop
 				setTimeout(animate, fps);
 			}
