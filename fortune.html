@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+	Cody Haslam
+	Mobile App Design and Computer Coding
+	Oct 26 2016
+	-->
+	<meta charset="UTF-8">
+	<title>Fortune Cooooooooooooooooooookie!</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<style type="text/css">
+    /* styles go here */
+	h1{color:#B6EF75; font-family:Cursive; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px; margin-left:-8px; margin-right:-8px}
+	p{color:#B6EF75; font-family:Quicksand; font-size:32px}
+	#refresh{margin:3.5em}
+		.btn
+		{
+	        -webkit-border-radius: 30;
+	        -moz-border-radius: 30;
+	        border-radius: 30px;
+	        font-family: Georgia;
+	        color: #B6EF75;
+	        font-size: 32px;
+	        background: #B461C2;
+	        padding: 10px 20px 10px 20px;
+	        text-decoration: none;
+		}
+
+		.btn:hover
+		{
+	        background: #D18EDC;
+	        text-decoration: none;
+		}
+
+	</style>
+</head>
+		<body style="background-color:#E7719F; text-align:center">
+		<h1>Fortune Cookies!</h1>
+
+		<p id="fortune">Your fortune goes here</p>
+		<div id='refresh'><a class="btn" href="">New fortune!</a></div>
+
+
+		<script type="text/javascript">
+			var fortunes =
+			[
+				"I believe that Ronald Reagan will someday make this country what it once was...an arctic wilderness -- Steve Martin",
+				"Cigarette: A fire at one end, a fool at the other, and a bit of tobacco in between.",
+				"We are the people our parents warned us about.",
+				"Overheard in a bar: Man: Hey, Baby, I'd sure like to get in your pants! Woman: No, thanks, I've already got one ass-hole in there now.",
+				"All the good ones are taken. --Harris",
+				"You now have Asian Flu.",
+				"Ueberall auf der Welt gibt es drei Dinge: Wasserstoff, Sauerstoff und Dummheit. -- Zappa"
+			];
+
+			var which = Math.floor(Math.random()*fortunes.length);
+			var randomFortune = fortunes[which];
+			document.getElementById("fortune").textContent = randomFortune;
+		</script>
+	</body>
+</html>

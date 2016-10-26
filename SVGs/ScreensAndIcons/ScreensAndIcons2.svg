@@ -1,0 +1,23 @@
+<svg width='768' height='1024' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 768 1024'>
+    <defs>
+
+    </defs>
+    <!-- the shapes and stuff will go here -->
+    <rect x="0" y="'0" width="768" height="1024" fill="#E7719F" />
+
+    <rect x="12" y="12" width="240" height="240" fill="#395" rx="20" ry="20" />
+    <rect x="264" y="12" width="240" height="240" fill="#467" rx="20" ry="20" />
+    <rect x="516" y="12" width="240" height="240" fill="#835" rx="20" ry="20" />
+
+    <rect x="12" y="264" width="240" height="240" fill="#857" rx="20" ry="20" />
+    <rect x="264" y="264" width="240" height="240" fill="#926" rx="20" ry="20" />
+    <rect x="516" y="264" width="240" height="240" fill="#496" rx="20" ry="20" />
+
+    <rect x="12" y="516" width="240" height="240" fill="#259" rx="20" ry="20" />
+    <rect x="264" y="516" width="240" height="240" fill="#736" rx="20" ry="20" />
+    <rect x="516" y="516" width="240" height="240" fill="#194" rx="20" ry="20" />
+
+    <rect x="12" y="768" width="240" height="240" fill="#047" rx="20" ry="20" />
+    <rect x="264" y="768" width="240" height="240" fill="#184" rx="20" ry="20" />
+    <rect x="516" y="768" width="240" height="240" fill="#268" rx="20" ry="20" />
+</svg>

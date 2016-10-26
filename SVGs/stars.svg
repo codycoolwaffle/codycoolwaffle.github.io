@@ -1,0 +1,30 @@
+<svg width='600' height='400' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 600 680' xmlns:xlink="http://www.w3.org/1999/xlink" >
+    <!-- the shapes and stuff will go here -->
+    <defs>
+        <clipPath id="outer">
+            <circle cx="300" cy="200" r="175" />
+        </clipPath>
+    </defs>
+    <rect x="0" y="0" width="600" height="400" fill="#FF987D" />
+    <g id="k4">
+        <g id="k3">
+            <g id="k2">
+                <g id="k">
+                    <g id="k12369">
+                        <g id="k126">
+                            <polygon id="k12" points="285 200 315 200 300 0 z" fill="#E7719F" clip-path="url(#outer)" />
+                            <use xlink:href="#k12" transform="rotate(180 300 200)" />
+                        </g>
+                        <use xlink:href="#k126" transform="rotate(90 300 200)" />
+                    </g>
+                    <use xlink:href="#k12369" transform="rotate(45 300 200)" />
+                </g>
+                <use xlink:href="#k" transform="rotate(22.5 300 200)" />
+            </g>
+            <use xlink:href="#k2" transform="rotate(11.25 300 200)" />
+        </g>
+        <use xlink:href="#k3" transform="rotate(5.625 300 200)" />
+    </g>
+    <use xlink:href="#k4" transform="rotate(2.8125 300 200)" />
+    <circle cx="300" cy="200" r="110" fill="#E7719F" />
+</svg>
