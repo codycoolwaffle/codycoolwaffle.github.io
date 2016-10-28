@@ -39,7 +39,7 @@
 		<h1>Fortune Cookies!</h1>
 
 		<p id="fortune">Your fortune goes here</p>
-		<div id='refresh'><a class="btn" href="">New fortune!</a></div>
+		<div id='refresh'><a class="btn" href="#">New fortune!</a></div>
 
 
 		<script type="text/javascript">
@@ -54,9 +54,14 @@
 				"Ueberall auf der Welt gibt es drei Dinge: Wasserstoff, Sauerstoff und Dummheit. -- Zappa"
 			];
 
-			var which = Math.floor(Math.random()*fortunes.length);
-			var randomFortune = fortunes[which];
-			document.getElementById("fortune").textContent = randomFortune;
+			document.getElementById("refresh").onclick = newFortune;
+
+			function newFortune()
+			{
+				var which = Math.floor(Math.random()*fortunes.length);
+				var randomFortune = fortunes[which];
+				document.getElementById("fortune").textContent = randomFortune;
+			}
 		</script>
 	</body>
 </html>
