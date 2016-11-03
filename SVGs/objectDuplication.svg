@@ -1,23 +1,24 @@
-<svg width='600' height='400' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 600 400' xmlns:xlink= "http://www.w3.org/1999/xlink">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width='600' height='400' xmlns="http://www.w3.org/2000/svg"
+	 viewbox='0 0 600 400'>
 	<!-- the shapes and stuff will go here -->
 	<defs>
 		<clipPath id='1'>
-			<rect x='0' y='0' width='600' height='100' fill='none' stroke='#000' stroke-width='1' />
+			<rect x='0' y='0' width='600' height='100' fill='none' stroke='#000' stroke-width='1'/>
 		</clipPath>
 		<clipPath id='2'>
-			<rect x='0' y='100' width='600' height='100' fill='none' stroke='#000' stroke-width='1' />
+			<rect x='0' y='100' width='600' height='100' fill='none' stroke='#000' stroke-width='1'/>
 		</clipPath>
 		<clipPath id='3'>
-			<rect x='0' y='200' width='600' height='100' fill='none' stroke='#000' stroke-width='1' />
+			<rect x='0' y='200' width='600' height='100' fill='none' stroke='#000' stroke-width='1'/>
 		</clipPath>
 		<clipPath id='4'>
-			<rect x='0' y='300' width='600' height='100' fill='none' stroke='#000' stroke-width='1' />
-		</clipPath >
-		<polygon points='20 20 580 200 200 380 z' id='tri' />
+			<rect x='0' y='300' width='600' height='100' fill='none' stroke='#000' stroke-width='1'/>
+		</clipPath>
+		<polygon points='20 20 580 200 200 380 z' id='tri'/>
 	</defs>
-	<rect x='0' y='0' width='600' height='400' fill='beige' />
-	<use xlink:href='#tri' fill='#E03A3E' clip-path='url(#1)' />
-	<use xlink:href='#tri' fill='#F5821F' clip-path='url(#2)' />
-	<use xlink:href='#tri' fill='#61BB46' clip-path='url(#3)' />
-	<use xlink:href='#tri' fill='#009DDC' clip-path='url(#4)' />
+	<rect x='0' y='0' width='600' height='400' fill='beige'/>
+	<use xlink:href='#tri' fill='#E03A3E' clip-path='url(#1)'/>
+	<use xlink:href='#tri' fill='#F5821F' clip-path='url(#2)'/>
+	<use xlink:href='#tri' fill='#61BB46' clip-path='url(#3)'/>
+	<use xlink:href='#tri' fill='#009DDC' clip-path='url(#4)'/>
 </svg>

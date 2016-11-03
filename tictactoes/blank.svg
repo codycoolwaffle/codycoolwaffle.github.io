@@ -1,5 +1,6 @@
-<svg width='72' height='72' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 72 72' xmlns:xlink= "http://www.w3.org/1999/xlink">
-  <!-- the shapes and stuff will go here -->
-  <rect x='0' y='0' width='72' height='72' fill='#FF987D' />
-  
+<svg width='72' height='72' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 72 72'
+>
+	<!-- the shapes and stuff will go here -->
+	<rect x='0' y='0' width='72' height='72' fill='#FF987D'/>
+
 </svg>

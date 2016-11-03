@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	 	<!--
-		Cody Haslam
-		Mobile App Design and Computer Coding
-		Oct 18 2016
-		-->
-		<meta charset='utf-8' />
-		<title>Basketballs!</title>
-		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	 	<style type='text/css'>
+<head>
+	<!--
+   Cody Haslam
+   Mobile App Design and Computer Coding
+   Oct 18 2016
+   -->
+	<meta charset='utf-8' />
+	<title>Basketballs!</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<style type='text/css'>
 	 		/* styles go here */
 			h1{color:#B6EF75; font-family:Quicksand; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px; margin-left:-8px; margin-right:-8px}
 			p{color:#B6EF75; font-family:Courier}
 			body{text-align:center}
-		</style>
-		<body style="background-color:#E7719F">
-	</head>
-	
-	<body>
-	  	<h1>Ball is life.</h1>
-	  	<!-- Page Content -->
-		
-		<svg width='800' height='200' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 800 200' xmlns:xlink= "http://www.w3.org/1999/xlink">
-			<defs>
-				<clipPath id='ball'>
-					<circle cx='100' cy='100' r='50' />
-				</clipPath>
-				
-				<radialGradient id='ballIsLife' cx='30%' cy='30%' r='50%' fx='30%' fy='30%'>
-					<stop offset='0%' style='stop-color:#FFF; stop-opacity:1' />
-					<stop offset='100%' style='stop-color:#FFF; stop-opacity:0' />
-				</radialGradient>
-			</defs>
-			
-			<!-- the shapes and stuff will go here -->
-			<rect x='0' y='0' width='800' height='200' fill='#B461C2' />
-			<rect x='0' y='150' width='800' height='25' fill='#963EA6' />
-			<g id='bb1' transform='translate(0 0)'>
-				<circle cx='100' cy='100' r='50' fill='#FF987D' />
-				<line x1='50' x2='150' y1='100' y2='100' stroke='black' />
-				<line x1='100' x2='100' y1='50' y2='150' stroke='black' />
-				<circle cx='100' cy='30' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
-				<circle cx='100' cy='170' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
-			</g>
-			<circle cx='100' cy='100' r='50' fill='url(#ballIsLife)' id='gradientBall' />
-		</svg>
-		
-		<script type='text/javascript'>
+
+
+	</style>
+<body style="background-color:#E7719F">
+</head>
+
+<body>
+<h1>Ball is life.</h1>
+<!-- Page Content -->
+
+<svg width='800' height='200' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 800 200'
+>
+	<defs>
+		<clipPath id='ball'>
+			<circle cx='100' cy='100' r='50' />
+		</clipPath>
+
+		<radialGradient id='ballIsLife' cx='30%' cy='30%' r='50%' fx='30%' fy='30%'>
+			<stop offset='0%' style='stop-color:#FFF; stop-opacity:1' />
+			<stop offset='100%' style='stop-color:#FFF; stop-opacity:0' />
+		</radialGradient>
+	</defs>
+
+	<!-- the shapes and stuff will go here -->
+	<rect x='0' y='0' width='800' height='200' fill='#B461C2' />
+	<rect x='0' y='150' width='800' height='25' fill='#963EA6' />
+	<g id='bb1' transform='translate(0 0)'>
+		<circle cx='100' cy='100' r='50' fill='#FF987D' />
+		<line x1='50' x2='150' y1='100' y2='100' stroke='black' />
+		<line x1='100' x2='100' y1='50' y2='150' stroke='black' />
+		<circle cx='100' cy='30' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
+		<circle cx='100' cy='170' r='50' fill='none' stroke='black' clip-path='url(#ball)' />
+	</g>
+	<circle cx='100' cy='100' r='50' fill='url(#ballIsLife)' id='gradientBall' />
+</svg>
+
+<script type='text/javascript'>
 			//Declaring variables
 			var moveBall = document.getElementById('bb1');
 			var gradientBall = document.getElementById('gradientBall');
@@ -80,6 +83,8 @@
 				//Telling Javascript how much milliseconds to wait before repeating loop
 				setTimeout(animate, 30);
 			}
-		</script>
-	</body>
+
+
+</script>
+</body>
 </html>

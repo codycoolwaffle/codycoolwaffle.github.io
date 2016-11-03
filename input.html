@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+	Cody Haslam
+	Mobile App Design And Computer Coding
+	Oct 31 2016
+	-->
+	<meta charset="utf-8" />
+	<title>Background Color Changer</title>
+</head>
+<body>
+<p>
+	<input type="text" id="user" />
+	<input type="submit" id="submit" />
+</p>
+
+<script type="text/javascript" src="javascript/get.js"></script>
+<script type="text/javascript">
+			get("#submit").onclick = changeColor;
+			function changeColor()
+			{
+				var color = get("#user").value;
+				get("body")[0].style.backgroundColor = color;
+			}
+
+
+</script>
+</body>
+</html>

@@ -1,36 +1,37 @@
-<svg width='1330' height='375' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 1330 375' xmlns:xlink= "http://www.w3.org/1999/xlink">
+<svg width='1330' height='375' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 1330 375'
+>
 	<!-- Clipping paths -->
 	<defs>
 		<clipPath id='e'>
-			<polygon points='1315 240 1190 240 1315 365 1065 365 1065 115 1315 115 z' />
+			<polygon points='1315 240 1190 240 1315 365 1065 365 1065 115 1315 115 z'/>
 		</clipPath>
 		<clipPath id='e2'>
-			<circle cx='1190' cy='240' r='125' />
+			<circle cx='1190' cy='240' r='125'/>
 		</clipPath>
 		<clipPath id='m'>
-			<rect x='0' y='0' width='400' height='215' />
+			<rect x='0' y='0' width='400' height='215'/>
 		</clipPath>
 	</defs>
 	<!-- the shapes and stuff will go here -->
-		<!-- M -->
-	<rect x='15' y='115' width='50' height='245' fill='#4885ED' />
-	<rect x='165' y='214' width='50' height='146' fill='#4885ED' />
-	<rect x='315' y='214' width='50' height='146' fill='#4885ED' />
-	<circle cx='115' cy='215' r='75' fill='none' stroke='#4885ED' stroke-width='50' clip-path='url(#m)' />
-	<circle cx='265' cy='215' r='75' fill='none' stroke='#4885ED' stroke-width='50' clip-path='url(#m)' />
+	<!-- M -->
+	<rect x='15' y='115' width='50' height='245' fill='#4885ED'/>
+	<rect x='165' y='214' width='50' height='146' fill='#4885ED'/>
+	<rect x='315' y='214' width='50' height='146' fill='#4885ED'/>
+	<circle cx='115' cy='215' r='75' fill='none' stroke='#4885ED' stroke-width='50' clip-path='url(#m)'/>
+	<circle cx='265' cy='215' r='75' fill='none' stroke='#4885ED' stroke-width='50' clip-path='url(#m)'/>
 	<!-- O -->
-	<circle cx='500' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' />
+	<circle cx='500' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50'/>
 	<!-- B -->
-	<circle cx='770' cy='240' r='100' fill='none' stroke='#F4C20D' stroke-width='50' />
-	<rect x='645' y='15' width='50' height='345' fill='#F4C20D' />
+	<circle cx='770' cy='240' r='100' fill='none' stroke='#F4C20D' stroke-width='50'/>
+	<rect x='645' y='15' width='50' height='345' fill='#F4C20D'/>
 	<!-- I -->
-	<rect x='915' y='115' width='50' height='245' fill='#4885ED' />
-	<rect x='915' y='45' width='50' height='50' fill='#4885ED' />
+	<rect x='915' y='115' width='50' height='245' fill='#4885ED'/>
+	<rect x='915' y='45' width='50' height='50' fill='#4885ED'/>
 	<!-- L -->
-	<rect x='995' y='15' width='50' height='345' fill='#3CBA54' />
+	<rect x='995' y='15' width='50' height='345' fill='#3CBA54'/>
 	<!-- E -->
 	<g transform='rotate(-22.5 1190 240)'>
-		<rect x='1070' y='215' width='245' height='50' fill='#DB3236' clip-path='url(#e2)' />
-		<circle cx='1190' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' clip-path='url(#e)' />
+		<rect x='1070' y='215' width='245' height='50' fill='#DB3236' clip-path='url(#e2)'/>
+		<circle cx='1190' cy='240' r='100' fill='none' stroke='#DB3236' stroke-width='50' clip-path='url(#e)'/>
 	</g>
 </svg>

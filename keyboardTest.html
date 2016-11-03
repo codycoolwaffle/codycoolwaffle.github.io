@@ -4,10 +4,10 @@
 	<!--
   Cody Haslam
   Mobile App Design and Computer Coding
-  10/28/2016
+  11/2/2016
   -->
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>The Skeleton Key!</title>
 	<style type="text/css">
     /* styles go here */
 	h1{color:#B6EF75; font-family:Cursive; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px; margin-left:-8px; margin-right:-8px}
@@ -18,11 +18,13 @@
 	</style>
 </head>
 <body style="background-color:#E7719F; text-align:center">
-<img src="https://i.ytimg.com/vi/alB3TDZMKDQ/maxresdefault.jpg" />
-
-<script>
-		var rr = new Audio('audio/THAT.mp3');
-		rr.play();
+<input type="text" onkeypress="skeletonKey()">
+<p id="p">0</p>
+<script type="text/javascript">
+		function skeletonKey()
+		{
+			document.getElementById("p").innerHTML++;
+		}
 
 
 </script>

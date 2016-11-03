@@ -1,18 +1,19 @@
-<svg width='600' height='400' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 600 400' xmlns:xlink= "http://www.w3.org/1999/xlink">
-  <!-- the shapes and stuff will go here -->
-  <g opacity='0.2'>
-  <path d='M 240 0
-           C 0 0 240 240 0 240' stroke='#0FF' stroke-width='8' fill='none' />
-  <path d='M 240 0
-           C -100 0 340 240 0 240' stroke='#F0F' stroke-width='8' fill='none' />
-  <path d='M 240 0
-           C 0 0 0 240 240 240' stroke='#FF0' stroke-width='8' fill='none' />
-  </g>
-  <circle cx='120' cy='120' r='120' stroke='brown' stroke-width='8' fill='none' />
-  <path d='M 120 0
+<svg width='600' height='400' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 600 400'
+>
+	<!-- the shapes and stuff will go here -->
+	<g opacity='0.2'>
+		<path d='M 240 0
+           C 0 0 240 240 0 240' stroke='#0FF' stroke-width='8' fill='none'/>
+		<path d='M 240 0
+           C -100 0 340 240 0 240' stroke='#F0F' stroke-width='8' fill='none'/>
+		<path d='M 240 0
+           C 0 0 0 240 240 240' stroke='#FF0' stroke-width='8' fill='none'/>
+	</g>
+	<circle cx='120' cy='120' r='120' stroke='brown' stroke-width='8' fill='none'/>
+	<path d='M 120 0
            C 187 0 240 53 240 120
            C 240 187 187 240 120 240
            C 53 240 0 187 0 120
            C 0 53 53 0 120 0'
-           stroke='#FFF' stroke-width='8' fill='none' />
+		  stroke='#FFF' stroke-width='8' fill='none'/>
 </svg>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	 	<!--
-		Cody Haslam
-		Mobile App Design and Computer Coding
-		Sep 6 2016
-		-->
-		<meta charset='utf-8' />
-		<title>Random Colour Buttons!!</title>
-		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	 	<style type='text/css'>
+<head>
+	<!--
+   Cody Haslam
+   Mobile App Design and Computer Coding
+   Sep 6 2016
+   -->
+	<meta charset='utf-8' />
+	<title>Random Colour Buttons!!</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<style type='text/css'>
 	 		/* styles go here */
 			h1{color:#B6EF75; font-family:Quicksand; text-align:center; padding:1em; font-weight:normal; font-size:72px; margin-left:-8px; margin-right:-8px}
 			body{text-align:center}
@@ -17,17 +17,19 @@
 			#r{background-color:#F00}
 			#g{background-color:#0F0; padding:3.5em; padding-top:4em; padding-bottom:4em}
 			#b{background-color:#00F; padding:3.905em; padding-top:4em; padding-bottom:4em}
-		</style>
-		<body style="background-color:#E7719F">
-	</head>
-	
-	<body>
-	  	<!-- Page Content -->
-	  	<h1 id='colour'>Buttons!</h1><br />
-		<div id='r' style='background-color:#F00'>&nbsp;Red</div>
-		<div id='g' style='background-color:#0F0'>&nbsp;Green</div>
-		<div id='b' style='background-color:#00F'>&nbsp;Blue</div>
-		<script type='text/javascript'>//Honey, I'm hooooooooooooooooooome!
+
+
+	</style>
+<body style="background-color:#E7719F">
+</head>
+
+<body>
+<!-- Page Content -->
+<h1 id='colour'>Buttons!</h1><br />
+<div id='r' style='background-color:#F00'>&nbsp;Red</div>
+<div id='g' style='background-color:#0F0'>&nbsp;Green</div>
+<div id='b' style='background-color:#00F'>&nbsp;Blue</div>
+<script type='text/javascript'>//Honey, I'm hooooooooooooooooooome!
 			var normColours = ['#F00', '#0F0', '#00F'];
 			var pageElements = [document.getElementById('colour'), document.getElementsByTagName('div')];
 			var norms = [true, true, true];
@@ -72,6 +74,8 @@
 				event.target.style.backgroundColor = newColour;
 				norms[elementNum] = false;
 			}
-		</script>
-	</body>
+
+
+</script>
+</body>
 </html>

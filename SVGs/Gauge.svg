@@ -1,62 +1,62 @@
-<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 400"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
-        <!-- the shapes and stuff will go here -->
-    <g id="theThing">
-        <defs>
-        </defs>
-        <rect x="0" y="0" width="600" height="400" fill="#B461C2"/>
-        <!-- Big circle and tick marks -->
-        <circle cx="300" cy="350" r="250" fill="none" stroke="#E7719F" stroke-width="4" clip-path="url(#clip)"/>
-        <polyline id="k12" points="300 100 300 80" stroke="#E7719F" stroke-width="4"/>
-        <g id="k">
-            <g id="k123">
-                <use xlink:href="#k12" transform="rotate(10 300 350)"/>
-                <use xlink:href="#k12" transform="rotate(20 300 350)"/>
-                <use xlink:href="#k12" transform="rotate(30 300 350)"/>
-            </g>
-            <use xlink:href="#k123" transform="rotate(30 300 350)"/>
-        </g>
-        <use xlink:href="#k" transform="rotate(-70 300 350)"/>
-
-        <!-- Little tick marks -->
-
-        <g id="illegalMinors">
-            <g id="legalMinors">
-                <polyline points="300 100 300 90" stroke="#E7719F" stroke-width="2" transform="rotate(2 300 350)"/>
-                <polyline points="300 100 300 90" stroke="#E7719F" stroke-width="2" transform="rotate(4 300 350)"/>
-                <polyline points="300 100 300 90" stroke="#E7719F" stroke-width="2" transform="rotate(6 300 350)"/>
-                <polyline points="300 100 300 90" stroke="#E7719F" stroke-width="2" transform="rotate(8 300 350)"/>
-            </g>
-            <use xlink:href="#legalMinors" transform="rotate(10 300 350)"/>
-            <use xlink:href="#legalMinors" transform="rotate(20 300 350)"/>
-        </g>
-        <use xlink:href="#illegalMinors" transform="rotate(30 300 350)"/>
-        <use xlink:href="#illegalMinors" transform="rotate(-30 300 350)"/>
-        <use xlink:href="#illegalMinors" transform="rotate(-60 300 350)"/>
-
-        <!-- Numbers -->
-        <g text-anchor="middle" fill="#E7719F" font-size="24px" font-family="Quicksand">
-            <text x="300" y="75" transform="rotate(-60 300 350)">0</text>
-            <text x="300" y="75" transform="rotate(-50 300 350)">10</text>
-            <text x="300" y="75" transform="rotate(-40 300 350)">20</text>
-            <text x="300" y="75" transform="rotate(-30 300 350)">30</text>
-            <text x="300" y="75" transform="rotate(-20 300 350)">40</text>
-            <text x="300" y="75" transform="rotate(-10 300 350)">50</text>
-            <text x="300" y="75">60</text>
-            <text x="300" y="75" transform="rotate(10 300 350)">70</text>
-            <text x="300" y="75" transform="rotate(20 300 350)">80</text>
-            <text x="300" y="75" transform="rotate(30 300 350)">90</text>
-            <text x="300" y="75" transform="rotate(40 300 350)">100</text>
-            <text x="300" y="75" transform="rotate(50 300 350)">110</text>
-            <text x="300" y="75" transform="rotate(60 300 350)">120</text>
-        </g>
-
-        <!-- Needle and rivets -->
-        <g id="needle" transform="rotate(30 300 350)">
-            <polygon points="300 350 285 350 300 100 z" fill="#FF987D"/>
-            <polygon points="300 350 315 350 300 100 z" fill="#FC7D5B"/>
-        </g>
-        <circle cx="300" cy="350" r="15" fill="#83CB2F" stroke="#83CB2F"/>
-        <circle cx="300" cy="350" r="7" fill="#E4FBCA" stroke="#E4FBCA"/>
-    </g>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="400" xmlns="http://www.w3.org/2000/svg"
+	 viewbox="0 0 600 400">
+	<!-- the shapes and stuff will go here -->
+	<g id="theThing">
+		<defs>
+		</defs>
+		<rect x="0" y="0" width="600" height="400" fill="#B461C2"/>
+		<!-- Big circle and tick marks -->
+		<circle cx="300" cy="350" r="250" fill="none" stroke="#E7719F" stroke-width="4" clip-path="url(#clip)"/>
+		<polyline id="k12" points="300 100 300 80" stroke="#E7719F" stroke-width="4"/>
+		<g id="k">
+			<g id="k123">
+				<use xlink:href="#k12" transform="rotate(10 300 350)"/>
+				<use xlink:href="#k12" transform="rotate(20 300 350)"/>
+				<use xlink:href="#k12" transform="rotate(30 300 350)"/>
+			</g>
+			<use xlink:href="#k123" transform="rotate(30 300 350)"/>
+		</g>
+		<use xlink:href="#k" transform="rotate(-70 300 350)"/>
+		
+		<!-- Little tick marks -->
+		
+		<g id="illegalMinors">
+			<g id="legalMinors">
+				<polyline points="300 100 300 90" stroke="#E7719F" stroke-width="2" transform="rotate(2 300 350)"/>
+				<polyline points="300 100 300 90" stroke="#E7719F" stroke-width="2" transform="rotate(4 300 350)"/>
+				<polyline points="300 100 300 90" stroke="#E7719F" stroke-width="2" transform="rotate(6 300 350)"/>
+				<polyline points="300 100 300 90" stroke="#E7719F" stroke-width="2" transform="rotate(8 300 350)"/>
+			</g>
+			<use xlink:href="#legalMinors" transform="rotate(10 300 350)"/>
+			<use xlink:href="#legalMinors" transform="rotate(20 300 350)"/>
+		</g>
+		<use xlink:href="#illegalMinors" transform="rotate(30 300 350)"/>
+		<use xlink:href="#illegalMinors" transform="rotate(-30 300 350)"/>
+		<use xlink:href="#illegalMinors" transform="rotate(-60 300 350)"/>
+		
+		<!-- Numbers -->
+		<g text-anchor="middle" fill="#E7719F" font-size="24px" font-family="Quicksand">
+			<text x="300" y="75" transform="rotate(-60 300 350)">0</text>
+			<text x="300" y="75" transform="rotate(-50 300 350)">10</text>
+			<text x="300" y="75" transform="rotate(-40 300 350)">20</text>
+			<text x="300" y="75" transform="rotate(-30 300 350)">30</text>
+			<text x="300" y="75" transform="rotate(-20 300 350)">40</text>
+			<text x="300" y="75" transform="rotate(-10 300 350)">50</text>
+			<text x="300" y="75">60</text>
+			<text x="300" y="75" transform="rotate(10 300 350)">70</text>
+			<text x="300" y="75" transform="rotate(20 300 350)">80</text>
+			<text x="300" y="75" transform="rotate(30 300 350)">90</text>
+			<text x="300" y="75" transform="rotate(40 300 350)">100</text>
+			<text x="300" y="75" transform="rotate(50 300 350)">110</text>
+			<text x="300" y="75" transform="rotate(60 300 350)">120</text>
+		</g>
+		
+		<!-- Needle and rivets -->
+		<g id="needle" transform="rotate(30 300 350)">
+			<polygon points="300 350 285 350 300 100 z" fill="#FF987D"/>
+			<polygon points="300 350 315 350 300 100 z" fill="#FC7D5B"/>
+		</g>
+		<circle cx="300" cy="350" r="15" fill="#83CB2F" stroke="#83CB2F"/>
+		<circle cx="300" cy="350" r="7" fill="#E4FBCA" stroke="#E4FBCA"/>
+	</g>
 </svg>

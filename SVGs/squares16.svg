@@ -1,24 +1,24 @@
-<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 400"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- the shapes and stuff will go here -->
-    <defs>
-
-    </defs>
-    <rect x="0" y="0" width="600" height="400" fill="#B461C2"/>
-
-    <g transform="translate(142 42)">
-        <g id="r8">
-            <g id="r4">
-                <g id="r2">
-                    <rect x="12" y="12" width="64" height="64" id="r1" fill="#E7719F" />
-                    <use xlink:href="#r1" transform="translate(76 0)" />
-                </g>
-                <use xlink:href="#r2" transform="translate(152 0)" />
-            </g>
-            <use xlink:href="#r4" transform="translate(0 76)" />
-        </g>
-        <use xlink:href="#r8" transform="translate(0 152)" />
-    </g>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="400" xmlns="http://www.w3.org/2000/svg"
+	 viewbox="0 0 600 400">
+	<!-- the shapes and stuff will go here -->
+	<defs>
+	
+	</defs>
+	<rect x="0" y="0" width="600" height="400" fill="#B461C2"/>
+	
+	<g transform="translate(142 42)">
+		<g id="r8">
+			<g id="r4">
+				<g id="r2">
+					<rect x="12" y="12" width="64" height="64" id="r1" fill="#E7719F"/>
+					<use xlink:href="#r1" transform="translate(76 0)"/>
+				</g>
+				<use xlink:href="#r2" transform="translate(152 0)"/>
+			</g>
+			<use xlink:href="#r4" transform="translate(0 76)"/>
+		</g>
+		<use xlink:href="#r8" transform="translate(0 152)"/>
+	</g>
 </svg>
-<!--454-->
-<!--254-->
+		<!--454-->
+		<!--254-->

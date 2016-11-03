@@ -1,21 +1,21 @@
 <svg width='768' height='1024' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 768 1024'>
-    <defs>
+	<defs>
 
-    </defs>
-    <!-- the shapes and stuff will go here -->
-    <rect x="0" y="0" width="256" height="256" fill="#395" rx="20" ry="20" />
-    <rect x="256" y="0" width="256" height="256" fill="#467" rx="20" ry="20" />
-    <rect x="512" y="0" width="256" height="256" fill="#835" rx="20" ry="20" />
+	</defs>
+	<!-- the shapes and stuff will go here -->
+	<rect x="0" y="0" width="256" height="256" fill="#395" rx="20" ry="20"/>
+	<rect x="256" y="0" width="256" height="256" fill="#467" rx="20" ry="20"/>
+	<rect x="512" y="0" width="256" height="256" fill="#835" rx="20" ry="20"/>
 
-    <rect x="0" y="256" width="256" height="256" fill="#857" rx="20" ry="20" />
-    <rect x="256" y="256" width="256" height="256" fill="#926" rx="20" ry="20" />
-    <rect x="512" y="256" width="256" height="256" fill="#496" rx="20" ry="20" />
+	<rect x="0" y="256" width="256" height="256" fill="#857" rx="20" ry="20"/>
+	<rect x="256" y="256" width="256" height="256" fill="#926" rx="20" ry="20"/>
+	<rect x="512" y="256" width="256" height="256" fill="#496" rx="20" ry="20"/>
 
-    <rect x="0" y="512" width="256" height="256" fill="#259" rx="20" ry="20" />
-    <rect x="256" y="512" width="256" height="256" fill="#736" rx="20" ry="20" />
-    <rect x="512" y="512" width="256" height="256" fill="#194" rx="20" ry="20" />
+	<rect x="0" y="512" width="256" height="256" fill="#259" rx="20" ry="20"/>
+	<rect x="256" y="512" width="256" height="256" fill="#736" rx="20" ry="20"/>
+	<rect x="512" y="512" width="256" height="256" fill="#194" rx="20" ry="20"/>
 
-    <rect x="0" y="768" width="256" height="256" fill="#047" rx="20" ry="20" />
-    <rect x="256" y="768" width="256" height="256" fill="#184" rx="20" ry="20" />
-    <rect x="512" y="768" width="256" height="256" fill="#268" rx="20" ry="20" />
+	<rect x="0" y="768" width="256" height="256" fill="#047" rx="20" ry="20"/>
+	<rect x="256" y="768" width="256" height="256" fill="#184" rx="20" ry="20"/>
+	<rect x="512" y="768" width="256" height="256" fill="#268" rx="20" ry="20"/>
 </svg>

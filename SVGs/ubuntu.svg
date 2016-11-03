@@ -1,10 +1,11 @@
-  <svg width='240' height='240' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 240 240' xmlns:xlink='http://www.w3.org/1999/xlink'>
-    <rect x='0' y='0' width='240' height='240' fill='#F60' rx='48' ry='48' />
-    <circle cx='120' cy='120' r='56.5' fill='#F60' stroke='#FFF' stroke-width='27' />
-    <polyline points='120 120 240 120' stroke='#F60' stroke-width='15' />
-    <polyline points='120 120 240 120' stroke='#F60' stroke-width='15' transform='rotate(120 120 120)' />
-    <polyline points='120 120 240 120' stroke='#F60' stroke-width='15' transform='rotate(240 120 120)' />
-    <circle cx='40' cy='120' r='20' fill='#FFF' stroke='#F60' stroke-width='10' />
-    <circle cx='40' cy='120' r='20' fill='#FFF' stroke='#F60' stroke-width='10' transform='rotate(120 120 120)' />
-    <circle cx='40' cy='120' r='20' fill='#FFF' stroke='#F60' stroke-width='10' transform='rotate(240 120 120)' />
-  </svg>
+<svg width='240' height='240' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 240 240'
+>
+	<rect x='0' y='0' width='240' height='240' fill='#F60' rx='48' ry='48'/>
+	<circle cx='120' cy='120' r='56.5' fill='#F60' stroke='#FFF' stroke-width='27'/>
+	<polyline points='120 120 240 120' stroke='#F60' stroke-width='15'/>
+	<polyline points='120 120 240 120' stroke='#F60' stroke-width='15' transform='rotate(120 120 120)'/>
+	<polyline points='120 120 240 120' stroke='#F60' stroke-width='15' transform='rotate(240 120 120)'/>
+	<circle cx='40' cy='120' r='20' fill='#FFF' stroke='#F60' stroke-width='10'/>
+	<circle cx='40' cy='120' r='20' fill='#FFF' stroke='#F60' stroke-width='10' transform='rotate(120 120 120)'/>
+	<circle cx='40' cy='120' r='20' fill='#FFF' stroke='#F60' stroke-width='10' transform='rotate(240 120 120)'/>
+</svg>

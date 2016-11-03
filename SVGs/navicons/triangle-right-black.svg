@@ -1,6 +1,7 @@
-<svg width='520' height='520' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 520 520' xmlns:xlink= "http://www.w3.org/1999/xlink">
-  <!-- the shapes and stuff will go here -->
-  <g fill='#000'>
-    <polygon points='1 0 1 13 13 6.5 z' transform='scale(40)' />
-  </g>
+<svg width='520' height='520' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 520 520'
+>
+	<!-- the shapes and stuff will go here -->
+	<g fill='#000'>
+		<polygon points='1 0 1 13 13 6.5 z' transform='scale(40)'/>
+	</g>
 </svg>
