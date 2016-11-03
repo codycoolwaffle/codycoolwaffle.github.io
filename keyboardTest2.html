@@ -25,33 +25,44 @@
 	<circle cx="100" cy="100" r="5" fill="#FF987D" id="id"></circle>
 </svg>
 
-<script src="javascript/get.js"></script>
+<script src="javascript/wafflib.js"></script>
 <script type="text/javascript">
 		get("body")[0].onkeydown = function(event)
 		{
 			//left
 			if(event.keyCode == 37)
 			{
-				get("#id").setAttribute("cx", get("#id").getAttribute("cx")-1);
+				get("#id").setAttribute("cx", get("#id").getAttribute("cx")-5);
 			}
 
 			//right
 			else if(event.keyCode == 39)
 			{
-				get("#id").setAttribute("cx", get("#id").getAttribute("cx")-0+1);
+				get("#id").setAttribute("cx", get("#id").getAttribute("cx")-0+5);
 			}
 
 			//up
 			else if(event.keyCode == 38)
 			{
-				get("#id").setAttribute("cy", get("#id").getAttribute("cy")-1);
+				get("#id").setAttribute("cy", get("#id").getAttribute("cy")-5);
 			}
 
 			//down
 			else if(event.keyCode == 40)
 			{
-				get("#id").setAttribute("cy", get("#id").getAttribute("cy")-0+1);
+				get("#id").setAttribute("cy", get("#id").getAttribute("cy")-0+5);
 			}
+			isOffScreen(get("#id"), get("svg")[0].getAttribute("width"), get("svg")[0].getAttribute("height"));
+		}
+
+		get("body")[0].onkeypress = function(event)
+		{
+			console.log(event.keyCode);
+		}
+
+		get("body")[0].onkeyup = function(event)
+		{
+			console.log(event.keyCode);
 		}
 
 		anime();
@@ -61,33 +72,6 @@
 			isOffScreen(get("#id"));
 			setTimeout(anime, 50);
 		}
-
-		function isOffScreen(entity)
-		{
-			r = entity.getAttribute("r")-0;
-
-
-			
-			if(entity.getAttribute("cx") <= r)
-				entity.setAttribute("cx", r);
-
-			else if(entity.getAttribute("cx") >= 600-r)
-				entity.setAttribute("cx", 600-r);
-
-
-			if(entity.getAttribute("cy") <= r)
-				entity.setAttribute("cy", r);
-
-			else if(entity.getAttribute("cy") >= 400-r)
-				entity.setAttribute("cy", 400-r);
-		}
-
-		function alart(thing)
-		{
-			alert(thing);
-		}
-
-
 </script>
 </body>
 </html>
