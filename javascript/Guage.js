@@ -15,6 +15,7 @@ document.getElementById("doit").onclick = function(e)
 {
 	var n = Math.floor(Math.random() * 120);
 	target = n;
+	mySound.play();
 	animate();
 }
 
@@ -26,7 +27,6 @@ function animate()
 		setNeedle(current+1);
 	else
 	{
-		mySound.play();
 		return;
 	}
 	setTimeout(animate, 60);
