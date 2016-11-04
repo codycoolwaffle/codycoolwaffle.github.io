@@ -1,6 +1,6 @@
 var current = 75;
 var target;
-var mySound = new Audio('audio/THAT.mp3');
+var mySound = new Audio('http://codycoolwaffle.github.io/audio/rev.mp3');
 
 function setNeedle(n)
 {
