@@ -1,9 +1,9 @@
 //Declaring variables
 var words = ["pancake", "waffle", "narwhal", "phone", "laptop", "eye", "puppy", "unicorn", "blanket", "triggered", "beagle", "collie", "controller", "beanie", "java", "fez", "sticky", "sucky", "touch", "collar", "scratch", "mouse", "pokemon", "minecraft", "terraria", "mario"];
 var word = "";
-var remainingLetters;
-var remainingGuesses;
-var answerArray;
+var remainingLetters = 0;
+var remainingGuesses = 6;
+var answerArray = [];
 
 setupGame();
 
@@ -69,15 +69,14 @@ function testEnd()
 
 function setupGame()
 {
-	//Setting up the answer array
-    answerArray = [];
-    for(var i = 0; i < word.length; i++)
-    	answerArray[i] = "_";
-    get("#word").innerHTML = answerArray.join(" ");
     remainingGuesses = 6;
 	remainingLetters = word.length;
 	word = words[Math.floor(Math.random() * words.length)];
 	makeReturnInvis();
+    answerArray = [];
+    for(var i = 0; i < word.length; i++)
+    	answerArray[i] = "_";
+    get("#word").innerHTML = answerArray.join(" ");
 }
 
 var returnButt = get("#refresh").innerHTML;
