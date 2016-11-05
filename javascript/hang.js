@@ -1,5 +1,5 @@
 //Declaring variables
-var words = ["javascript", "monkey", "amazing", "pancake"];
+var words = ["pancake", "waffle", "narwhal", "phone", "laptop", "eye", "puppy", "unicorn", "blanket", "triggered", "beagle", "collie", "controller", "beanie", "java", "fez", "sticky", "sucky", "touch", "collar", "scratch", "mouse", "pokemon", "minecraft", "terraria", "mario"];
 var word = "";
 var remainingLetters;
 var remainingGuesses;
@@ -14,7 +14,7 @@ get("#hangHim!").onclick = function()
 {
 	get("#out").innerHTML = "";
 	//Asking the player if they want to continue
-	var guess = get("#guess").value;
+	var guess = get("#guess").value.toLowerCase();
 
 	//If the guess doesn't return anything, ends code
 	if(guess === null)
