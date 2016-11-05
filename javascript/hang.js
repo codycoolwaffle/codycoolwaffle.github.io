@@ -70,13 +70,13 @@ function testEnd()
 function setupGame()
 {
     remainingGuesses = 6;
-	remainingLetters = word.length;
 	word = words[Math.floor(Math.random() * words.length)];
 	makeReturnInvis();
     answerArray = [];
     for(var i = 0; i < word.length; i++)
     	answerArray[i] = "_";
     get("#word").innerHTML = answerArray.join(" ");
+	remainingLetters = word.length;
 }
 
 var returnButt = get("#refresh").innerHTML;
