@@ -4,6 +4,7 @@ var word = "";
 var remainingLetters = 0;
 var remainingGuesses = 6;
 var answerArray = [];
+var returnButt = get("#refresh").innerHTML;
 
 setupGame();
 
@@ -79,7 +80,6 @@ function setupGame()
 	remainingLetters = word.length;
 }
 
-var returnButt = get("#refresh").innerHTML;
 function makeReturnInvis()
 {
 	get("#refresh").innerHTML = "";
