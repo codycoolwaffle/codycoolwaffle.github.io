@@ -1,0 +1,11 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 400">
+	<!-- the shapes and stuff will go here -->
+	<defs>
+	
+	</defs>
+	<g transform="scale(33.333333333333333333333333333333333333333333333333333333)">
+		<rect x="0" y="0" width="18" height="12" fill="#FFF"/>
+		<rect x="8" y="0" width="2" height="12" fill="#F00"/>
+		<rect x="0" y="5" width="18" height="2" fill="#F00"/>
+	</g>
+</svg>
