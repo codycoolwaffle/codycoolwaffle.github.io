@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+    Cody Haslam
+    Mobile App Design and Computer Coding
+    11/15/2016
+    -->
+	<meta charset="UTF-8">
+	<title>Web Console</title>
+	<style type="text/css">
+    /* styles go here */
+	h1{color:#B6EF75; font-family:Cursive; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px; margin-left:-8px; margin-right:-8px}
+	p{color:#B6EF75; font-family:Courier; margin-bottom:0px}
+	#out{background-color:#B461C2; margin:1em; padding:1em; box-shadow:2px 2px 4px #963EA6; white-space:pre; font-family:Courier, monospace}
+	table{border-collapse:collapse; border-color:#83CB2F}
+	td, th{border:1px solid #82CA2F; padding:0.25em 1em; text-align:center}
+	td{background-color:#F19ABC; color:#CCF69D}
+	th{background-color:#C22D67; color:#83CB2F; font-size:2em}
+  
+	</style>
+</head>
+<body style="background-color:#E7719F; text-align:center">
+	<div id="out"></div>
+
+	<script src="javascript/wafflib.js"></script>
+	<script type="text/javascript">
+		var out = [];
+
+		setupLog(get("#out"));
+		log("<p>Squares</p>", true);
+		var next = 0;
+		var pos = 0;
+		for(var wat = 0; next < 10000; wat++)
+		{
+			next = wat*wat;
+
+			out[pos] = next;
+			pos++;
+		}
+		makeTable(out, 10, 10);
+		console.log(out);
+
+		out = [];
+		log("<p>Cubes</p>", true);
+		next = 0;
+		pos = 0;
+		for(var wat = 0; wat*wat*wat < 100000; wat++)
+		{
+			next = wat*wat*wat;
+
+			out[pos] = next;
+			pos++;
+		}
+		makeTable(out, 8, 6);
+	</script>
+</body>
+</html>
