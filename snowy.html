@@ -2,17 +2,18 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>SNOW GLOBE!</title>
+    <title>CHRISTMAAAAAAAAAAAS!</title>
     <style type="text/css">
 		canvas{position:absolute}
 		canvas#background{background-color: #E7719F}
-	    	body{margin: 0}
+		body{margin: 0}
 	</style>
 </head>
 
 <body>
-	<canvas id="background"  	width="600" height="800" ></canvas>
+	<canvas class="background"  	width="600" height="800" ></canvas>
 	<canvas id="stars"  			width="600" height="800" ></canvas>
+    <canvas class="background"	width="600" height="800" ></canvas>
 	<canvas id="trees"  			width="600" height="800" ></canvas>
 	<canvas id="mainTree"  		width="600" height="800" ></canvas>
 	<canvas class="ornaments"  	width="600" height="800" ></canvas>
@@ -43,7 +44,7 @@
 				canvas[i].setAttribute("height", height);
 			}
 			drawBackground();
-			//drawStars();
+			drawStars();
 			drawTrees();
 			drawMainTree();
 			drawOrnaments(1);
@@ -62,13 +63,14 @@
 		//Main Functions
 		function drawBackground()
 		{
-			var context = get("#background").getContext("2d");
+			var context = get(".background")[0].getContext("2d");
 			context.beginPath();
 			context.fillStyle = "#99f";
 			context.rect(0, 0, width, height);
 			context.fill();
 			context.closePath();
 			
+			var context = get(".background")[1].getContext("2d");
 			context.beginPath();
 			context.fillStyle = "#ddd";
 			context.rect(0, height*(2/3), width, height/3);
@@ -77,10 +79,16 @@
 		}
 		function drawStars()
 		{
-			//Save for later
+			for(var i = 0; i < 100; i++)
+			{
+				var pos = [Math.random()*width, Math.random()*(height*2/3)];
+				var r = Math.random()*20;
+				drawStar(pos, r, get("#stars").getContext("2d"), "#FFF");
+			}
 		}
 		function drawTrees()
 		{
+			var context = get("#trees").getContext("2d");
 			for(var i = 0; i < 100; i++)
 			{
 				var pos = [Math.random() * width, 
@@ -88,7 +96,10 @@
 				var wide = Math.random() * (width/20);
 				var high = Math.random() * (height/2);
 				var colour = (Math.random() > 0.5) ? "#053" : "#044";
-				drawATree(pos, wide, high, colour);
+				var grad = context.createLinearGradient(pos[0]-wide/2, pos[1], pos[0]+wide/2, pos[1]);
+				grad.addColorStop(0, "#088");
+				grad.addColorStop(1, "#044");
+				drawATree(pos, wide, high, grad);
 			}
 		}
 		function drawMainTree()
@@ -101,11 +112,11 @@
 			{
 				for(var j = 0; j < 10; j++)
 				{
-					var pos = [i * width / 10 + Math.random() * 40, 
-							   j * height / 10 + Math.random() * 40];
+					var pos = [i * width / 10 + ((Math.random() * 60)-(Math.random() * 60)), 
+							   j * height / 10 + ((Math.random() * 60)-(Math.random() * 60))];
 					var whichColour = ornamentColours[Math.floor(Math.random() * ornamentColours.length)];
-					console.log(pos[0] + " " + pos[1]);
-					drawOrnament(pos, whichColour, ornamentRadius, layer-1);
+					var gradient = makeRadialGradient(whichColour, pos, ornamentRadius);
+					drawOrnament(pos, gradient, ornamentRadius, layer-1);
 				}
 			}
 		}
@@ -225,6 +236,31 @@
 			context.fillStyle = "#FFF";
 			context.fill();
 			context.closePath();
+		}
+		
+		function makeRadialGradient(colour, pos, r)
+		{
+			var context = get("canvas")[0].getContext("2d");
+			var gradient = context.createRadialGradient(pos[0]+0.2*r, pos[1]-0.3*r, 0, pos[0]+0.2*r, pos[1]-0.3*r, 1.9 * r);
+			gradient.addColorStop(0, "#EEE");
+			gradient.addColorStop(0.5, colour);
+			gradient.addColorStop(1, "#555");
+			return gradient;
+		}
+		
+		function drawStar(pos, r, context, colour)
+		{
+			context.beginPath();
+			context.fillStyle = colour;
+			
+			context.moveTo(pos[0], pos[1]-r);
+			context.lineTo(pos[0], pos[1]+r);
+			context.moveTo(pos[0]-r, pos[1]);
+			context.lineTo(pos[0]+r, pos[1]);
+			context.strokeStyle = "#FFF";
+			
+			context.stroke();
+			context.fill();
 		}
 	</script>
 </body>
