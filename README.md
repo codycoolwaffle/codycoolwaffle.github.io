@@ -4,3 +4,7 @@ Current code languages:
   *HTML
   
   *SVG
+
+  *Javascript
+  
+  *CSS
