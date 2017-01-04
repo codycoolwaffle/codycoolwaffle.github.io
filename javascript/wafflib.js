@@ -150,3 +150,20 @@ function makeTable(content, width, length)
 	buildLog("</table>", true);
 	printLog(true);
 }
+
+function random(s)
+{
+    return s[Math.floor(Math.random() * s.length)];
+}
+
+function randomColour()
+{
+    var s = '0123456789abcdef';
+    return '#'
+            + random(s)
+            + random(s)
+            + random(s)
+            + random(s)
+            + random(s)
+            + random(s);
+}
