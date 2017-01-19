@@ -1,1 +1,34 @@
-<!--Scalable Vector Graphic--><svg xmlns="http://www.w3.org/2000/svg"      xmlns:xlink="http://www.w3.org/1999/xlink"       width="400px"      height="400px"      viewBox="0 0 400px 400px">	 <defs>	 	<clipPath id="waffle">			<circle cx="200" cy="200" r="93"></circle>		</clipPath>	 </defs>	 	 <rect x="0" y="0" width="400" height="400" fill="#eee"></rect>	 <rect x="50" y="200" width="300" height="2000" fill="#ccc" transform="rotate(-45 200 200)"></rect>	 <circle cx="200" cy="200" r="150" fill="#ffc980"></circle>	 <g clip-path="url(#waffle)" transform="translate(-100 -100) scale(1.5)">		 <rect x="155" y="155" width="40" height="40" fill="#deb887"></rect>		 <rect x="155" y="105" width="40" height="40" fill="#deb887"></rect>		 <rect x="105" y="155" width="40" height="40" fill="#deb887"></rect>		 <rect x="205" y="155" width="40" height="40" fill="#deb887"></rect>		 <rect x="205" y="105" width="40" height="40" fill="#deb887"></rect>		 <rect x="255" y="155" width="40" height="40" fill="#deb887"></rect>		 <rect x="155" y="205" width="40" height="40" fill="#deb887"></rect>		 <rect x="105" y="205" width="40" height="40" fill="#deb887"></rect>		 <rect x="155" y="255" width="40" height="40" fill="#deb887"></rect>		 <rect x="205" y="205" width="40" height="40" fill="#deb887"></rect>		 <rect x="205" y="255" width="40" height="40" fill="#deb887"></rect>		 <rect x="255" y="205" width="40" height="40" fill="#deb887"></rect>		 <rect x="105" y="105" width="40" height="40" fill="#deb887"></rect>		 <rect x="255" y="105" width="40" height="40" fill="#deb887"></rect>		 <rect x="105" y="255" width="40" height="40" fill="#deb887"></rect>		 <rect x="255" y="255" width="40" height="40" fill="#deb887"></rect>	 </g></svg>
+<!--Scalable Vector Graphic-->
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"  
+     width="400px" 
+     height="400px" 
+     viewBox="0 0 400px 400px">
+	 <defs>
+	 	<clipPath id="waffle">
+			<circle cx="200" cy="200" r="93"></circle>
+		</clipPath>
+	 </defs>
+	 
+	 <rect x="0" y="0" width="400" height="400" fill="#eee"></rect>
+	 <rect x="50" y="200" width="300" height="2000" fill="#ddd" transform="rotate(-45 200 200)"></rect>
+	 <circle cx="200" cy="200" r="150" fill="#ffc980"></circle>
+	 <g clip-path="url(#waffle)" transform="translate(-100 -100) scale(1.5)">
+		 <rect x="155" y="155" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="155" y="105" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="105" y="155" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="205" y="155" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="205" y="105" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="255" y="155" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="155" y="205" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="105" y="205" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="155" y="255" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="205" y="205" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="205" y="255" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="255" y="205" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="105" y="105" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="255" y="105" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="105" y="255" width="40" height="40" fill="#deb887"></rect>
+		 <rect x="255" y="255" width="40" height="40" fill="#deb887"></rect>
+	 </g>
+</svg>
