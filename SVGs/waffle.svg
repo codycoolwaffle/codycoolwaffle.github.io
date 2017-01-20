@@ -6,29 +6,59 @@
      viewBox="0 0 400px 400px">
 	 <defs>
 	 	<clipPath id="waffle">
+			<circle cx="200" cy="200" r="140"></circle>
+		</clipPath>
+	 	<clipPath id="waffle2">
 			<circle cx="200" cy="200" r="93"></circle>
 		</clipPath>
+	 	<clipPath id="waffle3">
+			<circle cx="200" cy="200" r="200"></circle>
+		</clipPath>
+		<clipPath id="square">
+			<rect x="0" y="0" width="400" height="400" transform="rotate(-30 200 200)"></rect>
+		</clipPath>
 	 </defs>
-	 
-	 <rect x="0" y="0" width="400" height="400" fill="#eee"></rect>
-	 <rect x="50" y="200" width="300" height="2000" fill="#ddd" transform="rotate(-45 200 200)"></rect>
-	 <circle cx="200" cy="200" r="150" fill="#ffc980"></circle>
-	 <g clip-path="url(#waffle)" transform="translate(-100 -100) scale(1.5)">
-		 <rect x="155" y="155" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="155" y="105" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="105" y="155" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="205" y="155" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="205" y="105" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="255" y="155" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="155" y="205" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="105" y="205" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="155" y="255" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="205" y="205" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="205" y="255" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="255" y="205" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="105" y="105" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="255" y="105" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="105" y="255" width="40" height="40" fill="#deb887"></rect>
-		 <rect x="255" y="255" width="40" height="40" fill="#deb887"></rect>
+	 <g>
+		 <rect x="0" y="0" width="400" height="400" fill="#eee"></rect>
+		 <rect x="50" y="200" width="300" height="2000" fill="#ddd" clip-path="url(#square)" transform="rotate(-60 200 200)"></rect>
+		 <circle cx="200" cy="200" r="150" fill="#ffc980"></circle>
+		 <g clip-path="url(#waffle)" fill="#e8b97c" transform="rotate(0 200 200)">
+			 <rect x="205" y="205" width="40" height="40"></rect>
+			 <rect x="205" y="255" width="40" height="40"></rect>
+			 <rect x="255" y="205" width="40" height="40"></rect>
+			 <rect x="255" y="255" width="40" height="40"></rect>
+			 <rect x="205" y="155" width="40" height="40"></rect>
+			 <rect x="205" y="105" width="40" height="40"></rect>
+			 <rect x="255" y="155" width="40" height="40"></rect>
+			 <rect x="255" y="105" width="40" height="40"></rect>
+			 <rect x="155" y="205" width="40" height="40"></rect>
+			 <rect x="105" y="205" width="40" height="40"></rect>
+			 <rect x="155" y="255" width="40" height="40"></rect>
+			 <rect x="105" y="255" width="40" height="40"></rect>
+			 <rect x="155" y="155" width="40" height="40"></rect>
+			 <rect x="155" y="105" width="40" height="40"></rect>
+			 <rect x="105" y="155" width="40" height="40"></rect>
+			 <rect x="105" y="105" width="40" height="40"></rect>
+			 
+			 <rect x="105" y="55" width="40" height="40"></rect>
+			 <rect x="155" y="55" width="40" height="40"></rect>
+			 <rect x="205" y="55" width="40" height="40"></rect>
+			 <rect x="255" y="55" width="40" height="40"></rect>
+			 
+			 <rect x="105" y="305" width="40" height="40"></rect>
+			 <rect x="155" y="305" width="40" height="40"></rect>
+			 <rect x="205" y="305" width="40" height="40"></rect>
+			 <rect x="255" y="305" width="40" height="40"></rect>
+			 
+			 <rect x="305" y="105" width="40" height="40"></rect>
+			 <rect x="305" y="155" width="40" height="40"></rect>
+			 <rect x="305" y="205" width="40" height="40"></rect>
+			 <rect x="305" y="255" width="40" height="40"></rect>
+			 
+			 <rect x="55" y="105" width="40" height="40"></rect>
+			 <rect x="55" y="155" width="40" height="40"></rect>
+			 <rect x="55" y="205" width="40" height="40"></rect>
+			 <rect x="55" y="255" width="40" height="40"></rect>
+		 </g>
 	 </g>
 </svg>
