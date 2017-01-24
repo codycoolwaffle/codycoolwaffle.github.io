@@ -76,7 +76,7 @@ function setupGame()
     	answerArray[i] = "_";
     get("#word").innerHTML = answerArray.join(" ");
 	remainingLetters = word.length;
-    get("#refresh").onclick = setupGame();
+    get("#refresh").onclick = setupGame;
 }
 
 function makeReturnInvis()
