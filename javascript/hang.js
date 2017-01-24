@@ -8,8 +8,6 @@ var returnButt = get("#refresh").innerHTML;
 
 setupGame();
 
-get("#refresh").onclick = setupGame();
-
 //Main loop
 get("#hangHim!").onclick = function()
 {
@@ -78,11 +76,13 @@ function setupGame()
     	answerArray[i] = "_";
     get("#word").innerHTML = answerArray.join(" ");
 	remainingLetters = word.length;
+    get("#refresh").onclick = setupGame();
 }
 
 function makeReturnInvis()
 {
 	get("#refresh").innerHTML = "";
+	get("#out").innerHTML = "";
 }
 
 function makeReturnVis()
