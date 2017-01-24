@@ -5,6 +5,31 @@ var remainingLetters = 0;
 var remainingGuesses = 6;
 var answerArray = [];
 var returnButt = get("#refresh").innerHTML;
+var failing = [["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v","w", "x", "y", "z"],
+		[false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+		""];
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+////                                                   ////
+////     D I S A B L E   M E   A F T E R   1/25/16     ////
+////                                                   ////
+/*////////////////*/var showOff = true;/*////////////////*/
+///////////////////////////////////////////////////////////
+
+if(showOff)
+	words = ["pancake", "waffle", "phone", "laptop", "controller", "apple", "android", "svcte", "javascript", "save me"];//Please don't sue me
+
+
+
+
+
+
+
+
+
+
+
 
 setupGame();
 
@@ -66,26 +91,44 @@ function testEnd()
 	}
 }
 
+function failure(fail)
+{
+	
+}
+
+
 function setupGame()
 {
-    remainingGuesses = 6;
+	remainingGuesses = 6;
 	word = words[Math.floor(Math.random() * words.length)];
 	makeReturnInvis();
-    answerArray = [];
-    for(var i = 0; i < word.length; i++)
-    	answerArray[i] = "_";
-    get("#word").innerHTML = answerArray.join(" ");
+	answerArray = [];
 	remainingLetters = word.length;
-    get("#refresh").onclick = setupGame;
+	
+	for(var i = 0; i < word.length; i++)
+	{
+		if(word[i]==" ")
+		{
+			answerArray[i] = word[i];
+			remainingLetters--;
+		}
+		else
+			answerArray[i] = "_";
+	}
+	
+	get("#word").innerHTML = answerArray.join(" ");
+	get("#refresh").onclick = setupGame;
 }
 
 function makeReturnInvis()
 {
 	get("#refresh").innerHTML = "";
 	get("#out").innerHTML = "";
+	get("#FAILURE").innerHTML = "";
 }
 
 function makeReturnVis()
 {
 	get("#refresh").innerHTML = returnButt;
+	get("#FAILURE").innerHTML = "";
 }
