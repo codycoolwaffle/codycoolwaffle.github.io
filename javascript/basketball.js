@@ -70,6 +70,7 @@ function ballBounce()
 		console.log("Colision!");
 		velocityX = [dx/17.149858514250884, -dx/17.149858514250884];
 		velocityY = [dy/17.149858514250884, -dy/17.149858514250884];
+		velocity = [Math.sqrt((velocityX[0]*velocityX[0])+(velocityY[0]*velocityY[0])), Math.sqrt((velocityX[1]*velocityX[1])+(velocityY[1]*velocityY[1]))];
 	}
 	
 	//var square = document.getElementById('square');
