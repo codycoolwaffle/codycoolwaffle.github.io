@@ -24,22 +24,19 @@ function animate()
 			//Making balls go backwards
 			velocityX[i] = -velocityX[i];
 			rotVelocity[i] = -rotVelocity[i];
+			
+			move();
 		}
 		if(y[i] >= 450 || y[i]<= -50)
 		{
 			//Making balls go backwards
 			velocityY[i] = -velocityY[i];
 			rotVelocity[i] = -rotVelocity[i];
+			
+			move();
 		}
 
-		//Increasing the movement variables
-		x[i] += velocityX[i]*speed;
-		y[i] += velocityY[i]*speed;
-		rotation[i] += rotVelocity[i];
-
-		//Moving and rotating the balls
-		moveBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ') rotate(' + rotation[i] + ' 100 100)');
-		gradientBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ')');
+		move();
 	}
 	ballBounce();
 	//Telling Javascript how much milliseconds to wait before repeating loop
@@ -73,27 +70,28 @@ function ballBounce()
 		velocityX = [dx/(100/velocity[0]), -dx/(100/velocity[0])];
 		velocityY = [dy/(100/velocity[0]), -dy/(100/velocity[0])];
 		
-		
-		////////////////////////
-		//	Begin Copy-pasta
-		////////////////////////
-		
-		//Increasing the movement variables
-		x[i] += velocityX[i]*speed;
-		y[i] += velocityY[i]*speed;
-		rotation[i] += rotVelocity[i];
-
-		//Moving and rotating the balls
-		moveBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ') rotate(' + rotation[i] + ' 100 100)');
-		gradientBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ')');
-		
-		////////////////////////
-		//	  End Copy-pasta
-		////////////////////////
+		move();
 	}
 	
 	//var square = document.getElementById('square');
 	//var x = (5.83095189485*Math.cos((toRadians(0))+(2*Math.PI)));
 	//var y = (-5.83095189485*Math.sin((toRadians(0))+(2*Math.PI)));
 	//square.setAttribute('transform', 'translate(' + x + ' ' + y + ')');
+}
+
+function move()
+{
+	
+	for(var i = 0; i < 2; i++)
+		{
+			//Increasing the movement variables
+			x[i] += velocityX[i]*speed;
+			y[i] += velocityY[i]*speed;
+			rotation[i] += rotVelocity[i];
+
+			//Moving and rotating the balls
+			moveBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ') rotate(' + rotation[i] + ' 100 100)');
+			gradientBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ')');
+		}
+	
 }
