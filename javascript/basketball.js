@@ -47,14 +47,12 @@ function animate()
 document.getElementById('faster').onclick = function(e)
 {
 	speed *= 1.25;
-	rotVelocity *= 1.25;
 }
 
 //Declaring decelerate button function
 document.getElementById('slower').onclick = function(e)
 {
 	speed *= 0.75;
-	rotVelocity *= 0.75;
 }
 
 //Function for making balls bounce off each other
@@ -87,7 +85,7 @@ function move()
 			//Increasing the movement variables
 			x[i] += velocityX[i]*speed;
 			y[i] += velocityY[i]*speed;
-			rotation[i] += rotVelocity[i];
+			rotation[i] += rotVelocity[i]*speed;
 
 			//Moving and rotating the balls
 			moveBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ') rotate(' + rotation[i] + ' 100 100)');
