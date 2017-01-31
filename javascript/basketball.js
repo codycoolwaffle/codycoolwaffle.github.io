@@ -72,6 +72,24 @@ function ballBounce()
 		console.log("Colision!");
 		velocityX = [dx/(100/velocity[0]), -dx/(100/velocity[0])];
 		velocityY = [dy/(100/velocity[0]), -dy/(100/velocity[0])];
+		
+		
+		////////////////////////
+		//	Begin Copy-pasta
+		////////////////////////
+		
+		//Increasing the movement variables
+		x[i] += velocityX[i]*speed;
+		y[i] += velocityY[i]*speed;
+		rotation[i] += rotVelocity[i];
+
+		//Moving and rotating the balls
+		moveBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ') rotate(' + rotation[i] + ' 100 100)');
+		gradientBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ')');
+		
+		////////////////////////
+		//	  End Copy-pasta
+		////////////////////////
 	}
 	
 	//var square = document.getElementById('square');
