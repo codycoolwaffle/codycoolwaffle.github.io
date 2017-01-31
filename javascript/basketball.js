@@ -68,8 +68,8 @@ function ballBounce()
 	if(dx <= 100 && dy <= 100)
 	{
 		console.log("Colision!");
-		velocityX = [dx, -dx];
-		velocityY = [dy, -dy];
+		velocityX = [dx/17.149858514250884, -dx/17.149858514250884];
+		velocityY = [dy/17.149858514250884, -dy/17.149858514250884];
 	}
 	
 	//var square = document.getElementById('square');
