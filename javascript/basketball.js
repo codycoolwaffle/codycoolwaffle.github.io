@@ -62,9 +62,9 @@ document.getElementById('slower').onclick = function(e)
 function ballBounce()
 {
 	
-	if(Math.abs(x[0]-x[1] <= 100
+	if(Math.abs(x[0]-x[1]) <= 100
 	   && 
-	   Math.abs(y[0]-y[1] <= 100)
+	   Math.abs(y[0]-y[1]) <= 100)
 	{
 		console.log("Success!");
 	}
