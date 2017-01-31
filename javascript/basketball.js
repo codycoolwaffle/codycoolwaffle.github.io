@@ -62,11 +62,14 @@ document.getElementById('slower').onclick = function(e)
 function ballBounce()
 {
 	
-	if(Math.abs(x[0]-x[1]) <= 100
-	   && 
-	   Math.abs(y[0]-y[1]) <= 100)
+	var dx = Math.abs(x[0]-x[1]);
+	var dy = Math.abs(y[0]-y[1]);
+	
+	if(dx <= 100 && dy <= 100)
 	{
-		console.log("Success!");
+		console.log("Colision!");
+		velocityX = [dx, -dx];
+		velocityY = [dy, -dy];
 	}
 	
 	//var square = document.getElementById('square');
