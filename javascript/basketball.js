@@ -49,13 +49,15 @@ function animate()
 //Declaring accelerate button function
 document.getElementById('faster').onclick = function(e)
 {
-	speed *= 0.75;
+	speed *= 1.25;
+	rotVelocity *= 1.25;
 }
 
 //Declaring decelerate button function
 document.getElementById('slower').onclick = function(e)
 {
-	speed *= 1.25;
+	speed *= 0.75;
+	rotVelocity *= 0.75;
 }
 
 //Function for making balls bounce off each other
