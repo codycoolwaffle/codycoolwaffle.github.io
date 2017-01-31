@@ -65,7 +65,7 @@ function ballBounce()
 	var dx = Math.abs(x[0]-x[1]);
 	var dy = Math.abs(y[0]-y[1]);
 	
-	if(dx+dy <= 100)
+	if(Math.sqrt((dx*dx)+(dy*dy))^2 <= 100)
 	{
 		console.log("Colision!");
 		velocityX = [dx/(100/velocity[0]), -dx/(100/velocity[0])];
