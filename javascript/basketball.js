@@ -41,6 +41,7 @@ function animate()
 		moveBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ') rotate(' + rotation[i] + ' 100 100)');
 		gradientBall[i].setAttribute('transform', 'translate(' + x[i] + ' ' + y[i] + ')');
 	}
+	ballBounce();
 	//Telling Javascript how much milliseconds to wait before repeating loop
 	setTimeout(animate, 16.6666666667);
 }
@@ -60,7 +61,12 @@ document.getElementById('slower').onclick = function(e)
 //Function for making balls bounce off each other
 function ballBounce()
 {
-
+	
+	if(Math.abs(x[0]-x[1] <= (5.83095189485*Math.cos((toRadians(0))+(2*Math.PI)))) && Math.abs(y[0]-y[1]) <= (-5.83095189485*Math.sin((toRadians(0))+(2*Math.PI))))
+	{
+		console.log("Success!");
+	}
+	
 	//var square = document.getElementById('square');
 	//var x = (5.83095189485*Math.cos((toRadians(0))+(2*Math.PI)));
 	//var y = (-5.83095189485*Math.sin((toRadians(0))+(2*Math.PI)));
