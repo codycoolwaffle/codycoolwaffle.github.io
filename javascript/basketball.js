@@ -21,25 +21,25 @@ function animate()
 		//Testing if balls are touching edge
 		if(x[i] > 650)
 		{
-			invertX();
+			invertX(i);
 			x[i] = 650;
 			move();
 		}
 		if(x[i] < -50)
 		{
-			invertX();
+			invertX(i);
 			x[i] = -50;
 			move();
 		}
 		if(y[i] > 450)
 		{
-			invertY();
+			invertY(i);
 			y[i] = 450;
 			move();
 		}
 		if(y[i] < -50)
 		{
-			invertY();
+			invertY(i);
 			y[i] = -50;
 			move();
 		}
@@ -51,14 +51,14 @@ function animate()
 	setTimeout(animate, 16.6666666667);
 }
 
-function invertX()
+function invertX(i)
 {
 	//Making balls go backwards
 	velocityX[i] = -velocityX[i];
 	rotVelocity[i] = -rotVelocity[i];
 }
 
-function invertY()
+function invertY(i)
 {
 	//Making balls go backwards
 	velocityY[i] = -velocityY[i];
