@@ -59,8 +59,8 @@ document.getElementById('slower').onclick = function(e)
 function ballBounce()
 {
 	
-	var dx = Math.abs(x[0]-x[1]);
-	var dy = Math.abs(y[0]-y[1]);
+	var dx = x[0]-x[1];
+	var dy = y[0]-y[1];
 	var dist = Math.sqrt((dx*dx)+(dy*dy));
 	
 	if(dist <= 100)
