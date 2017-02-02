@@ -19,20 +19,28 @@ function animate()
 	for(var i = 0; i < 2; i++)
 	{
 		//Testing if balls are touching edge
-		if(x[i] >= 650 || x[i]<= -50)
+		if(x[i] > 650)
 		{
-			//Making balls go backwards
-			velocityX[i] = -velocityX[i];
-			rotVelocity[i] = -rotVelocity[i];
-			
+			invertX();
+			x[i] = 650;
 			move();
 		}
-		if(y[i] >= 450 || y[i]<= -50)
+		if(x[i] < -50)
 		{
-			//Making balls go backwards
-			velocityY[i] = -velocityY[i];
-			rotVelocity[i] = -rotVelocity[i];
-			
+			invertX();
+			x[i] = -50;
+			move();
+		}
+		if(y[i] > 450)
+		{
+			invertY();
+			y[i] = 450;
+			move();
+		}
+		if(y[i] < -50)
+		{
+			invertY();
+			y[i] = -50;
 			move();
 		}
 
@@ -41,6 +49,20 @@ function animate()
 	ballBounce();
 	//Telling Javascript how much milliseconds to wait before repeating loop
 	setTimeout(animate, 16.6666666667);
+}
+
+function invertX()
+{
+	//Making balls go backwards
+	velocityX[i] = -velocityX[i];
+	rotVelocity[i] = -rotVelocity[i];
+}
+
+function invertY()
+{
+	//Making balls go backwards
+	velocityY[i] = -velocityY[i];
+	rotVelocity[i] = -rotVelocity[i];
 }
 
 //Declaring accelerate button function
