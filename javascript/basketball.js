@@ -23,25 +23,21 @@ function animate()
 		{
 			invertX(i);
 			x[i] = 650;
-			move();
 		}
 		if(x[i] < -50)
 		{
 			invertX(i);
 			x[i] = -50;
-			move();
 		}
 		if(y[i] > 450)
 		{
 			invertY(i);
 			y[i] = 450;
-			move();
 		}
 		if(y[i] < -50)
 		{
 			invertY(i);
 			y[i] = -50;
-			move();
 		}
 
 		move();
