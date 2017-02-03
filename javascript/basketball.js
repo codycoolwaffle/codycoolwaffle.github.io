@@ -18,6 +18,7 @@ function animate()
 {
 	for(var i = 0; i < 2; i++)
 	{
+		move();
 		//Testing if balls are touching edge
 		if(x[i] > 650)
 		{
@@ -39,8 +40,7 @@ function animate()
 			invertY(i);
 			y[i] = -50;
 		}
-
-		move();
+		
 	}
 	ballBounce();
 	//Telling Javascript how much milliseconds to wait before repeating loop
