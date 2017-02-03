@@ -10,22 +10,32 @@
 	<title>Basketballs!</title>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<style type='text/css'>
-	 		/* styles go here */
-			h1{color:#B6EF75; font-family:Quicksand; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px; margin-left:-8px; margin-right:-8px}
-			p{color:#B6EF75; font-family:Courier}
-
-
-
+		/* styles go here */
+		h1{color:#B6EF75; font-family:Quicksand; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px; margin-left:-8px; margin-right:-8px}
+		p{color:#B6EF75; font-family:Courier}
+		.btn
+		{
+        		font-family: Georgia;
+        		color: #B6EF75;
+        		font-size: 32px;
+        		background: #963EA6;
+        		padding: 10px 20px 10px 20px;
+        		text-decoration: none;
+		}
+		.btn.open
+		{
+        		background: #D18EDC;
+        		text-decoration: none;
+		}
 	</style>
 </head>
 
 <body style="background-color:#E7719F; text-align:center">
 <h1>Ball is life.</h1>
 <!-- Page Content -->
-<p>
-	<button id='faster'>+</button>
-	<button id='slower'>-</button>
-</p>
+	<div id="control"><a class="btn2" href="#">Controls</a></div>
+<button id='faster'>+</button>
+<button id='slower'>-</button>
 
 <svg width='800' height='600' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 800 600'>
 	<defs>
@@ -62,5 +72,11 @@
 
 <script src="javascript/wafflib.js"></script>
 <script src="javascript/basketball.js"></script>
+	<script type="text/javascript">
+		get("#control").onclick = function(e)
+		{
+			alart(e.target.class);
+		}
+	</script>
 </body>
 </html>
