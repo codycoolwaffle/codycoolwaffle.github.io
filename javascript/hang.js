@@ -15,22 +15,19 @@ setupGame();
 
 //Main loop
 get("#hangHim!").onclick = hang;
-get("#guess").onkeypress = function(event)
+get("body").onkeypress = function(event)
 {
-	if(event.keyCode == 13)
-	{
-		if(!running)
-			setupGame();
-		else
-			hang();
-	}
+	if(event.keyCode == 13 && !running)
+		setupGame();
+	else if(event.keyCode-97 >= 0 && event.keyCode-97 < 26)
+		hang(event.keyCode-97);
 }
 
-function hang()
+function hang(key)
 {
 	get("#out").innerHTML = "";
 	//Asking the player if they want to continue
-	var guess = get("#guess").value.toLowerCase();
+	key = key.toLowerCase();
 
 	//If the guess doesn't return anything, ends code
 	if(guess === null || !running)
@@ -86,6 +83,20 @@ function testEnd()
 function failure(fail)
 {
 	
+}
+
+function makeFailure(str="", num=0)
+{
+	
+	if (num == 26)
+		return str;
+	else
+	{
+		var out = "";
+		if(failing[1][num]==true)
+			out = failing[0][num];
+		return makeFailure(str+out, ++num);
+	}
 }
 
 
