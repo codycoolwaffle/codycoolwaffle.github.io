@@ -19,9 +19,10 @@ get("#guess").onkeypress = function(event)
 {
 	if(event.keyCode == 13)
 	{
-		hang();
 		if(!running)
 			setupGame();
+		else
+			hang();
 	}
 }
 
