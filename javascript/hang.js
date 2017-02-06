@@ -120,7 +120,7 @@ function setupGame()
 			remainingLetters--;
 		}
 		else
-			answerArray[i] = "_";.
+			answerArray[i] = "_";
 	}
 	
 	get("#word").innerHTML = answerArray.join(" ");
