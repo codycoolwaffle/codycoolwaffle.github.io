@@ -120,11 +120,16 @@ function setupGame()
 			remainingLetters--;
 		}
 		else
-			answerArray[i] = "_";
+			answerArray[i] = "_";.
 	}
 	
 	get("#word").innerHTML = answerArray.join(" ");
-	get("#refresh").onclick = setupGame;
+	
+	for(var i = 1; i <= 6; i++)
+	{
+		get("#hm" + i).setAttribute("fill", "none");
+		get("#hm" + i).setAttribute("stroke", "none");
+	}
 }
 
 function makeReturnInvis()
