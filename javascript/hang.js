@@ -34,7 +34,14 @@ if(showOff)
 setupGame();
 
 //Main loop
-get("#hangHim!").onclick = function()
+get("#hangHim!").onclick = hang;
+get("#guess").onkeypress = function(event)
+{
+	if(event.keyCode == 13)
+		hang();
+}
+
+function hang()
 {
 	get("#out").innerHTML = "";
 	//Asking the player if they want to continue
