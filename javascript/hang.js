@@ -26,7 +26,6 @@ function hang(key)
 {
 	get("#out").innerHTML = "";
 	//Asking the player if they want to continue
-	key = key.toLowerCase();
 	var guess = failing[0][key];
 
 	//If the guess doesn't return anything, ends code
