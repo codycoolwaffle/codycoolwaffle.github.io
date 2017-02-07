@@ -28,13 +28,14 @@ function hang(key)
 	get("#out").innerHTML = "";
 	//Asking the player if they want to continue
 	key = key.toLowerCase();
+	var guess = failing[0][key];
 
 	//If the guess doesn't return anything, ends code
-	if(guess === null || !running)
+	if(!running)
 		return;
 	//If the guess returns a string that isn't a single letter, tells player to fix it
-	else if(guess.length !== 1)
-		get("#out").innerHTML = "Please enter a single letter.";
+	else if(failing[1][key]==true)
+		get("#out").innerHTML = "Please enter a new letter";
 	//If guess is valid, determines it
 	else
 	{
@@ -56,6 +57,19 @@ function hang(key)
 			get("#hm" + remainingGuesses).setAttribute("stroke", "#000");
 			remainingGuesses--;
 		}
+		failing[1][key] = true;
+		
+		var point = 0;
+		failing[2] = [];
+		for(var i = 0; i < 26; i++)
+		{
+			if(failing[1][i] == true)
+			{
+				failing[2][point] = failing[0][i];
+				point++;
+			}
+		}
+		get("#FAILURE").innerHTML = failing[2].join("\t");
 	}
 
 	//Telling the player their progress
@@ -78,11 +92,6 @@ function testEnd()
 		get("#out").innerHTML = "Too bad. The answer was " + word;
 		makeReturnVis();
 	}
-}
-
-function failure(fail)
-{
-	
 }
 
 function makeFailure(str="", num=0)
@@ -127,6 +136,9 @@ function setupGame()
 		get("#hm" + i).setAttribute("stroke", "none");
 	}
 	running = true;
+	for(var i = 0; i < 26; i++)
+		failing[1][i] = false;
+	failing[2] = [];
 }
 
 function makeReturnInvis()
