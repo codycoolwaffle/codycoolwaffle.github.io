@@ -87,7 +87,7 @@ function testEnd()
 	}
 	else if(remainingGuesses == 0)
 	{
-		get("#out").innerHTML = "Too bad. The answer was \"" + word + "\"<br>Press \"Enter\" to play again.";
+		get("#out").innerHTML = "Too bad. The answer was \"" + capitalize(word) + "\"<br>Press \"Enter\" to play again.";
 		makeReturnVis();
 	}
 }
