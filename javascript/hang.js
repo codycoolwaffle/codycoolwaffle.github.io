@@ -44,7 +44,7 @@ function hang(key)
 			if(word[i] === guess)
 			{
 				if(i == 0)
-					answerArray[i] = guess;
+					answerArray[i] = guess.toUpperCase();
 				else
 					answerArray[i] = guess;
 				remainingLetters--;
