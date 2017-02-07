@@ -167,3 +167,8 @@ function randomColour()
             + random(s)
             + random(s);
 }
+
+function capitalize(word)
+{
+	return word[0].toUpperCase + word.substr(1);
+}
