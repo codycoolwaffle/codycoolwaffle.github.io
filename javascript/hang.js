@@ -5,7 +5,6 @@ var running = false;
 var remainingLetters = 0;
 var remainingGuesses = 6;
 var answerArray = [];
-var returnButt = get("#refresh").innerHTML;
 var failing = [["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v","w", "x", "y", "z"],
 		[false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 		""];
@@ -14,7 +13,6 @@ var failing = [["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 setupGame();
 
 //Main loop
-get("#hangHim!").onclick = hang;
 get("body")[0].onkeypress = function(event)
 {
 	if(event.keyCode == 13 && !running)
@@ -143,14 +141,12 @@ function setupGame()
 
 function makeReturnInvis()
 {
-	get("#refresh").innerHTML = "";
 	get("#out").innerHTML = "";
 	get("#FAILURE").innerHTML = "";
 }
 
 function makeReturnVis()
 {
-	get("#refresh").innerHTML = returnButt;
 	get("#FAILURE").innerHTML = "";
 	running = false;
 }
