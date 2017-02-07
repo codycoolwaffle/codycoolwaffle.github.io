@@ -72,8 +72,6 @@ function hang(key)
 
 	//Telling the player their progress
 	get("#word").innerHTML = answerArray.join(" ");
-
-	get("#guess").value = "";
 	testEnd();
 }
 
