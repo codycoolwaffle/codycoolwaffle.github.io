@@ -82,12 +82,12 @@ function testEnd()
 {
 	if(remainingLetters == 0)
 	{
-		get("#out").innerHTML = "Good job!\nPress \"Enter\" to play again.";
+		get("#out").innerHTML = "Good job!<br>Press \"Enter\" to play again.";
 		makeReturnVis();
 	}
 	else if(remainingGuesses == 0)
 	{
-		get("#out").innerHTML = "Too bad. The answer was \"" + word + "\"\nPress \"Enter\" to play again.";
+		get("#out").innerHTML = "Too bad. The answer was \"" + word + "\"<br>Press \"Enter\" to play again.";
 		makeReturnVis();
 	}
 }
