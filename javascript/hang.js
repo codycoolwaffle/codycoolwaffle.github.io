@@ -43,7 +43,10 @@ function hang(key)
 			//If the guess matches the current letter, answer array is updated and the remaining letters is reduced by 1
 			if(word[i] === guess)
 			{
-				answerArray[i] = guess;
+				if(i == 0)
+					answerArray[i] = guess;
+				else
+					answerArray[i] = guess;
 				remainingLetters--;
 			}
 		}
