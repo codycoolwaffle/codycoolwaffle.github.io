@@ -3,7 +3,7 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"  
      width="400px" 
      height="400px" 
-     viewBox="0 0 400px 400px">
+     viewBox="0 0 400 400">
 	 <defs>
 	 	<clipPath id="waffle">
 			<circle cx="200" cy="200" r="140"></circle>
