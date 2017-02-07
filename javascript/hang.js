@@ -15,7 +15,7 @@ setupGame();
 
 //Main loop
 get("#hangHim!").onclick = hang;
-get("body").onkeypress = function(event)
+get("body")[0].onkeypress = function(event)
 {
 	if(event.keyCode == 13 && !running)
 		setupGame();
