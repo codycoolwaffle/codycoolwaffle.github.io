@@ -41,6 +41,14 @@
 	
 	<script src="javascript/wafflib.js"></script>
 	<script type="text/javascript">
-		
+		get("#calculate").onclick = function()
+		{
+			var input = get("#input").value.split(" ");
+			
+			var out = 0;
+			for(var i = 0; i < input.length; i++)
+				out += input[i];
+			get("out").innerHTML = "<br><br>" + out;
+		}
 	</script>
 </html>
