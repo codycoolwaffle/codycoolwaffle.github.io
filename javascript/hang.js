@@ -17,7 +17,7 @@ get("body")[0].onkeypress = function(event)
 {
 	if(event.keyCode == 13 && !running)
 		setupGame();
-	else if(event.keyCode-97 >= 0 && event.keyCode-97 < 26)
+	else if(event.keyCode-97 >= 0 && event.keyCode-97 < 26 && running)
 		hang(event.keyCode-97);
 }
 
@@ -26,12 +26,9 @@ function hang(key)
 	get("#out").innerHTML = "";
 	//Asking the player if they want to continue
 	var guess = failing[0][key];
-
-	//If the guess doesn't return anything, ends code
-	if(!running)
-		return;
+	
 	//If the guess returns a string that isn't a single letter, tells player to fix it
-	else if(failing[1][key]==true)
+	if(failing[1][key]==true)
 		get("#out").innerHTML = "Please enter a new letter";
 	//If guess is valid, determines it
 	else
