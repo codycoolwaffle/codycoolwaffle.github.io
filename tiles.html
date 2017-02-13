@@ -3,60 +3,61 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tiles</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-<body style="background-color:#E7719F; text-align:center">
-<h1>Tiles</h1>
-<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"
->
-	<rect x="0" y="0" width="600" height="400" fill="#B461C2"></rect>
-	<g id="squares"></g>
-</svg>
+<body>
+	<h1>Tiles</h1>
+	<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"
+	>
+		<rect x="0" y="0" width="600" height="400" fill="#B461C2"></rect>
+		<g id="squares"></g>
+	</svg>
 
-<script type="text/javascript">
-		//Declaring variables
-		var across = 10;
-		var down = 10;
-		var margin = 3;
-		var size = 5;
-		var startX = 300 - ((across * size + (across + 1) * margin)/2);
-		var startY = 200 - ((down * size + (down + 1) * margin)/2);
+	<script type="text/javascript">
+			//Declaring variables
+			var across = 10;
+			var down = 10;
+			var margin = 3;
+			var size = 5;
+			var startX = 300 - ((across * size + (across + 1) * margin)/2);
+			var startY = 200 - ((down * size + (down + 1) * margin)/2);
 
-		//Main loop
-		//Making 4 rows of four squares
-		for(var j = 0; j < down; j++)
-		{
-			//Making 4 squares
-			for(var i = 0; i < across; i++)
+			//Main loop
+			//Making 4 rows of four squares
+			for(var j = 0; j < down; j++)
 			{
-				//Making coords for a square
-				var x = startX + margin + i * (margin + size);
-				var y = startY + margin + j * (margin + size);
+				//Making 4 squares
+				for(var i = 0; i < across; i++)
+				{
+					//Making coords for a square
+					var x = startX + margin + i * (margin + size);
+					var y = startY + margin + j * (margin + size);
 
-				//Drawing the square
-				var sq = drawSquare(x, y, size, "#FF987D");
-				console.log(sq);
-				document.getElementById("squares").innerHTML += sq;
+					//Drawing the square
+					var sq = drawSquare(x, y, size, "#FF987D");
+					console.log(sq);
+					document.getElementById("squares").innerHTML += sq;
+				}
 			}
-		}
 
-		function drawSquare(x, y, size, colour)
-		{
-			return printf("<rect x='%s' y='%s' width='%s' height='%s' fill='%s' />", x, y, size, size, colour);
-		}
-
-		function printf()
-		{
-            var g = arguments[0];
-            for (var i = 1; i < arguments.length; i++)
+			function drawSquare(x, y, size, colour)
 			{
-                g = g.replace("%s", arguments[i]);
-            }
-            return g;
-        }
+				return printf("<rect x='%s' y='%s' width='%s' height='%s' fill='%s' />", x, y, size, size, colour);
+			}
+
+			function printf()
+			{
+		    var g = arguments[0];
+		    for (var i = 1; i < arguments.length; i++)
+				{
+			g = g.replace("%s", arguments[i]);
+		    }
+		    return g;
+		}
 
 
 
 
-</script>
+	</script>
 </body>
 </html>
