@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!--
-  Cody Haslam
-  Mobile App Design and Computer Coding
-  11/2/2016
-  -->
-	<meta charset="UTF-8">
-	<title>The next Skeleton Key!</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-	<h1>Do you want to build a snowman?</h1>
+	<head>
+		<!--
+		Cody Haslam
+		Mobile App Design and Computer Coding
+		11/2/2016
+		-->
+		<meta charset="UTF-8">
+		<title>The next Skeleton Key!</title>
+		<style type="text/css">
+			/* styles go here */
+			h1{color:#B6EF75; font-family:Cursive; background-color:#DA4F85; text-align:center; padding:1em; font-weight:normal; font-size:72px; margin-left:-8px; margin-right:-8px; margin-top:-8px; margin-bottom:0px}
+			p{color:#B6EF75; font-family:Courier}
+		</style>
+	</head>
+	<body style="background-color:#E7719F; text-align:center">
+		<h1>Keyboard test</h1>
 
-	<svg width='600' height='400' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 600 400'>
-		<rect x='0' y='0' width='600' height='400' fill='#B461C2'></rect>
-		<circle cx="100" cy="100" r="5" fill="#FF987D" id="id"></circle>
-	</svg>
+		<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 400">
+			<rect x="0" y="0" width="600" height="400" fill="#B461C2"></rect>
+			<circle cx="100" cy="100" r="5" fill="#FF987D" id="id"></circle>
+		</svg>
 
-	<script src="javascript/wafflib.js"></script>
-	<script type="text/javascript">
+		<script src="javascript/wafflib.js"></script>
+		<script type="text/javascript">
 			get("body")[0].onkeydown = function(event)
 			{
 				//left
@@ -60,7 +64,6 @@
 				isOffScreen(get("#id"));
 				setTimeout(anime, 50);
 			}
-
-	</script>
-</body>
+		</script>
+	</body>
 </html>
