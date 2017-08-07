@@ -71,6 +71,11 @@
 				playerEvent.target.setSize(initWidth * scaleFactor, initHeight * scaleFactor);
 			}
 			window.onresize = resize;
+			
+			function restartVideo()
+			{
+				playerEvent.target.playVideo();
+			}
 		</script>
 	</body>
 </html>
