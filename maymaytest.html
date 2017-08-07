@@ -43,8 +43,7 @@
 			{
 				if(event.data == YT.PlayerState.PLAYING && !done)
 				{
-					setTimeout(stopVideo, player.getDuration()*1000);
-					done = true;
+					setTimeout(onplayerReady, player.getDuration()*1000);
 				}
 			}
 			
