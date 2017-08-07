@@ -34,6 +34,7 @@
 			
 			function onPlayerReady(event)
 			{
+				playerEvent = event;
 				event.target.playVideo();
 			}
 			
@@ -42,7 +43,7 @@
 			{
 				if(/**event.data == YT.PlayerState.PLAYING &&**/ !done)
 				{
-					setTimeout(onPlayerReady, 2000);
+					setTimeout(restartVideo, event.target.getDuration()*1000);
 				}
 			}
 			
@@ -50,6 +51,8 @@
 			{
 				player.playVideo();
 			}
+			
+			var playerEvent;
 			
 			var initWidth = 1280;
 			var initHeight = 720;
@@ -65,7 +68,7 @@
 				
 				var scaleFactor = Math.min(widthScale, heightScale);
 				
-				player.setSize(initWidth * scaleFactor, initHeight * scaleFactor);
+				playerEvent.target.setSize(initWidth * scaleFactor, initHeight * scaleFactor);
 			}
 			window.onresize = resize;
 		</script>
