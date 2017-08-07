@@ -51,7 +51,7 @@
 				player.playVideo();
 			}
 			
-			/**var initWidth = 1280;
+			var initWidth = 1280;
 			var initHeight = 720;
 			
 			resize();
@@ -65,10 +65,9 @@
 				
 				var scaleFactor = Math.min(widthScale, heightScale);
 				
-				get("iframe")[0].setAttribute("width", initWidth * scaleFactor);
-				get("iframe")[0].setAttribute("height", initHeight * scaleFactor);
+				player.setSize(initWidth * scaleFactor, initHeight * scaleFactor);
 			}
-			window.onresize = resize;**/
+			window.onresize = resize;
 		</script>
 	</body>
 </html>
