@@ -1,71 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!--
-  Cody Haslam
-  Mobile App Design and Computer Coding
-  11/1/2016
-  -->
-	<meta charset="UTF-8">
-	<title>It will all be sorted!</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<style type="text/css">
-		table{width:400px; margin:0 auto;}
-	</style>
-</head>
-<body>
-	<textarea id="user" placeholder="I can show you the world!"></textarea><br>
+	<head>
+		<meta charset="UTF-8">
+		<title>It will all be sorted!</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<style type="text/css">
+			table{width:400px; margin:0 auto;}
+		</style>
+	</head>
+	<body>
+		<textarea id="user" placeholder="I can show you the world!"></textarea><br>
 
-	<select id="choice">
-		<option value="sort">Alphabetical</option>
-		<option value="reverse">Reverse</option>
-		<option value="shuffle">Shuffle</option>
-		<option value="caps">CAPS LOCK</option>
-	</select>
-	<input type="submit" id="sort" value="Sort" />
+		<select id="choice">
+			<option value="sort">Alphabetical</option>
+			<option value="reverse">Reverse</option>
+			<option value="shuffle">Shuffle</option>
+			<option value="caps">CAPS LOCK</option>
+		</select>
+		<input type="submit" id="sort" value="Sort" />
 
-	<table align="center">
-		<tr>
-			<td id="left"></td>
-			<td id="right"></td>
-		</tr>
-	</table>
+		<table align="center">
+			<tr>
+				<td id="left"></td>
+				<td id="right"></td>
+			</tr>
+		</table>
 
-	<script type="text/javascript" src="http://codycoolwaffle.github.io/javascript/wafflib.js"></script>
-	<script type="text/javascript">
-			get("#sort").onclick = function()
-			{
-				var text = get("#user").value;
-				var option = get("#choice").value;
-
-				var temp = text.split(" ");
-				get("#left").innerHTML = temp.join("<br />");
-
-				switch(option)
+		<script type="text/javascript" src="http://codycoolwaffle.github.io/javascript/wafflib.js"></script>
+		<script type="text/javascript">
+				get("#sort").onclick = function()
 				{
-					case "sort":
-						temp.sort();
-						break;
-					case "reverse":
-						temp.sort();
-						temp.reverse();
-						break;
-					case "shuffle":
-						temp = shuffle(temp);
-						break;
-					case "caps":
-						for(var i = 0; i < temp.length; i++)
-							temp[i] = temp[i].toUpperCase();
-						break;
-					default:
-						break;
+					var text = get("#user").value;
+					var option = get("#choice").value;
+
+					var temp = text.split(" ");
+					get("#left").innerHTML = temp.join("<br />");
+
+					switch(option)
+					{
+						case "sort":
+							temp.sort();
+							break;
+						case "reverse":
+							temp.sort();
+							temp.reverse();
+							break;
+						case "shuffle":
+							temp = shuffle(temp);
+							break;
+						case "caps":
+							for(var i = 0; i < temp.length; i++)
+								temp[i] = temp[i].toUpperCase();
+							break;
+						default:
+							break;
+					}
+
+					get("#right").innerHTML = temp.join("<br />");
 				}
-
-				get("#right").innerHTML = temp.join("<br />");
-			}
-
-
-
-	</script>
-</body>
+		</script>
+	</body>
 </html>

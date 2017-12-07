@@ -1,0 +1,8 @@
+<svg width='72' height='72' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 72 72'
+>
+	<!-- the shapes and stuff will go here -->
+	<rect x='0' y='0' width='72' height='72' fill='#F19ABC'/>
+	<polyline points='11 11 61 61' stroke='#B461C2' stroke-width='4' fill='none'/>
+	<polyline points='11 61 61 11' stroke='#B461C2' stroke-width='4' fill='none'/>
+
+</svg>

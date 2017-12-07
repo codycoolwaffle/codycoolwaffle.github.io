@@ -1,0 +1,21 @@
+<svg width='400' height='400' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 400 400'>
+    <defs>
+		<clipPath id='ball'>
+			<circle cx='100' cy='100' r='50'></circle>
+		</clipPath>
+
+		<radialGradient id='ballIsLife' cx='30%' cy='30%' r='50%' fx='30%' fy='30%'>
+			<stop offset='0%' style='stop-color:#FFF; stop-opacity:1'></stop>
+			<stop offset='100%' style='stop-color:#FFF; stop-opacity:0'></stop>
+		</radialGradient>
+	</defs>
+    <rect x='0' y='0' width='400' height='400' fill='#B461C2'/>
+    <g transform='rotate(55 200 200) translate(-100 -100) scale(3)'>
+		<circle cx='100' cy='100' r='50' fill='#FF987D'></circle>
+		<line x1='50' x2='150' y1='100' y2='100' stroke='black'></line>
+		<line x1='100' x2='100' y1='50' y2='150' stroke='black'></line>
+		<circle cx='100' cy='30' r='50' fill='none' stroke='black' clip-path='url(#ball)'></circle>
+		<circle cx='100' cy='170' r='50' fill='none' stroke='black' clip-path='url(#ball)'></circle>
+	</g>
+    <circle cx='100' cy='100' r='50' fill='url(#ballIsLife)' transform='translate(-100 -100) scale(3)'></circle>
+</svg>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+	   Cody Haslam
+	   Mobile App Design and Computer Coding
+	   Apr 21 2017
+	   -->
+		<meta charset="utf-8" />
+		<title>Portfoli-OOOOOOOHHHHHH</title>
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			#fancyFigures{text-align: center; width: 100%}
+			#fancyFigures div{display: inline-block; border: 3px #C22D67 solid; margin: 8px}
+			#fancyFigures div a{display: inline-block; width: 200px; height: 200px; background-size: 100% 100%; background-repeat: no-repeat; background-position: center center; transition: all 0.7s ease; margin-bottom: -4px; font-size: 16px; text-decoration: none; color: #B6EF75; position: relative}
+			#fancyFigures div a.dark{color: #963EA6}
+			#fancyFigures div a.dark:hover:after{color: #B6EF75}
+			#fancyFigures div a.light{color: #C22D67}
+			#fancyFigures div a.light:hover:after{color: #B6EF75}
+			#fancyFigures div a:hover{background-size: 125% 125%}
+			#fancyFigures div a:after{background-color: rgba(0, 0, 0, 0); width: 200px; height: 200px; top: 0; left: 0; box-sizing: border-box; transition: opacity .7s linear; padding-top: 90%; position: absolute; transition: all 0.7s ease}
+			#fancyFigures div a:hover:after{background-color: rgba(0, 0, 0, 0.35); padding-top: 40%; font-size: 30px}
+			
+			
+			a.speed{background-image: url(thumbnails/speedometer.png)}
+			a.speed:after{content: "Speedometer"}
+			a.balls{background-image: url(thumbnails/basketball.svg)}
+			a.balls:after{content: "Basketball"}
+			a.coco{background-image: url(thumbnails/chocobo.png)}
+			a.coco:after{content: "Chocolate Molecule"}
+			#fancyFigures div a.coco:hover:after{padding-top: 30%}
+			a.ttt{background-image: url(thumbnails/ticytac.png)}
+			a.ttt:after{content: "Tic Tac Toe"}
+			a.fort{background-image: url(thumbnails/fortune.png)}
+			a.fort:after{content: "Fortune Teller"}
+			#fancyFigures div a.fort:hover:after{padding-top: 30%}
+			a.benzer{background-image: url(thumbnails/benzene.png)}
+			a.benzer:after{content: "Benzene Ring"}
+			#fancyFigures div a.benzer:hover:after{padding-top: 30%}
+			a.lost{background-image: url(thumbnails/mazes.png)}
+			a.lost:after{content: "Maze Game"}
+			a.colour{background-image: url(thumbnails/colour.png)}
+			a.colour:after{content: "Colour Scheme"}
+			#fancyFigures div a.colour:hover:after{padding-top: 30%}
+			a.winter{background-image: url(thumbnails/winter.png)}
+			a.winter:after{content: "Snow Globe"}
+			a.iCon{background-image: url(thumbnails/icons.svg)}
+			a.iCon:after{content: "Icons"}
+			a.resume{background-image: url(thumbnails/resume.png)}
+			a.resume:after{content: "Resume"}
+		</style>
+	</head>
+	
+	<body>
+	<h1>Portfolio</h1>
+		<div id="fancyFigures">
+			<div><a href="speedometer/guage.html" class="speed"></a></div>
+			<div><a href="Basketball2D.html" class="balls"></a></div>
+			<div><a href="chocolate.html" class="coco dark"></a></div>
+			<div><a href="tictactoes/tictactoes.html" class="ttt"></a></div><br>
+			<div><a href="fortune.html" class="fort"></a></div>
+			<div><a href="BenzeneRing.html" class="benzer"></a></div>
+			<div><a href="maze.html" class="lost"></a></div>
+			<div><a href="colour!.html" class="colour"></a></div><br>
+			<div><a href="snowy.html" class="winter light"></a></div>
+			<div><a href="icons/icons.svg.html" class="iCon"></a></div>
+			<div><a href="resume/resume.html" class="resume dark"></a></div>
+		</div>
+		<div id="footer">Copyright &copy; 2017 Cody Haslam</div>
+		
+		<script src="javascript/wafflib.js"></script>
+		<script type="text/javascript">
+			var projects = get("a");
+			var size = window.innerWidth*0.2;
+			alart(projects);
+			for(var i = 0; i < projects.length; i++)
+			{
+				projects[i].style.width = size;
+				projects[i].style.height = size;
+			}
+			alart(size);
+		</script>
+	</body>
+</html>

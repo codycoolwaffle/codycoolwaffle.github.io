@@ -1,0 +1,44 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width='240' height='240' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 240 240'>
+    <defs>
+    </defs>
+    <g id='move' transform='translate(-70 0)'>
+		<rect x="0" y="0" width="720" height="240" fill="#C22D67" />
+        <g id='chrome'>
+            <rect x='0' y='0' width='240' height='240' fill='crimson' rx='48' ry='48'/>
+            <circle cx='120' cy='120' r='80' fill='#FFF'/>
+            <circle cx='120' cy='120' r='35' fill='#FFF' stroke='crimson' stroke-width='5'/>
+            <polyline points='120 85 240 85' stroke='crimson' stroke-width='5'/>
+            <polyline points='120 85 240 85' stroke='crimson' stroke-width='5' transform='rotate(120 120 120)'/>
+            <polyline points='120 85 240 85' stroke='crimson' stroke-width='5' transform='rotate(240 120 120)'/>
+        </g>
+        <g id='atom' transform='translate(240 0)'>
+            <rect x='0' y='0' width='240' height='240' fill='#248' rx='48' ry='48'/>
+            <g transform='translate(12 12) scale(0.9)'>
+                <circle cx='120' cy='120' r='20' fill='#FFF'/>
+                <g>
+                    <ellipse cx='120' cy='120' rx='100' ry='45' stroke='#FFF' stroke-width='2' fill='none'/>
+                    <circle cx='36' cy='143' r='10' fill='#FFF'/>
+                </g>
+                <g transform='rotate(120 120 120)'>
+                    <ellipse cx='120' cy='120' rx='100' ry='45' stroke='#FFF' stroke-width='2' fill='none'/>
+                    <circle cx='36' cy='143' r='10' fill='#FFF'/>
+                </g>
+                <g transform='rotate(240 120 120)'>
+                    <ellipse cx='120' cy='120' rx='100' ry='45' stroke='#FFF' stroke-width='2' fill='none'/>
+                    <circle cx='36' cy='143' r='10' fill='#FFF'/>
+                </g>
+            </g>
+        </g>
+        <g id='ubuntu' transform='translate(480 0)'>
+            <rect x='0' y='0' width='240' height='240' fill='#F60' rx='48' ry='48'/>
+            <circle cx='120' cy='120' r='56.5' fill='#F60' stroke='#FFF' stroke-width='27'/>
+            <polyline points='120 120 240 120' stroke='#F60' stroke-width='15'/>
+            <polyline points='120 120 240 120' stroke='#F60' stroke-width='15' transform='rotate(120 120 120)'/>
+            <polyline points='120 120 240 120' stroke='#F60' stroke-width='15' transform='rotate(240 120 120)'/>
+            <circle cx='40' cy='120' r='20' fill='#FFF' stroke='#F60' stroke-width='10'/>
+            <circle cx='40' cy='120' r='20' fill='#FFF' stroke='#F60' stroke-width='10' transform='rotate(120 120 120)'/>
+            <circle cx='40' cy='120' r='20' fill='#FFF' stroke='#F60' stroke-width='10' transform='rotate(240 120 120)'/>
+        </g>
+        <use x='720' y='0' xlink:href='#chrome'/>
+    </g>
+</svg>

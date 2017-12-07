@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1600 900" style="enable-background:new 0 0 1600 900;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EEEEEE;}
+	.st1{fill:#DDDDDD;}
+	.st2{fill:#FFC980;}
+	.st3{clip-path:url(#SVGID_2_);}
+	.st4{fill:#E8B97C;}
+	.st5{fill:#E7719F;}
+	.st6{fill:none;stroke:#FFFFFF;stroke-width:22;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st8{fill:#FFFFFF;}
+</style>
+<g>
+	<rect class="st0" width="1600" height="900"/>
+	<g transform="translate(350 0) scale(2.25)">
+		<polygon class="st1" points="275,70.1 125,329.9 246.4,400 555.6,400 555.6,232.1 		"/>
+	</g>
+</g>
+<g>
+	<circle class="st2" cx="800" cy="450" r="337.5"/>
+	<g>
+		<g>
+			<defs>
+				<circle id="SVGID_1_" cx="800" cy="450" r="315"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="rotate(0 200 200)" class="st3">
+				<rect x="811.3" y="461.3" class="st4" width="90" height="90"/>
+				<rect x="811.3" y="573.8" class="st4" width="90" height="90"/>
+				<rect x="923.8" y="461.3" class="st4" width="90" height="90"/>
+				<rect x="923.8" y="573.8" class="st4" width="90" height="90"/>
+				<rect x="811.3" y="348.8" class="st4" width="90" height="90"/>
+				<rect x="811.3" y="236.3" class="st4" width="90" height="90"/>
+				<rect x="923.8" y="348.8" class="st4" width="90" height="90"/>
+				<rect x="923.8" y="236.3" class="st4" width="90" height="90"/>
+				<rect x="698.8" y="461.3" class="st4" width="90" height="90"/>
+				<rect x="586.3" y="461.3" class="st4" width="90" height="90"/>
+				<rect x="698.8" y="573.8" class="st4" width="90" height="90"/>
+				<rect x="586.3" y="573.8" class="st4" width="90" height="90"/>
+				<rect x="698.8" y="348.8" class="st4" width="90" height="90"/>
+				<rect x="698.8" y="236.3" class="st4" width="90" height="90"/>
+				<rect x="586.3" y="348.8" class="st4" width="90" height="90"/>
+				<rect x="586.3" y="236.3" class="st4" width="90" height="90"/>
+				<rect x="586.3" y="123.8" class="st4" width="90" height="90"/>
+				<rect x="698.8" y="123.8" class="st4" width="90" height="90"/>
+				<rect x="811.3" y="123.8" class="st4" width="90" height="90"/>
+				<rect x="923.8" y="123.8" class="st4" width="90" height="90"/>
+				<rect x="586.3" y="686.3" class="st4" width="90" height="90"/>
+				<rect x="698.8" y="686.3" class="st4" width="90" height="90"/>
+				<rect x="811.3" y="686.3" class="st4" width="90" height="90"/>
+				<rect x="923.8" y="686.3" class="st4" width="90" height="90"/>
+				<rect x="1036.3" y="236.3" class="st4" width="90" height="90"/>
+				<rect x="1036.3" y="348.8" class="st4" width="90" height="90"/>
+				<rect x="1036.3" y="461.3" class="st4" width="90" height="90"/>
+				<rect x="1036.3" y="573.8" class="st4" width="90" height="90"/>
+				<rect x="473.8" y="236.3" class="st4" width="90" height="90"/>
+				<rect x="473.8" y="348.8" class="st4" width="90" height="90"/>
+				<rect x="473.8" y="461.3" class="st4" width="90" height="90"/>
+				<rect x="473.8" y="573.8" class="st4" width="90" height="90"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	<polygon class="st5" points="856.3,0 546.9,0 453.8,453.6 1046.2,211.3 	"/>
+	<line class="st6" x1="462.5" y1="450" x2="1040.8" y2="213.5"/>
+	<polygon class="st5" points="400.6,331.9 546.9,0 774.1,0 	"/>
+	<line class="st7" x1="491.3" y1="251.3" x2="828.2" y2="-48.1"/>
+	<circle class="st8" cx="400.6" cy="331.9" r="50.6"/>
+</g>
+</svg>

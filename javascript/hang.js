@@ -1,14 +1,13 @@
 //Declaring variables
-var words = ["pancake", "waffle", "narwhal", "phone", "laptop", "eye", "puppy", "unicorn", "blanket", "triggered", "beagle", "collie", "controller", "beanie", "java", "fez", "sticky", "sucky", "touch", "collar", "scratch", "mouse", "pokemon", "minecraft", "terraria", "mario"];
+var words = ["pancake", "waffle", "narwhal", "phone", "laptop", "eye", "puppy", "unicorn", "blanket", "triggered", "beagle", "collie", "controller", "beanie", "java", "fez", "touch", "collar", "scratch", "mouse", "pokemon", "minecraft", "terraria", "mario"];
 var word = "";
 var running = false;
 var remainingLetters = 0;
 var remainingGuesses = 6;
 var answerArray = [];
 var failing = [["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v","w", "x", "y", "z"],
-		[false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
-		""];
-
+		       [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
+		       ""];
 
 setupGame();
 

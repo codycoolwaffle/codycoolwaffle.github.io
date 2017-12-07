@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!--
-   Cody Haslam
-   Mobile App Design and Computer Coding
-   Oct 18 2016
-   -->
-	<meta charset='utf-8' />
-	<title>Basketballs!</title>
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<style type='text/css'>
-		.btn2
-		{
-        		font-family: Georgia;
-        		color: #B6EF75;
-        		font-size: 32px;
-        		background: #963EA6;
-        		padding: 10px 20px 10px 20px;
-        		text-decoration: none;
-		}
-		.btn2.open
-		{
-        		background: #D18EDC;
-        		text-decoration: none;
-		}
-	</style>
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<title>Basketballs!</title>
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<style type="text/css">
+				h1{font-family: quicksand; margin-bottom: 10px}
+				.btn2
+				{
+						font-family: Georgia;
+						color: #B6EF75;
+						font-size: 32px;
+						background: #963EA6;
+						padding: 10px 20px 10px 20px;
+						text-decoration: none;
+				}
+				.btn2.open
+				{
+						background: #D18EDC;
+						text-decoration: none;
+				}
+				#faster, #slower{padding: 16px; margin: 20px; width: 60px; height: 60px}
+				#faster a.btn2, #slower a.btn2{width: 60px; height: 60px}
+			</style>
+	</head>
 
-<body>
-<h1>Ball is life.</h1>
-<!-- Page Content -->
-	<div id="control"><a class="btn2" href="#">Controls</a></div>
-<button id='faster'>+</button>
-<button id='slower'>-</button>
+	<body>
+		<h1>Ball is life.</h1>
+		<!-- Page Content -->
+		<div id="control"><a class="btn2" href="#">Controls</a></div>
+		<div id="controls" style="display: ">
+			<div id="faster"><a class="btn2" href="#">+</a></div>
+			<div id="slower"><a class="btn2" href="#">-</a></div>
+		</div>
 
-<svg width='800' height='600' xmlns="http://www.w3.org/2000/svg" viewbox='0 0 800 600'>
-	<defs>
-		<clipPath id='ball'>
-			<circle cx='100' cy='100' r='50'></circle>
-		</clipPath>
+		<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 800 600">
+			<defs>
+				<clipPath id="ball">
+					<circle cx="100" cy="100" r="50"></circle>
+				</clipPath>
 
-		<radialGradient id='ballIsLife' cx='30%' cy='30%' r='70%' fx='30%' fy='30%'>
-			<stop offset='0%' style='stop-color:#FFF; stop-opacity:0.75'></stop>
-			<stop offset='100%' style='stop-color:#FFF; stop-opacity:0'></stop>
-		</radialGradient>
-	</defs>
+				<radialGradient id="ballIsLife" cx="30%" cy="30%" r="70%" fx="30%" fy="30%">
+					<stop offset="0%" style="stop-color:#FFF; stop-opacity:0.75"></stop>
+					<stop offset="100%" style="stop-color:#FFF; stop-opacity:0"></stop>
+				</radialGradient>
+			</defs>
 
-	<!-- the shapes and stuff will go here -->
-	<rect x='0' y='0' width='800' height='600' fill='#B461C2'></rect>
-	<g id='bb1' transform='translate(0 0)'>
-		<circle cx='100' cy='100' r='50' fill='#FF987D'></circle>
-		<line x1='50' x2='150' y1='100' y2='100' stroke='black'></line>
-		<line x1='100' x2='100' y1='50' y2='150' stroke='black'></line>
-		<circle cx='100' cy='30' r='50' fill='none' stroke='black' clip-path='url(#ball)'></circle>
-		<circle cx='100' cy='170' r='50' fill='none' stroke='black' clip-path='url(#ball)'></circle>
-	</g>
-	<circle cx='100' cy='100' r='50' fill='url(#ballIsLife)' id='gradientBall'></circle>
+			<!-- the shapes and stuff will go here -->
+			<rect x="0" y="0" width="800" height="600" fill="#B461C2"></rect>
+			<g id="bb1" transform="translate(0 0)">
+				<circle cx="100" cy="100" r="50" fill="#FF987D"></circle>
+				<line x1="50" x2="150" y1="100" y2="100" stroke="black"></line>
+				<line x1="100" x2="100" y1="50" y2="150" stroke="black"></line>
+				<circle cx="100" cy="30" r="50" fill="none" stroke="black" clip-path="url(#ball)"></circle>
+				<circle cx="100" cy="170" r="50" fill="none" stroke="black" clip-path="url(#ball)"></circle>
+			</g>
+			<circle cx="100" cy="100" r="50" fill="url(#ballIsLife)" id="gradientBall"></circle>
 
-	<g id='bb2' transform='translate(0 0)'>
-		<circle cx='100' cy='100' r='50' fill='#FF987D'></circle>
-		<line x1='50' x2='150' y1='100' y2='100' stroke='black'></line>
-		<line x1='100' x2='100' y1='50' y2='150' stroke='black'></line>
-		<circle cx='100' cy='30' r='50' fill='none' stroke='black' clip-path='url(#ball)'></circle>
-		<circle cx='100' cy='170' r='50' fill='none' stroke='black' clip-path='url(#ball)'></circle>
-	</g>
-	<circle cx='100' cy='100' r='50' fill='url(#ballIsLife)' id='gradientBall2'></circle>
-</svg>
+			<g id="bb2" transform="translate(0 0)">
+				<circle cx="100" cy="100" r="50" fill="#FF987D"></circle>
+				<line x1="50" x2="150" y1="100" y2="100" stroke="black"></line>
+				<line x1="100" x2="100" y1="50" y2="150" stroke="black"></line>
+				<circle cx="100" cy="30" r="50" fill="none" stroke="black" clip-path="url(#ball)"></circle>
+				<circle cx="100" cy="170" r="50" fill="none" stroke="black" clip-path="url(#ball)"></circle>
+			</g>
+			<circle cx="100" cy="100" r="50" fill="url(#ballIsLife)" id="gradientBall2"></circle>
+		</svg>
 
-<script src="javascript/wafflib.js"></script>
-<script src="javascript/basketball.js"></script>
-	<script type="text/javascript">
-		get("#control").onclick = function()
-		{
-			alart(get(".btn2")[0].className);
-		}
-	</script>
-</body>
+		<script src="javascript/wafflib.js"></script>
+		<script src="javascript/basketball.js"></script>
+		<script type="text/javascript">
+			get("#control").onclick = function()
+			{
+				if(get("#controls").style.display == "none")
+				{
+					get("#controls").style.display = "block";
+				}
+				else
+				{
+					get("#controls").style.display = "none";
+				}
+			}
+		</script>
+	</body>
 </html>

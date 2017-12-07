@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		Cody Haslam
+		Mobile App Design and Computer Coding
+		Sep 8 2016
+		-->
+		<meta charset="utf-8" />
+		<title>This is a benzene ring</title>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<!-- Page Content -->
+		<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 400 600">
+			<defs>
+				<radialgradient id="ripples" cx="50%" cy="50%" r="69%" fx="50%" fy="50%">
+					<stop offset="0%" style="stop-color:#AAA; stop-opacity:1"></stop>
+					<stop offset="11%" style="stop-color:#787878; stop-opacity:1"></stop>
+					<stop offset="22%" style="stop-color:#AAA; stop-opacity:1"></stop>
+					<stop offset="33%" style="stop-color:#787878; stop-opacity:1"></stop>
+					<stop offset="44%" style="stop-color:#AAA; stop-opacity:1"></stop>
+					<stop offset="55%" style="stop-color:#787878; stop-opacity:1"></stop>
+					<stop offset="66%" style="stop-color:#AAA; stop-opacity:1"></stop>
+					<stop offset="77%" style="stop-color:#787878; stop-opacity:1"></stop>
+					<stop offset="88%" style="stop-color:#AAA; stop-opacity:1"></stop>
+					<stop offset="100%" style="stop-color:#787878; stop-opacity:1"></stop>
+				</radialgradient>
+		
+				<radialgradient id="pink1" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+					<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+					<stop offset="100%" style="stop-color:#E7719F; stop-opacity:1"></stop>
+				</radialgradient>
+		
+				<radialgradient id="pink2" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+					<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+					<stop offset="100%" style="stop-color:#DA4F85; stop-opacity:1"></stop>
+				</radialgradient>
+		
+				<radialgradient id="purple1" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+					<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+					<stop offset="100%" style="stop-color:#B461C2; stop-opacity:1"></stop>
+				</radialgradient>
+		
+				<radialgradient id="purple2" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+					<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+					<stop offset="100%" style="stop-color:#963EA6; stop-opacity:1"></stop>
+				</radialgradient>
+		
+				<radialgradient id="orange1" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+					<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+					<stop offset="100%" style="stop-color:#FF987D; stop-opacity:1"></stop>
+				</radialgradient>
+		
+				<radialgradient id="orange2" cx="50%" cy="50%" r="50%" fx="60%" fy="40%">
+					<stop offset="0%" style="stop-color:#FFF; stop-opacity:1"></stop>
+					<stop offset="100%" style="stop-color:#FC7D5B; stop-opacity:1"></stop>
+				</radialgradient>
+			</defs>
+			<!-- CIRCLES -->
+			<!-- & other stuff -->
+		
+			<rect x="0" y="0" width="400" height="600" fill="url(#ripples)"></rect>
+		
+			<polyline points="200 200 113 250" stroke="url(#pink1)" stroke-width="5"></polyline>
+			<polyline points="113 350 200 400" stroke="url(#pink1)" stroke-width="5"></polyline>
+			<polyline points="200 400 287 350" stroke="url(#pink1)" stroke-width="5" transform="translate(0 5)"></polyline>
+			<polyline points="200 400 287 350" stroke="url(#pink1)" stroke-width="5" transform="translate(0 -5)"></polyline>
+			<polyline points="287 250 200 200" stroke="url(#pink1)" stroke-width="5" transform="translate(0 5)"></polyline>
+			<polyline points="287 250 200 200" stroke="url(#pink1)" stroke-width="5" transform="translate(0 -5)"></polyline>
+			<rect x="110.5" y="250" width="5" height="100" fill="url(#pink1)" transform="translate(5 0)"></rect>
+			<rect x="110.5" y="250" width="5" height="100" fill="url(#pink1)" transform="translate(-5 0)"></rect>
+			<rect x="284.5" y="250" width="5" height="100" fill="url(#pink1)"></rect>
+		
+			<circle cx="200" cy="200" r="35" fill="url(#pink1)"></circle>
+			<circle cx="113" cy="250" r="35" fill="url(#orange2)"></circle>
+			<circle cx="113" cy="350" r="35" fill="url(#purple1)"></circle>
+			<circle cx="200" cy="400" r="35" fill="url(#pink2)"></circle>
+			<circle cx="287" cy="350" r="35" fill="url(#orange1)"></circle>
+			<circle cx="287" cy="250" r="35" fill="url(#purple2)"></circle>
+		
+			<text x="200" y="100" fill="#B6EF75" font="comic sans ms" font-size="32px" text-anchor="middle">Benzene</text>
+			<text x="200" y="500" fill="#B6EF75" font="comic sans ms" font-size="32px" text-anchor="middle">Ring</text>
+		
+		</svg>
+		<br><br><br>
+		<div id="nav"></div>
+		
+		<div id="casestudy">
+  			<p><span>Objective:</span> </p>
+  			<p><span>Problem:</span> It needed to be a perfect hexagon.</p>
+  			<p><span>Solution:</span> I made the six circles in the same spot, offset from the center, then rotated them around the center 60n degrees where ‘n’ is the number of the ball.</p>
+		</div>
+		
+		<div id="footer">Copyright &copy; 2017 Cody Haslam</div>
+		
+		<script src="javascript/wafflib.js"></script>
+		<script src="javascript/nav.js"></script>
+	</body>
+</html>
