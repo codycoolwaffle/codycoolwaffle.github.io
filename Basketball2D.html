@@ -6,17 +6,17 @@
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<style type="text/css">
-				h1{font-family: quicksand; margin-bottom: 10px}
+				h1{font-family: quicksand,cursive; margin-bottom: 10px}
 				.btn2
 				{
-						font-family: Georgia;
+						font-family: Georgia,cursive;
 						color: #B6EF75;
 						font-size: 32px;
 						background: #963EA6;
 						padding: 10px 20px 10px 20px;
 						text-decoration: none;
 				}
-				.btn2.open
+				.btn2:hover
 				{
 						background: #D18EDC;
 						text-decoration: none;
@@ -28,9 +28,9 @@
 
 	<body>
 		<h1>Ball is life.</h1>
-		<!-- Page Content -->
+
 		<div id="control"><a class="btn2" href="#">Controls</a></div>
-		<div id="controls" style="display: ">
+		<div id="controls" style="display: none">
 			<div id="faster"><a class="btn2" href="#">+</a></div>
 			<div id="slower"><a class="btn2" href="#">-</a></div>
 		</div>
@@ -73,7 +73,7 @@
 		<script type="text/javascript">
 			get("#control").onclick = function()
 			{
-				if(get("#controls").style.display == "none")
+				if(get("#controls").style.display === "none")
 				{
 					get("#controls").style.display = "block";
 				}

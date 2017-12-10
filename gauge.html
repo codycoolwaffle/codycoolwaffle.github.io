@@ -6,33 +6,14 @@
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<style type="text/css">
-			p{font-family: "Comic Sans MS"}
-			#newgame{margin: 3.5em}
+			p{font-family: "Comic Sans MS",sans-serif}
 			#doit{margin: 3.5em}
-			.btn
-			{
-				-webkit-border-radius: 30;
-				-moz-border-radius: 30;
-				border-radius: 30px;
-				font-family: Georgia;
-				color: #B6EF75;
-				font-size: 32px;
-				background: #B461C2;
-				padding: 10px 20px 10px 20px;
-				text-decoration: none;
-			}
-			.btn:hover
-			{
-				background: #D18EDC;
-				text-decoration: none;
-			}
 		</style>
 	</head>
 	<body>
 		<h1>Guage</h1>
 		<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="400" xmlns="http://www.w3.org/2000/svg"
 			 viewbox="0 0 600 400">
-			<!-- the shapes and stuff will go here -->
 			<g id="theThing">
 				<defs>
 					<clipPath id="clip">
@@ -40,6 +21,7 @@
 					</clipPath>
 				</defs>
 				<rect x="0" y="0" width="600" height="400" fill="#B461C2"></rect>
+				
 				<!-- Big circle and tick marks -->
 				<circle cx="300" cy="350" r="250" fill="none" stroke="#E7719F" stroke-width="4" clip-path="url(#clip)"></circle>
 				<polyline id="k12" points="300 100 300 80" stroke="#E7719F" stroke-width="4"></polyline>
@@ -54,7 +36,6 @@
 				<use xlink:href="#k" transform="rotate(-70 300 350)"></use>
 
 				<!-- Little tick marks -->
-
 				<g id="illegalMinors">
 					<g id="legalMinors">
 						<polyline points="300 100 300 90" stroke="#E7719F" stroke-width="2" transform="rotate(2 300 350)"></polyline>
@@ -99,6 +80,6 @@
 
 		<div id='doit'><a class="btn">Just do it!</a></div>
 
-		<script src="http://codycoolwaffle.github.io/javascript/Gauge.js"></script>
+		<script src="javascript/Gauge.js"></script>
 	</body>
 </html>

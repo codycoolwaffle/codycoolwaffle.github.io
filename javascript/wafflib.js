@@ -37,9 +37,9 @@ function alart(thing)
 }
 
 function get (which) {
-  if (which[0] == "#")
+  if (which[0] === "#")
     return document.getElementById(which.substr(1));
-  else if (which[0] == ".")
+  else if (which[0] === ".")
     return document.getElementsByClassName(which.substr(1));
   else
     return document.getElementsByTagName(which);
@@ -65,17 +65,18 @@ function toRadians(degs)
 	return Math.PI*degs/180;
 }
 
+// noinspection InfiniteRecursionJS
 function keynitiate(tag, fps)
 {
 	get(tag)[0].onkeydown = function(event)
 	{
 		keys[event.keyCode] = true;
-	}
+	};
 
 	get(tag)[0].onkeyup = function(event)
 	{
     	keys[event.keyCode] = false;
-    }
+    };
 
     setTimeout(keynitiate(tag, fps), fps);
 }
@@ -171,4 +172,14 @@ function randomColour()
 function capitalize(word)
 {
 	return word[0].toUpperCase() + word.substr(1);
+}
+
+function randomWithMinMax(min, max)
+{
+	return (Math.random()*(max-min))+min;
+}
+
+function randomIntWithMinMax(min, max)
+{
+	return Math.floor((Math.random()*max)+min);
 }

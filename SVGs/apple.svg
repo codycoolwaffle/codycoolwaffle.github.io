@@ -1,6 +1,5 @@
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" width='600' height='680' xmlns="http://www.w3.org/2000/svg"
 	 viewbox='0 0 600 680'>
-	<!-- the shapes and stuff will go here -->
 	<defs>
 		<clipPath id='1'>
 			<rect x='0' y='9' width='600' height='3.7916666667'/>
@@ -44,13 +43,4 @@
 		<use x='0' y='0' xlink:href='#apple' fill='#963D97' clip-path='url(#5)'/>
 		<use x='0' y='0' xlink:href='#apple' fill='#009DDC' clip-path='url(#6)'/>
 	</g>
-	
-	<!--
-	<use id ='apple' clip-path='url(#1)' fill='#0F0' />
-	<use id ='apple' clip-path='url(#2)' fill='#FF0' />
-	<use id ='apple' clip-path='url(#3)' fill='#F90' />
-	<use id ='apple' clip-path='url(#4)' fill='#F00' />
-	<use id ='apple' clip-path='url(#5)' fill='#F0F' />
-	<use id ='apple' clip-path='url(#6)' fill='#00F' />
-	-->
 </svg>

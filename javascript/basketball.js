@@ -62,16 +62,16 @@ function invertY(i)
 }
 
 //Declaring accelerate button function
-document.getElementById('faster').onclick = function(e)
+document.getElementById('faster').onclick = function()
 {
 	speed *= 1.25;
-}
+};
 
 //Declaring decelerate button function
-document.getElementById('slower').onclick = function(e)
+document.getElementById('slower').onclick = function()
 {
 	speed *= 0.75;
-}
+};
 
 //Function for making balls bounce off each other
 function ballBounce()

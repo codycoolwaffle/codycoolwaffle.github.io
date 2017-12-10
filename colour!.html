@@ -9,7 +9,7 @@
 				h1{color:#BA5FC1; background-color:#CCCCCC}
 				div.colour{display:inline-block; padding:4em; margin-left:-0.25em}
 				p{color:#BA5FC1}
-			</style>
+		</style>
 	</head>
 
 	<body>
@@ -55,7 +55,7 @@
 
 			function changeColour(event)
 			{
-				if(event.target.className != "colour")
+				if(event.target.className !== "colour")
 				{
 					get("h1")[0].style.backgroundColor = "#CCCCCC";
 				}

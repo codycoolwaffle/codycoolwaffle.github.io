@@ -69,13 +69,7 @@ function isTouchingWalls()
 
 function wasWallHit(wall)
 {
-	if(Math.abs(cy - wall[1]) > parseFloat(player.getAttribute("r")))
-		return false;
+	return cx <= wall[2] + parseFloat(player.getAttribute("r")) && cx >= wall[0] - parseFloat(player.getAttribute("r")) && Math.abs(cy - wall[1]) <= parseFloat(player.getAttribute("r"));
 
-	if(cx < wall[0] - parseFloat(player.getAttribute("r")))
-		return false;
-	if(cx > wall[2] + parseFloat(player.getAttribute("r")))
-		return false;
 
-	return true;
 }

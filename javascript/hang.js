@@ -14,11 +14,11 @@ setupGame();
 //Main loop
 get("body")[0].onkeypress = function(event)
 {
-	if(event.keyCode == 13 && !running)
+	if(event.keyCode === 13 && !running)
 		setupGame();
 	else if(event.keyCode-97 >= 0 && event.keyCode-97 < 26 && running)
 		hang(event.keyCode-97);
-}
+};
 
 function hang(key)
 {
@@ -27,7 +27,7 @@ function hang(key)
 	var guess = failing[0][key];
 	
 	//If the guess returns a string that isn't a single letter, tells player to fix it
-	if(failing[1][key]==true)
+	if(failing[1][key]===true)
 		get("#out").innerHTML = "Please enter a new letter";
 	//If guess is valid, determines it
 	else
@@ -39,7 +39,7 @@ function hang(key)
 			//If the guess matches the current letter, answer array is updated and the remaining letters is reduced by 1
 			if(word[i] === guess)
 			{
-				if(i == 0)
+				if(i === 0)
 					answerArray[i] = guess.toUpperCase();
 				else
 					answerArray[i] = guess;
@@ -47,7 +47,7 @@ function hang(key)
 			}
 		}
 
-		if(remainingLetters == temp)
+		if(remainingLetters === temp)
 		{
 			get("#hm" + remainingGuesses).setAttribute("fill", "#000");
 			get("#hm" + remainingGuesses).setAttribute("stroke", "#000");
@@ -59,7 +59,7 @@ function hang(key)
 		failing[2] = [];
 		for(var i = 0; i < 26; i++)
 		{
-			if(failing[1][i] == true)
+			if(failing[1][i] === true)
 			{
 				failing[2][point] = failing[0][i];
 				point++;
@@ -76,29 +76,31 @@ function hang(key)
 //When game is finished, tells the player their progress, and the correct word
 function testEnd()
 {
-	if(remainingLetters == 0)
+	if(remainingLetters === 0)
 	{
 		get("#out").innerHTML = "Good job!<br>Press \"Enter\" to play again.";
 		makeReturnVis();
 	}
-	else if(remainingGuesses == 0)
+	else if(remainingGuesses === 0)
 	{
 		get("#out").innerHTML = "Too bad. The answer was \"" + capitalize(word) + "\"<br>Press \"Enter\" to play again.";
 		makeReturnVis();
 	}
 }
 
-function makeFailure(str="", num=0)
+function makeFailure(parameters)
 {
+	var str = parameters.str;
+	var num = parameters.num;
 	
-	if (num == 26)
+	if (num === 26)
 		return str;
 	else
 	{
 		var out = "";
-		if(failing[1][num]==true)
+		if(failing[1][num]===true)
 			out = failing[0][num];
-		return makeFailure(str+out, ++num);
+		return makeFailure({str: str + out, num: ++num});
 	}
 }
 
@@ -113,7 +115,7 @@ function setupGame()
 	
 	for(var i = 0; i < word.length; i++)
 	{
-		if(word[i]==" ")
+		if(word[i]===" ")
 		{
 			answerArray[i] = word[i];
 			remainingLetters--;
